@@ -6,12 +6,14 @@ import logging
 from homeassistant.core import HomeAssistant
 from homeassistant.config_entries import ConfigEntry
 from .const import DOMAIN
+import asyncio
 
 
-SERVICE_APPLY_SCENE = "apply_scene"
+SERVICE_APPLY_PRESET = "apply_preset"
 ATTR_SCENE_PRESET_ID = "preset_id"
 ATTR_LIGHT_ENTITIES = "light_entities"
 ATTR_BRIGHTNESS = "brightness"
+ATTR_TRANSITION = "transition"
 PRESETS_JSON_FILE = os.path.join(os.path.dirname(__file__), "./presets.json")
 
 with open(PRESETS_JSON_FILE, "r") as file:
@@ -21,16 +23,18 @@ SCENE_SCHEMA = vol.Schema({
     vol.Required(ATTR_SCENE_PRESET_ID): cv.string,
     vol.Required(ATTR_LIGHT_ENTITIES): cv.ensure_list,
     vol.Optional(ATTR_BRIGHTNESS): vol.Coerce(int),
+    vol.Optional(ATTR_TRANSITION, default=1): vol.Coerce(float)
 })
 
 
 _LOGGER = logging.getLogger(__name__)
 
 async def async_setup(hass, config):
-    async def apply_scene_service(call):
+    async def apply_preset_service(call):
         scene_id = call.data.get(ATTR_SCENE_PRESET_ID)
         light_entities = call.data.get(ATTR_LIGHT_ENTITIES)
         brightness_override = call.data.get(ATTR_BRIGHTNESS)
+        transition = call.data.get(ATTR_TRANSITION, 1)
 
         # Retrieve the scene data by ID (if found)
         scene_data = None
@@ -45,6 +49,8 @@ async def async_setup(hass, config):
         if not scene_data:
             raise ValueError(f"Scene '{scene_id}' not found in the JSON file.")
 
+        tasks = []
+
         # Apply the scene to the selected light entities
         light_index = 0
         for light_entity in light_entities:
@@ -56,27 +62,32 @@ async def async_setup(hass, config):
                     scene_data["lights"][light_index]["x"],
                     scene_data["lights"][light_index]["y"]
                 ],
-                "brightness": brightness_override if brightness_override is not None else scene_data.get("bri", 255)
+                "brightness": brightness_override if brightness_override is not None else scene_data.get("bri", 255),
+                "transition": transition,
             }
 
-            # Call the light.turn_on service to set the light's state
-            await hass.services.async_call(
+
+            task = hass.services.async_call(
                 "light",
                 "turn_on",
                 {
                     "entity_id": light_entity,
                     "xy_color": light_params["xy_color"],
                     "brightness": light_params["brightness"],
+                    "transition": light_params["transition"],
                 },
-                blocking=True,
+                blocking=False,
             )
+            tasks.append(task)
 
             light_index += 1
 
+        await asyncio.gather(*tasks)
+
     hass.services.async_register(
         DOMAIN,
-        SERVICE_APPLY_SCENE,
-        apply_scene_service,
+        SERVICE_APPLY_PRESET,
+        apply_preset_service,
         schema=SCENE_SCHEMA,
     )
 

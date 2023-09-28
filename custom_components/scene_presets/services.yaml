@@ -1,4 +1,4 @@
-apply_scene:
+apply_preset:
   description: Apply a scene preset to specified light entities
   fields:
     preset_id:
@@ -24,3 +24,12 @@ apply_scene:
         number:
           min: 0
           max: 255
+
+    transition:
+      description: Optional transition duration
+      example: 1
+      selector:
+        number:
+          min: 0
+          max: 300
+          unit_of_measurement: seconds
