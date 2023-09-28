@@ -2,34 +2,35 @@ apply_preset:
   description: Apply a scene preset to specified light entities
   fields:
     preset_id:
-      description: Preset to apply
+      name: "Preset"
       example: "Rest"
       required: true
       selector:
         text: null
-    light_entities:
-      description: List of light entities to apply the preset to
-      example: ["light.bedroom", "light.living_room"]
+    targets:
+      name: "Targets"
       required: true
       selector:
-        entity:
-          multiple: true
-          filter:
-            - domain: light
-
+        target:
+          entity:
+            domain: light
     brightness:
-      description: Optional brightness override
+      name: "Brightness"
       example: 150
       selector:
         number:
           min: 0
           max: 255
-
     transition:
-      description: Optional transition duration
+      name: "Transition"
       example: 1
       selector:
         number:
           min: 0
           max: 300
           unit_of_measurement: seconds
+    shuffle:
+      name: "Shuffle"
+      example: true
+      selector:
+        boolean:
