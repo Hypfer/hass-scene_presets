@@ -1,0 +1,6 @@
+{
+  "domain": "scene_presets",
+  "name": "Scene Presets",
+  "config_flow": true,
+  "version": "0.0.1"
+}

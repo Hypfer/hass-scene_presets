@@ -1,0 +1,26 @@
+apply_scene:
+  description: Apply a scene preset to specified light entities
+  fields:
+    preset_id:
+      description: Preset to apply
+      example: "Rest"
+      required: true
+      selector:
+        text: null
+    light_entities:
+      description: List of light entities to apply the preset to
+      example: ["light.bedroom", "light.living_room"]
+      required: true
+      selector:
+        entity:
+          multiple: true
+          filter:
+            - domain: light
+
+    brightness:
+      description: Optional brightness override
+      example: 150
+      selector:
+        number:
+          min: 0
+          max: 255
