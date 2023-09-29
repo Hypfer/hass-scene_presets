@@ -47,7 +47,7 @@ def ensure_list(data):
 
 async def async_setup(hass, config):
     async def apply_preset_service(call):
-        scene_id = call.data.get(ATTR_SCENE_PRESET_ID)
+        preset_id = call.data.get(ATTR_SCENE_PRESET_ID)
         targets = call.data.get(ATTR_TARGETS)
         brightness_override = call.data.get(ATTR_BRIGHTNESS)
         transition = call.data.get(ATTR_TRANSITION, 1)
@@ -57,14 +57,14 @@ async def async_setup(hass, config):
         scene_data = None
         for scene_set in SCENES_DATA.get("sets", []):
             for scene in scene_set.get("scenes", []):
-                if scene.get("name") == scene_id:
+                if scene.get("name") == preset_id:
                     scene_data = scene
                     break
             if scene_data:
                 break
 
         if not scene_data:
-            raise ValueError(f"Scene '{scene_id}' not found in the JSON file.")
+            raise vol.Invalid(f"Preset '{preset_id}' not found.")
 
         entity_reg = entity_registry.async_get(hass)
         device_reg = device_registry.async_get(hass)
