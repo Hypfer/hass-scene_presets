@@ -36,3 +36,76 @@ apply_preset:
       example: true
       selector:
         boolean:
+
+get_dynamic_scenes:
+  description: Get all currently active dynamic scenes
+
+start_dynamic_scene:
+  description: Start a loop that periodically applies a shuffled scene preset
+  fields:
+    preset_id:
+      name: "Preset"
+      example: "Rest"
+      required: true
+      selector:
+        text: null
+    targets:
+      name: "Targets"
+      required: true
+      selector:
+        target:
+          entity:
+            domain:
+              - light
+              - group
+    brightness:
+      name: "Brightness"
+      example: 150
+      selector:
+        number:
+          min: 0
+          max: 255
+    transition:
+      name: "Transition"
+      example: 1
+      selector:
+        number:
+          min: 0
+          max: 300
+          unit_of_measurement: seconds
+    interval:
+      name: "Interval"
+      example: 60
+      selector:
+        number:
+          min: 0
+          max: 300
+          unit_of_measurement: seconds
+
+stop_dynamic_scene:
+  description: Stop a dynamic scene by ID
+  fields:
+    id:
+      name: ID
+      required: true
+      example: "d1db9696-e8ef-41b7-ba71-af696ee89b28"
+      selector:
+        text: null
+
+stop_dynamic_scenes_for_targets:
+  description: Stops all dynamic scenes that include any of the specified targets
+  fields:
+    targets:
+      name: "Targets"
+      required: true
+      selector:
+        target:
+          entity:
+            domain:
+              - light
+              - group
+
+
+
+stop_all_dynamic_scenes:
+  description: Stops all currently running dynamic scenes
