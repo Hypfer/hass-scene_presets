@@ -2,5 +2,13 @@
   "domain": "scene_presets",
   "name": "Scene Presets",
   "config_flow": true,
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "codeowners": [
+    "@hypfer"
+  ],
+  "dependencies": [],
+  "documentation": "https://github.com/Hypfer/hass-scene_presets",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "requirements": []
 }
