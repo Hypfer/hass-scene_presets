@@ -20,7 +20,7 @@ You can find them and the names to call in [./custom_component/scene_presets/pre
 
 ## Screenshots
 
-![UI.png](./img/UI.png)
+![service.png](./img/service.png)
 
 ![step1.png](./img/step1.png)
 

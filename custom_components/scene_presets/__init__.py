@@ -7,6 +7,7 @@ from homeassistant.core import HomeAssistant
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.helpers import entity_registry
 from homeassistant.helpers import device_registry
+from homeassistant.components.group import expand_entity_ids
 from .const import DOMAIN
 import asyncio
 import random
@@ -76,7 +77,11 @@ async def async_setup(hass, config):
         area_ids = ensure_list(targets.get("area_id"))
 
         for entity_id in entity_ids:
-            resolved_entity_ids.extend([entity_id])
+            if entity_id.startswith("light."):
+                resolved_entity_ids.extend([entity_id])
+            elif entity_id.startswith("group."):
+                resolved_entity_ids.extend(expand_entity_ids(hass, [entity_id]))
+
         for device_id in device_ids:
             registry_entries = entity_registry.async_entries_for_device(entity_reg, device_id)
 
@@ -89,6 +94,7 @@ async def async_setup(hass, config):
 
                 resolved_entity_ids.extend(entry.entity_id for entry in registry_entries if entry.domain == 'light')
 
+        # Deduplicate entity_id list
         resolved_entity_ids = list(set(resolved_entity_ids))
 
         if shuffle:

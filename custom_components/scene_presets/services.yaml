@@ -13,7 +13,9 @@ apply_preset:
       selector:
         target:
           entity:
-            domain: light
+            domain:
+              - light
+              - group
     brightness:
       name: "Brightness"
       example: 150
