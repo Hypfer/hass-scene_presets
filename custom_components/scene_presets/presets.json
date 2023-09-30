@@ -100,6 +100,7 @@
       "scenes": [
         {
           "name": "Blossom",
+          "img": "Blossom.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -126,6 +127,7 @@
         },
         {
           "name": "Crocus",
+          "img": "Crocus.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -152,6 +154,7 @@
         },
         {
           "name": "Precious",
+          "img": "Precious.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -178,6 +181,7 @@
         },
         {
           "name": "Narcissa",
+          "img": "Narcissa.jpeg",
           "bri": 229,
           "lights": [
             {
@@ -209,6 +213,7 @@
       "scenes": [
         {
           "name": "Rolling hills",
+          "img": "Rolling hills.jpeg",
           "bri": 115,
           "lights": [
             {
@@ -235,6 +240,7 @@
         },
         {
           "name": "Warm embrace",
+          "img": "Warm embrace.jpeg",
           "bri": 102,
           "lights": [
             {
@@ -261,6 +267,7 @@
         },
         {
           "name": "Dreamy dusk",
+          "img": "Dreamy dusk.jpeg",
           "bri": 128,
           "lights": [
             {
@@ -287,6 +294,7 @@
         },
         {
           "name": "Honolulu",
+          "img": "Honolulu.jpeg",
           "bri": 100,
           "lights": [
             {
@@ -313,6 +321,7 @@
         },
         {
           "name": "Savanna sunset",
+          "img": "Savanna sunset.jpeg",
           "bri": 148,
           "lights": [
             {
@@ -339,6 +348,7 @@
         },
         {
           "name": "Golden pond",
+          "img": "Golden pond.jpeg",
           "bri": 165,
           "lights": [
             {
@@ -365,6 +375,7 @@
         },
         {
           "name": "Ruby glow",
+          "img": "Ruby glow.jpeg",
           "bri": 102,
           "lights": [
             {
@@ -391,6 +402,7 @@
         },
         {
           "name": "Tropical twilight",
+          "img": "Tropical twilight.jpeg",
           "bri": 112,
           "lights": [
             {
@@ -422,6 +434,7 @@
       "scenes": [
         {
           "name": "Miami",
+          "img": "Miami.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -448,6 +461,7 @@
         },
         {
           "name": "Cancun",
+          "img": "Cancun.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -474,6 +488,7 @@
         },
         {
           "name": "Rio",
+          "img": "Rio.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -500,6 +515,7 @@
         },
         {
           "name": "Chinatown",
+          "img": "Chinatown.jpeg",
           "bri": 153,
           "lights": [
             {
@@ -526,6 +542,7 @@
         },
         {
           "name": "Ibiza",
+          "img": "Ibiza.jpeg",
           "bri": 125,
           "lights": [
             {
@@ -552,6 +569,7 @@
         },
         {
           "name": "Osaka",
+          "img": "Osaka.jpeg",
           "bri": 92,
           "lights": [
             {
@@ -578,6 +596,7 @@
         },
         {
           "name": "Tokyo",
+          "img": "Tokyo.jpeg",
           "bri": 120,
           "lights": [
             {
@@ -604,6 +623,7 @@
         },
         {
           "name": "Motown",
+          "img": "Motown.jpeg",
           "bri": 135,
           "lights": [
             {
@@ -630,6 +650,7 @@
         },
         {
           "name": "Fairfax",
+          "img": "Fairfax.jpeg",
           "bri": 158,
           "lights": [
             {
@@ -661,6 +682,7 @@
       "scenes": [
         {
           "name": "Galaxy",
+          "img": "Galaxy.jpeg",
           "bri": 64,
           "lights": [
             {
@@ -687,6 +709,7 @@
         },
         {
           "name": "Starlight",
+          "img": "Starlight.jpeg",
           "bri": 62,
           "lights": [
             {
@@ -713,6 +736,7 @@
         },
         {
           "name": "Blood moon",
+          "img": "Blood moon.jpeg",
           "bri": 52,
           "lights": [
             {
@@ -739,6 +763,7 @@
         },
         {
           "name": "Arctic aurora",
+          "img": "Arctic aurora.jpeg",
           "bri": 67,
           "lights": [
             {
@@ -765,6 +790,7 @@
         },
         {
           "name": "Moonlight",
+          "img": "Moonlight.jpeg",
           "bri": 52,
           "lights": [
             {
@@ -791,6 +817,7 @@
         },
         {
           "name": "Nebula",
+          "img": "Nebula.jpeg",
           "bri": 62,
           "lights": [
             {
@@ -822,6 +849,7 @@
       "scenes": [
         {
           "name": "Still waters",
+          "img": "Still waters.jpeg",
           "bri": 173,
           "lights": [
             {
@@ -848,6 +876,7 @@
         },
         {
           "name": "Adrift",
+          "img": "Adrift.jpeg",
           "bri": 165,
           "lights": [
             {
@@ -874,6 +903,7 @@
         },
         {
           "name": "Pensive",
+          "img": "Pensive.jpeg",
           "bri": 143,
           "lights": [
             {
@@ -900,6 +930,7 @@
         },
         {
           "name": "Majestic morning",
+          "img": "Majestic morning.jpeg",
           "bri": 145,
           "lights": [
             {
@@ -926,6 +957,7 @@
         },
         {
           "name": "Sundown",
+          "img": "Sundown.jpeg",
           "bri": 128,
           "lights": [
             {
@@ -952,6 +984,7 @@
         },
         {
           "name": "Blue lagoon",
+          "img": "Blue lagoon.jpeg",
           "bri": 128,
           "lights": [
             {
@@ -978,6 +1011,7 @@
         },
         {
           "name": "Palm Beach",
+          "img": "Palm Beach.jpeg",
           "bri": 97,
           "lights": [
             {
@@ -1004,6 +1038,7 @@
         },
         {
           "name": "Lake Placid",
+          "img": "Lake Placid.jpeg",
           "bri": 77,
           "lights": [
             {
@@ -1035,6 +1070,7 @@
       "scenes": [
         {
           "name": "Mountain breeze",
+          "img": "Mountain breeze.jpeg",
           "bri": 153,
           "lights": [
             {
@@ -1061,6 +1097,7 @@
         },
         {
           "name": "Lake mist",
+          "img": "Lake mist.jpeg",
           "bri": 165,
           "lights": [
             {
@@ -1087,6 +1124,7 @@
         },
         {
           "name": "Ocean dawn",
+          "img": "Ocean dawn.jpeg",
           "bri": 214,
           "lights": [
             {
@@ -1113,6 +1151,7 @@
         },
         {
           "name": "Frosty dawn",
+          "img": "Frosty dawn.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -1139,6 +1178,7 @@
         },
         {
           "name": "Sunday morning",
+          "img": "Sunday morning.jpeg",
           "bri": 173,
           "lights": [
             {
@@ -1165,6 +1205,7 @@
         },
         {
           "name": "Emerald isle",
+          "img": "Emerald isle.jpeg",
           "bri": 191,
           "lights": [
             {
@@ -1191,6 +1232,7 @@
         },
         {
           "name": "Spring blossom",
+          "img": "Spring blossom.jpeg",
           "bri": 153,
           "lights": [
             {
@@ -1222,6 +1264,7 @@
       "scenes": [
         {
           "name": "Beginnings",
+          "img": "Beginnings.jpeg",
           "bri": 52,
           "lights": [
             {
@@ -1248,6 +1291,7 @@
         },
         {
           "name": "First light",
+          "img": "First light.jpeg",
           "bri": 77,
           "lights": [
             {
@@ -1274,6 +1318,7 @@
         },
         {
           "name": "Horizon",
+          "img": "Horizon.jpeg",
           "bri": 128,
           "lights": [
             {
@@ -1300,6 +1345,7 @@
         },
         {
           "name": "Valley dawn",
+          "img": "Valley dawn.jpeg",
           "bri": 178,
           "lights": [
             {
@@ -1326,6 +1372,7 @@
         },
         {
           "name": "Sunflare",
+          "img": "Sunflare.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -1357,6 +1404,7 @@
       "scenes": [
         {
           "name": "Emerald flutter",
+          "img": "Emerald flutter.jpeg",
           "bri": 102,
           "lights": [
             {
@@ -1383,6 +1431,7 @@
         },
         {
           "name": "Memento",
+          "img": "Memento.jpeg",
           "bri": 102,
           "lights": [
             {
@@ -1409,6 +1458,7 @@
         },
         {
           "name": "Resplendent",
+          "img": "Resplendent.jpeg",
           "bri": 77,
           "lights": [
             {
@@ -1435,6 +1485,7 @@
         },
         {
           "name": "Scarlet dream",
+          "img": "Scarlet dream.jpeg",
           "bri": 77,
           "lights": [
             {
@@ -1466,6 +1517,7 @@
       "scenes": [
         {
           "name": "Amethyst valley",
+          "img": "Amethyst valley.jpeg",
           "bri": 239,
           "lights": [
             {
@@ -1492,6 +1544,7 @@
         },
         {
           "name": "Misty ridge",
+          "img": "Misty ridge.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -1518,6 +1571,7 @@
         },
         {
           "name": "Hazy days",
+          "img": "Hazy days.jpeg",
           "bri": 221,
           "lights": [
             {
@@ -1544,6 +1598,7 @@
         },
         {
           "name": "Midsummer sun",
+          "img": "Midsummer sun.jpeg",
           "bri": 251,
           "lights": [
             {
@@ -1570,6 +1625,7 @@
         },
         {
           "name": "Autumn gold",
+          "img": "Autumn gold.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -1596,6 +1652,7 @@
         },
         {
           "name": "Spring lake",
+          "img": "Spring lake.jpeg",
           "bri": 241,
           "lights": [
             {
@@ -1622,6 +1679,7 @@
         },
         {
           "name": "Winter mountain",
+          "img": "Winter mountain.jpeg",
           "bri": 224,
           "lights": [
             {
@@ -1648,6 +1706,7 @@
         },
         {
           "name": "Midwinter",
+          "img": "Midwinter.jpeg",
           "bri": 226,
           "lights": [
             {
@@ -1679,6 +1738,7 @@
       "scenes": [
         {
           "name": "Amber bloom",
+          "img": "Amber bloom.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -1705,6 +1765,7 @@
         },
         {
           "name": "Lily",
+          "img": "Lily.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -1731,6 +1792,7 @@
         },
         {
           "name": "Painted sky",
+          "img": "Painted sky.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -1757,6 +1819,7 @@
         },
         {
           "name": "Winter beauty",
+          "img": "Winter beauty.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -1783,6 +1846,7 @@
         },
         {
           "name": "Orange fields",
+          "img": "Orange fields.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -1809,6 +1873,7 @@
         },
         {
           "name": "Forest adventure",
+          "img": "Forest adventure.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -1834,7 +1899,8 @@
           ]
         },
         {
-          "name": "Blue Planet",
+          "name": "Blue planet",
+          "img": "Blue planet.jpeg",
           "bri": 138,
           "lights": [
             {
@@ -1861,6 +1927,7 @@
         },
         {
           "name": "Meriete",
+          "img": "Meriete.jpeg",
           "bri": 203,
           "lights": [
             {
@@ -1892,6 +1959,7 @@
       "scenes": [
         {
           "name": "Soho",
+          "img": "Soho.jpeg",
           "bri": 158,
           "lights": [
             {
@@ -1918,6 +1986,7 @@
         },
         {
           "name": "Vapor wave",
+          "img": "Vapor wave.jpeg",
           "bri": 198,
           "lights": [
             {
@@ -1944,6 +2013,7 @@
         },
         {
           "name": "Magneto",
+          "img": "Magneto.jpeg",
           "bri": 224,
           "lights": [
             {
@@ -1970,6 +2040,7 @@
         },
         {
           "name": "Tyrell",
+          "img": "Tyrell.jpeg",
           "bri": 128,
           "lights": [
             {
@@ -1996,6 +2067,7 @@
         },
         {
           "name": "Disturbia",
+          "img": "Disturbia.jpeg",
           "bri": 160,
           "lights": [
             {
@@ -2022,6 +2094,7 @@
         },
         {
           "name": "Hal",
+          "img": "Hal.jpeg",
           "bri": 193,
           "lights": [
             {

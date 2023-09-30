@@ -16,7 +16,7 @@ This component provides all the scene presets that were available in the Hue App
 These have been manually extracted in a clean-room way by setting a group of lights to a scene and then noting the different x,y values + its name.
 Thanks again to @coderph0x!
 
-You can find them and the names to call in [./custom_component/scene_presets/presets.json](custom_components/scene_presets/presets.json)
+Check out the [./assets/](./assets/Readme.md) folder for a list with all presets available.
 
 ## Screenshots
 
