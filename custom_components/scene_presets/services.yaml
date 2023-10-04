@@ -1,14 +1,17 @@
 apply_preset:
+  name: "Apply preset"
   description: Apply a scene preset to specified light entities
   fields:
     preset_id:
       name: "Preset"
+      description: "The preset to use"
       example: "Rest"
       required: true
       selector:
         text: null
     targets:
       name: "Targets"
+      description: "What to apply the preset to"
       required: true
       selector:
         target:
@@ -18,6 +21,7 @@ apply_preset:
               - group
     brightness:
       name: "Brightness"
+      description: "Override the presets brightness"
       example: 150
       selector:
         number:
@@ -25,6 +29,7 @@ apply_preset:
           max: 255
     transition:
       name: "Transition"
+      description: "Transition duration between states"
       example: 1
       selector:
         number:
@@ -33,24 +38,29 @@ apply_preset:
           unit_of_measurement: seconds
     shuffle:
       name: "Shuffle"
+      description: "Shuffle the colors before applying"
       example: true
       selector:
         boolean:
 
 get_dynamic_scenes:
+  name: "Get dynamic scenes"
   description: Get all currently active dynamic scenes
 
 start_dynamic_scene:
+  name: "Start dynamic scene"
   description: Start a loop that periodically applies a shuffled scene preset
   fields:
     preset_id:
       name: "Preset"
+      description: "The preset to use"
       example: "Rest"
       required: true
       selector:
         text: null
     targets:
       name: "Targets"
+      description: "What to apply the preset to"
       required: true
       selector:
         target:
@@ -60,6 +70,7 @@ start_dynamic_scene:
               - group
     brightness:
       name: "Brightness"
+      description: "Override the presets brightness"
       example: 150
       selector:
         number:
@@ -67,6 +78,7 @@ start_dynamic_scene:
           max: 255
     transition:
       name: "Transition"
+      description: "Transition duration between states"
       example: 1
       selector:
         number:
@@ -75,6 +87,7 @@ start_dynamic_scene:
           unit_of_measurement: seconds
     interval:
       name: "Interval"
+      description: "Time between color changes"
       example: 60
       selector:
         number:
@@ -83,20 +96,24 @@ start_dynamic_scene:
           unit_of_measurement: seconds
 
 stop_dynamic_scene:
+  name: "Stop dynamic scene"
   description: Stop a dynamic scene by ID
   fields:
     id:
       name: ID
+      description: "The UUID of the dynamic scene to stop"
       required: true
       example: "d1db9696-e8ef-41b7-ba71-af696ee89b28"
       selector:
         text: null
 
 stop_dynamic_scenes_for_targets:
+  name: "Stop dynamic scenes for targets"
   description: Stops all dynamic scenes that include any of the specified targets
   fields:
     targets:
       name: "Targets"
+      description: "Targets to stop all dynamic scenes for"
       required: true
       selector:
         target:
@@ -105,7 +122,6 @@ stop_dynamic_scenes_for_targets:
               - light
               - group
 
-
-
 stop_all_dynamic_scenes:
+  name: "Stop all dynamic scenes"
   description: Stops all currently running dynamic scenes

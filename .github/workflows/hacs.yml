@@ -1,4 +1,4 @@
-name: Validate
+name: HACS validate
 
 on:
   workflow_dispatch:

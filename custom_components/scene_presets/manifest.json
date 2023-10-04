@@ -1,14 +1,15 @@
 {
-  "domain": "scene_presets",
-  "name": "Scene Presets",
-  "config_flow": true,
-  "version": "0.0.1",
-  "codeowners": [
-    "@hypfer"
-  ],
-  "dependencies": [],
-  "documentation": "https://github.com/Hypfer/hass-scene_presets",
-  "integration_type": "service",
-  "iot_class": "calculated",
-  "requirements": []
+    "domain": "scene_presets",
+    "name": "Scene Presets",
+    "codeowners": [
+        "@hypfer"
+    ],
+    "config_flow": true,
+    "dependencies": [],
+    "documentation": "https://github.com/Hypfer/hass-scene_presets",
+    "integration_type": "service",
+    "iot_class": "calculated",
+    "issue_tracker": "https://github.com/Hypfer/hass-scene_presets/issues",
+    "requirements": [],
+    "version": "0.0.1"
 }

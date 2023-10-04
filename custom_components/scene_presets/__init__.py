@@ -9,6 +9,7 @@ from .dynamic_scenes import DynamicScene, DynamicSceneManager
 from .presets import apply_preset
 from .util import ensure_list, resolve_targets
 
+CONFIG_SCHEMA = cv.empty_config_schema(DOMAIN)
 
 APPLY_PRESET_SCHEMA = vol.Schema({
     vol.Required(ATTR_SCENE_PRESET_ID): cv.string,
