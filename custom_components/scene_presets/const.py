@@ -1,4 +1,7 @@
 DOMAIN = "scene_presets"
+NAME = "Scene Presets"
+
+PANEL_URL = "/scene_presets_panel.js"
 
 SERVICE_APPLY_PRESET = "apply_preset"
 SERVICE_START_DYNAMIC_SCENE = "start_dynamic_scene"

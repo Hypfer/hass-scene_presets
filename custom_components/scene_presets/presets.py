@@ -1,21 +1,16 @@
 import voluptuous as vol
-import os
-import json
 import asyncio
 import random
 import logging
-
-PRESETS_JSON_FILE = os.path.join(os.path.dirname(__file__), "./presets.json")
-
-with open(PRESETS_JSON_FILE, "r") as file:
-    SCENES_DATA = json.load(file)
+from .file_utils import PRESET_DATA
 
 _LOGGER = logging.getLogger(__name__)
+
 
 async def apply_preset(hass, preset_id, light_entity_ids, transition, shuffle, brightness_override=None):
     # Retrieve the scene data by ID (if found)
     scene_data = None
-    for scene_set in SCENES_DATA.get("sets", []):
+    for scene_set in PRESET_DATA.get("sets", []):
         for scene in scene_set.get("scenes", []):
             if scene.get("name") == preset_id:
                 scene_data = scene

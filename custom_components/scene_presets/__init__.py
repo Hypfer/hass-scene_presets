@@ -7,6 +7,7 @@ from .const import *
 
 from .dynamic_scenes import DynamicScene, DynamicSceneManager
 from .presets import apply_preset
+from .view import async_setup_view
 from .util import ensure_list, resolve_targets
 
 CONFIG_SCHEMA = cv.empty_config_schema(DOMAIN)
@@ -168,5 +169,6 @@ async def async_setup_entry(
     hass: HomeAssistant, entry: ConfigEntry
 ) -> bool:
     hass.data.setdefault(DOMAIN, {})
+    await async_setup_view(hass)
 
     return True
