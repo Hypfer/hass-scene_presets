@@ -1,44 +1,38 @@
 // @ts-nocheck
+// noinspection JSUnusedGlobalSymbols
+
 import {Container} from "react-dom";
 import {App} from "./App";
 import {createRoot, Root} from "react-dom/client";
-import {DEFAULT_STYLES} from "./const";
+import {loadConfigDashboard} from "./helpers";
 
 class ScenePresetsPanel extends HTMLElement {
+    initialized: boolean = false;
     shadow: Container;
     hasHass: boolean = false;
     _hass: any;
     private _narrow: boolean = false;
-    private readonly styleElem: HTMLStyleElement;
-    private readonly container: HTMLDivElement;
     private root: Root;
 
     constructor() {
         super();
         this.shadow = this.attachShadow({mode: "open"});
-
-        this.container = document.createElement("div");
-        this.styleElem = document.createElement("style");
-
-        this.shadow.appendChild(this.styleElem);
-        this.shadow.appendChild(this.container);
         
-        Object.entries(DEFAULT_STYLES).forEach(([key, value]) => {
-            this.container.style.setProperty(key, value);
-        });
+        this.root = createRoot(this.shadow);
 
-        this.root = createRoot(this.container);
+        this.initialize().then(() => {
+            console.log("loaded");
+            
+            this.initialized = true;
+        })
     }
 
     set hass(hass) {
         this._hass = hass;
 
-        console.log("HASS was set", hass);
-        if (!this.hasHass) {
-            this.hasHass = true;
+        //console.log("HASS was set", hass);
 
-            this.renderElement();
-        }
+        this.renderElement();
     }
 
     set narrow(narrow) {
@@ -48,32 +42,22 @@ class ScenePresetsPanel extends HTMLElement {
     }
 
     renderElement() {
-        console.log("HASS", this._hass);
-
-        this.syncCSSVars();
-
-        this.root.render(
-            <App
-                hass={this._hass}
-                narrow={this._narrow}
-                toggleMenu={() => {
-                    this.dispatchEvent(new Event("hass-toggle-menu"));
-                }}
-            />,
-            this.container
-        );
+        if (this.initialized) {
+            this.root.render(
+                <App
+                    hass={this._hass}
+                    narrow={this._narrow}
+                />
+            );
+        } else {
+            setTimeout(() => {
+                this.renderElement();
+            }, 100);
+        }
     }
 
-    syncCSSVars() {
-        const hassStyles = window.parent.getComputedStyle(window.parent.document.documentElement);
-
-        for (const propertyName of hassStyles) {
-            if (propertyName.startsWith("--")) {
-                const value = hassStyles.getPropertyValue(propertyName);
-
-                this.container.style.setProperty(propertyName, value);
-            }
-        }
+    async initialize() {
+        await loadConfigDashboard()
     }
 }
 

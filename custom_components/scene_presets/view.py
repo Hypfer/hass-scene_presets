@@ -19,8 +19,7 @@ async def async_setup_view(hass):
         config={
             "_panel_custom": {
                 "name": "scene-presets-panel",
-                "module_url": f"{PANEL_URL}?{VERSION}",
-                "embed_iframe": True
+                "module_url": f"{PANEL_URL}?{VERSION}"
             },
             "version": VERSION
         },

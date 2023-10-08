@@ -2,24 +2,38 @@ import React from "react";
 
 import presets from "../custom_components/scene_presets/presets.json";
 import {Tile} from "./components/Tile";
-import {TopBar} from "./components/TopBar";
 
+declare global {
+    namespace JSX {
+        interface IntrinsicElements {
+            ['ha-app-layout']: any;
+            ['app-header']: any;
+            ['app-toolbar']: any
+            ['ha-menu-button']: any
+            ['ha-entity-toggle']: any;
+            ['ha-top-app-bar-fixed']: any
+        }
+    }
+}
 
 export const App : React.FunctionComponent<{
     hass: any,
     narrow: boolean,
-    toggleMenu: () => void
 }> = ({
     hass,
     narrow,
-    toggleMenu
 }): JSX.Element => {
     return (
         <>
-            <TopBar
-                narrow={narrow}
-                toggleMenu={toggleMenu}
-            />
+            <ha-top-app-bar-fixed>
+                <ha-menu-button 
+                    slot="navigationIcon" 
+                    hass={hass}
+                    narrow={narrow}
+                />
+                <div slot="title">Scene Presets</div>
+            </ha-top-app-bar-fixed>
+
             <div
                 style={{
                     padding: "2rem"

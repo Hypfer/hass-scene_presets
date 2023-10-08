@@ -41,8 +41,8 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "0.0.0-experimental-dddfe6882-20231005",
+    "react-dom": "0.0.0-experimental-dddfe6882-20231005",
     "react-icons": "4.11.0"
   }
 }
