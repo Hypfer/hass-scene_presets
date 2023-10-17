@@ -3,9 +3,11 @@ import React from "react";
 export const Tile :React.FunctionComponent<{
     name: string,
     imgSrc?: string
+    onClick?: (name: string) => void
 }> = ({
     name,
-    imgSrc
+    imgSrc,
+    onClick
 }): JSX.Element => {
     return (
         <div
@@ -14,9 +16,13 @@ export const Tile :React.FunctionComponent<{
                 padding: "20px",
                 borderRadius: "15px",
                 position: "relative",
-                flex: "0 0  calc(33.33% - 20px)",
-                height: "150px",
-                width: "250px"
+                height: "75px",
+                width: "150px",
+
+                cursor: "pointer"
+            }}
+            onClick={() => {
+                onClick?.(name);
             }}
         >
             {
@@ -42,6 +48,7 @@ export const Tile :React.FunctionComponent<{
                                 left: 0,
                                 width: "100%",
                                 height: "100%",
+                                borderRadius: "15px",
                                 background: "linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5))"
                             }}
                         ></div>

@@ -17,22 +17,28 @@ class ScenePresetsPanel extends HTMLElement {
     constructor() {
         super();
         this.shadow = this.attachShadow({mode: "open"});
-        
+
         this.root = createRoot(this.shadow);
 
         this.initialize().then(() => {
             console.log("loaded");
-            
+
             this.initialized = true;
-        })
+        });
     }
 
     set hass(hass) {
+
         this._hass = hass;
 
         //console.log("HASS was set", hass);
 
-        this.renderElement();
+        if (!this.hasHass) {
+            this.hasHass = true;
+
+            this.renderElement();
+        }
+
     }
 
     set narrow(narrow) {
@@ -57,7 +63,7 @@ class ScenePresetsPanel extends HTMLElement {
     }
 
     async initialize() {
-        await loadConfigDashboard()
+        await loadConfigDashboard();
     }
 }
 
