@@ -11,6 +11,7 @@ declare global {
             ["ha-entity-toggle"]: any;
             ["ha-top-app-bar-fixed"]: any;
             ["ha-selector"]: any;
+            ["ha-switch"]: any;
             ["ha-card"]: any;
             ["ha-settings-row"]: any;
         }

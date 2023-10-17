@@ -1,26 +1,16 @@
 import React, {Component} from "react";
 
-export interface HaTargetSelectorValue {
-    entity_id?: string | Array<string>,
-    device_id?: string | Array<string>,
-    area_id?: string | Array<string>
-}
-
-export interface HaSelectorValue extends HaTargetSelectorValue {
-
-}
-
-interface HaSelectorProps {
+export interface HaSelectorProps {
     hass: any;
     selector: any;
-    value: HaSelectorValue;
-    onValueChanged: (value: HaSelectorValue) => void
+    value: any;
+    onValueChanged: (value: any) => void
 }
 
-class HaSelector extends Component<HaSelectorProps> { //TODO: Type this a bit more
+abstract class HaSelector<P> extends Component<P & HaSelectorProps> {
     private elementRef: React.RefObject<HTMLElement>;
 
-    constructor(props: HaSelectorProps) {
+    constructor(props: P & HaSelectorProps) {
         super(props);
 
         this.elementRef = React.createRef();

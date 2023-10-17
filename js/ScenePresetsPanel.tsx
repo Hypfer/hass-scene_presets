@@ -28,17 +28,13 @@ class ScenePresetsPanel extends HTMLElement {
     }
 
     set hass(hass) {
-
         this._hass = hass;
-
-        //console.log("HASS was set", hass);
 
         if (!this.hasHass) {
             this.hasHass = true;
 
             this.renderElement();
         }
-
     }
 
     set narrow(narrow) {

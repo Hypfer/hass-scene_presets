@@ -17,9 +17,9 @@ This will change in the future
 
 ## Screenshots
 
-![service.png](./img/service.png)
+![ui.png](./img/ui.png)
 
-![preview.png](./img/preview.png)
+![service.png](./img/service.png)
 
 ![step1.png](./img/step1.png)
 

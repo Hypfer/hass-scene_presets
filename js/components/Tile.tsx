@@ -13,11 +13,15 @@ export const Tile :React.FunctionComponent<{
         <div
             style={{
                 margin: "10px",
-                padding: "20px",
+                padding: "15px",
                 borderRadius: "15px",
                 position: "relative",
-                height: "75px",
-                width: "150px",
+                flexGrow: "1",
+                flexShrink: "0",
+                flexBasis: "calc(20%)",
+                maxWidth: "33%",
+                height: "6rem",
+
 
                 cursor: "pointer"
             }}
