@@ -6,28 +6,46 @@ from .const import *
 
 _LOGGER = logging.getLogger(__name__)
 
+
 class DynamicScene:
     def __init__(self, hass, parameters=None, interval=5):
         self.id = str(uuid.uuid4())
         self.hass = hass
         self.interval = interval
-
         self._running = False
         self._task = None
         self.parameters = parameters if parameters is not None else {}
-
         self.start_loop()
 
     async def _loop(self):
+        run_count = 0
+
         while self._running:
+            # make sure to abort when (all) the light(s) turns off
+            if run_count > 0:
+                entity_states = [
+                    self.hass.states.get(x)
+                    for x in self.parameters.get("light_entity_ids")
+                    if x is not None
+                ]
+                lights_on = len([x for x in entity_states if x.state == "on"])
+                if lights_on == 0:
+                    _LOGGER.warning("Stop running because light(s) have turned off")
+                    self._running = False
+                    return
+
+            # on start of the dynamic scene use a short transition
+            transition = 0.5 if run_count == 0 else self.parameters.get(ATTR_TRANSITION)
+
             await apply_preset(
                 self.hass,
                 self.parameters.get(ATTR_SCENE_PRESET_ID),
                 self.parameters.get("light_entity_ids"),
-                self.parameters.get(ATTR_TRANSITION),
+                transition,
                 self.parameters.get(ATTR_SHUFFLE),
-                self.parameters.get(ATTR_BRIGHTNESS, None)
+                self.parameters.get(ATTR_BRIGHTNESS, None),
             )
+            run_count += 1
 
             await asyncio.sleep(self.interval)
 
@@ -43,16 +61,17 @@ class DynamicScene:
 
         self._running = False
 
-
     def to_dict(self):
         return {
             "id": self.id,
             "interval": self.interval,
-            "parameters": self.parameters
+            "parameters": self.parameters,
+            "running": self._running,
         }
 
     def __del__(self):
         self.stop_loop()
+
 
 class DynamicSceneManager:
     def __init__(self):
@@ -106,4 +125,3 @@ class DynamicSceneManager:
             scenes_dict["dynamic_scenes"].append(scene.to_dict())
 
         return scenes_dict
-    
