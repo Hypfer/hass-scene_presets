@@ -7,7 +7,9 @@ from .file_utils import PRESET_DATA
 _LOGGER = logging.getLogger(__name__)
 
 
-async def apply_preset(hass, preset_id, light_entity_ids, transition, shuffle, brightness_override=None):
+async def apply_preset(
+    hass, preset_id, light_entity_ids, transition, shuffle, brightness_override=None
+):
     # Retrieve the scene data by ID (if found)
     scene_data = None
     for scene_set in PRESET_DATA.get("sets", []):
@@ -33,23 +35,32 @@ async def apply_preset(hass, preset_id, light_entity_ids, transition, shuffle, b
             light_index = 0  # Start back at the beginning
 
         light_params = {
-            "xy_color": [
-                scene_data["lights"][light_index]["x"],
-                scene_data["lights"][light_index]["y"]
-            ],
-            "brightness": brightness_override if brightness_override is not None else scene_data.get("bri", 255),
+            "brightness": brightness_override
+            if brightness_override
+            else scene_data.get("bri", 255),
             "transition": transition,
+            "entity_id": entity_id,
         }
+        hass_state = hass.states.get(entity_id)
+        if not hass_state:
+            continue
+        if "xy" in hass_state.attributes.get("supported_color_modes", ""):
+            light_params["xy_color"] = [
+                scene_data["lights"][light_index]["x"],
+                scene_data["lights"][light_index]["y"],
+            ]
+        else:
+            # if light does not support xy colors, convert to kelvin
+            x_color = scene_data["lights"][light_index]["x"]
+            y_color = scene_data["lights"][light_index]["y"]
+            n = (x_color - 0.3320) / (0.1858 - y_color)
+            color_temp_kelvin = int(437 * n**3 + 3601 * n**2 + 6861 * n + 5517)
+            light_params["kelvin"] = color_temp_kelvin
 
         task = hass.services.async_call(
             "light",
             "turn_on",
-            {
-                "entity_id": entity_id,
-                "xy_color": light_params["xy_color"],
-                "brightness": light_params["brightness"],
-                "transition": light_params["transition"],
-            },
+            light_params,
             blocking=False,
         )
         tasks.append(task)
