@@ -45,7 +45,8 @@ export const PresetApplyPage: React.FunctionComponent<{
     return (
         <div
             style={{
-                padding: "1rem"
+                padding: "1rem",
+                userSelect: "none"
             }}
         >
             <div
@@ -196,7 +197,7 @@ export const PresetApplyPage: React.FunctionComponent<{
                     presetsToUse.map(({name, scenes}) => {
                         return (
                             <div
-                                key={"scene_" + name}
+                                key={"category_" + name}
                             >
                                 <h3
                                     style={{
@@ -213,10 +214,10 @@ export const PresetApplyPage: React.FunctionComponent<{
                                     }}
                                 >
                                     {
-                                        scenes.map((scene) => {
+                                        scenes.map((scene, i) => {
                                             return (
                                                 <Tile
-                                                    key={"scene_" + name}
+                                                    key={"scene_" + name + "_" + i}
                                                     name={scene.name}
                                                     imgSrc={scene.img ? "/assets/scene_presets/" + scene.img : undefined}
                                                     onClick={(name) => {

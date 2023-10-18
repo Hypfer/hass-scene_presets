@@ -1,4 +1,7 @@
 import ScenePresetsPanel from "./ScenePresetsPanel";
 
+const ELEMENT_NAME = "scene-presets-panel"
 
-window.customElements.define("scene-presets-panel", ScenePresetsPanel);
+if (!window.customElements.get(ELEMENT_NAME)) {
+    window.customElements.define(ELEMENT_NAME, ScenePresetsPanel)
+}
