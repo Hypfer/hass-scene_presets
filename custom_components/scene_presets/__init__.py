@@ -67,6 +67,9 @@ async def async_setup(hass, config):
 
 
     async def start_dynamic_scene(call):
+        # always stop any existing actions first
+        await stop_dynamic_scenes_for_targets(call)
+
         preset_id = call.data.get(ATTR_SCENE_PRESET_ID)
         targets = call.data.get(ATTR_TARGETS)
         interval = call.data.get(ATTR_INTERVAL)
