@@ -44,7 +44,9 @@ async def apply_preset(
         hass_state = hass.states.get(entity_id)
         if not hass_state:
             continue
-        if "xy" in hass_state.attributes.get("supported_color_modes", ""):
+
+        supported_color_modes = hass_state.attributes.get("supported_color_modes", "")
+        if any(mode in supported_color_modes for mode in ["xy", "hs", "rgb"]):
             light_params["xy_color"] = [
                 scene_data["lights"][light_index]["x"],
                 scene_data["lights"][light_index]["y"],
