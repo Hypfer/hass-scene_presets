@@ -504,3 +504,52 @@ Feel free to contact me, and I'm sure we can find a solution.
 <img src="./palettes/Hal.svg" height="100"/>
 
 `Hal`
+### Halloween
+#### Trick or treat
+<img src="./Trick or treat.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Trick or treat.svg" height="100"/>
+
+`Trick or treat`
+#### Glowing grins
+<img src="./Glowing grins.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Glowing grins.svg" height="100"/>
+
+`Glowing grins`
+#### Spellbound
+<img src="./Spellbound.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Spellbound.svg" height="100"/>
+
+`Spellbound`
+#### Hocus pocus
+<img src="./Hocus pocus.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Hocus pocus.svg" height="100"/>
+
+`Hocus pocus`
+#### Toil and trouble
+<img src="./Toil and trouble.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Toil and trouble.svg" height="100"/>
+
+`Toil and trouble`
+#### Witching hour
+<img src="./Witching hour.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Witching hour.svg" height="100"/>
+
+`Witching hour`
+#### Pandemonium
+<img src="./Pandemonium.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Pandemonium.svg" height="100"/>
+
+`Pandemonium`
+#### Phantom
+<img src="./Phantom.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Phantom.svg" height="100"/>
+
+`Phantom`
