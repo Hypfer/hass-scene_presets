@@ -40,7 +40,7 @@ export const PresetApplyPage: React.FunctionComponent<{
         ]
     );
 
-    const presetsToUse = presets.sets.filter(set => set.name !== "Defaults");
+    const presetsToUse = presets.sets;
 
     return (
         <div

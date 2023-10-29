@@ -20,38 +20,56 @@ Feel free to contact me, and I'm sure we can find a solution.
 ## Presets
 
 #### Rest
+<img src="./Rest.jpeg" height="256"/>
+<br/>
 <img src="./palettes/Rest.svg" height="100"/>
 
 `Rest`
 #### Relax
+<img src="./Relax.jpeg" height="256"/>
+<br/>
 <img src="./palettes/Relax.svg" height="100"/>
 
 `Relax`
 #### Read
+<img src="./Read.jpeg" height="256"/>
+<br/>
 <img src="./palettes/Read.svg" height="100"/>
 
 `Read`
 #### Concentrate
+<img src="./Concentrate.jpeg" height="256"/>
+<br/>
 <img src="./palettes/Concentrate.svg" height="100"/>
 
 `Concentrate`
 #### Energize
+<img src="./Energize.jpeg" height="256"/>
+<br/>
 <img src="./palettes/Energize.svg" height="100"/>
 
 `Energize`
 #### Cool bright
+<img src="./Cool bright.jpeg" height="256"/>
+<br/>
 <img src="./palettes/Cool bright.svg" height="100"/>
 
 `Cool bright`
 #### Bright
+<img src="./Bright.jpeg" height="256"/>
+<br/>
 <img src="./palettes/Bright.svg" height="100"/>
 
 `Bright`
 #### Dimmed
+<img src="./Dimmed.jpeg" height="256"/>
+<br/>
 <img src="./palettes/Dimmed.svg" height="100"/>
 
 `Dimmed`
 #### Nightlight
+<img src="./Nightlight.jpeg" height="256"/>
+<br/>
 <img src="./palettes/Nightlight.svg" height="100"/>
 
 `Nightlight`

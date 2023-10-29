@@ -8,6 +8,9 @@ min_angle = 2
 white_point = (0.3127, 0.3290)
 
 def get_next_random_color(current: Tuple[float, float], options: List[Tuple[float, float]]) -> Tuple[float, float]:
+    if len(options) == 1:
+        return options[0]
+
     valid_end_colors = []
 
     for color in options:
@@ -41,8 +44,8 @@ def get_next_random_color(current: Tuple[float, float], options: List[Tuple[floa
         return random.choice(options)
 
 def get_next_color(idx: int, options: List[Tuple[float, float]]) -> Tuple[float, float]:
-    if not options:
-        return white_point
+    if len(options) == 1:
+        return options[0]
 
     wrapped_idx = idx % len(options)
     next_color = options[wrapped_idx]
@@ -50,8 +53,8 @@ def get_next_color(idx: int, options: List[Tuple[float, float]]) -> Tuple[float,
     return next_color
 
 def get_random_color(options: List[Tuple[float, float]]) -> Tuple[float, float]:
-    if not options:
-        return white_point
+    if len(options) == 1:
+        return options[0]
 
     random_color = random.choice(options)
 
