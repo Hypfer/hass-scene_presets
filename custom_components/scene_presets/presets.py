@@ -1,8 +1,8 @@
 import voluptuous as vol
 import asyncio
-import random
 import logging
 from .file_utils import PRESET_DATA
+from .color_management import *
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -23,17 +23,15 @@ async def apply_preset(
     if not scene_data:
         raise vol.Invalid(f"Preset '{preset_id}' not found.")
 
+    preset_colors = [(light["x"], light["y"]) for light in scene_data["lights"]]
+
     if shuffle:
         random.shuffle(light_entity_ids)
 
     tasks = []
 
     # Apply the scene to the selected light entities
-    light_index = 0
-    for entity_id in light_entity_ids:
-        if light_index >= len(scene_data["lights"]):
-            light_index = 0  # Start back at the beginning
-
+    for index, entity_id in enumerate(light_entity_ids):
         light_params = {
             "brightness": brightness_override
             if brightness_override
@@ -45,19 +43,33 @@ async def apply_preset(
         if not hass_state:
             continue
 
-        supported_color_modes = hass_state.attributes.get("supported_color_modes", "")
-        if any(mode in supported_color_modes for mode in ["xy", "hs", "rgb"]):
-            light_params["xy_color"] = [
-                scene_data["lights"][light_index]["x"],
-                scene_data["lights"][light_index]["y"],
-            ]
+        if shuffle:
+            current_color = hass_state.attributes.get("xy_color", None)
+
+            if current_color is not None:
+                next_color = get_next_random_color(current_color, preset_colors)
+            else:
+                next_color = get_random_color(preset_colors)
         else:
+            next_color = get_next_color(index, preset_colors)
+
+        supported_color_modes = hass_state.attributes.get("supported_color_modes", "")
+        color_support = any(mode in supported_color_modes for mode in ["xy", "hs", "rgb"])
+        temp_support = "color_temp" in supported_color_modes
+
+        if color_support:
+            light_params["xy_color"] = next_color
+        elif temp_support:
             # if light does not support xy colors, convert to kelvin
-            x_color = scene_data["lights"][light_index]["x"]
-            y_color = scene_data["lights"][light_index]["y"]
+            x_color = next_color[0]
+            y_color = next_color[1]
+
             n = (x_color - 0.3320) / (0.1858 - y_color)
             color_temp_kelvin = int(437 * n**3 + 3601 * n**2 + 6861 * n + 5517)
+
             light_params["kelvin"] = color_temp_kelvin
+        else:
+            continue
 
         task = hass.services.async_call(
             "light",
@@ -66,7 +78,5 @@ async def apply_preset(
             blocking=False,
         )
         tasks.append(task)
-
-        light_index += 1
 
     await asyncio.gather(*tasks)
