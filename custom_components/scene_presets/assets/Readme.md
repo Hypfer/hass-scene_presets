@@ -571,3 +571,29 @@ Feel free to contact me, and I'm sure we can find a solution.
 <img src="./palettes/Phantom.svg" height="100"/>
 
 `Phantom`
+
+### Custom Palettes
+#### SECAM
+<img src="./SECAM.jpeg" height="256"/>
+<br/>
+<img src="./palettes/SECAM.svg" height="100"/>
+
+`SECAM`
+#### CGA
+<img src="./CGA.jpeg" height="256"/>
+<br/>
+<img src="./palettes/CGA.svg" height="100"/>
+
+`CGA`
+#### Light Cycles
+<img src="./Light Cycles.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Light Cycles.svg" height="100"/>
+
+`Light Cycles`
+#### Valetudo
+<img src="./Valetudo.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Valetudo.svg" height="100"/>
+
+`Valetudo`
