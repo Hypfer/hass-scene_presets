@@ -571,6 +571,67 @@ Feel free to contact me, and I'm sure we can find a solution.
 <img src="./palettes/Phantom.svg" height="100"/>
 
 `Phantom`
+### Winter holidays
+#### Snow sparkle
+<img src="./Snow sparkle.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Snow sparkle.svg" height="100"/>
+
+`Snow sparkle`
+#### Under the tree
+<img src="./Under the tree.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Under the tree.svg" height="100"/>
+
+`Under the tree`
+#### Nutcracker
+<img src="./Nutcracker.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Nutcracker.svg" height="100"/>
+
+`Nutcracker`
+#### Jolly
+<img src="./Jolly.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Jolly.svg" height="100"/>
+
+`Jolly`
+#### Golden star
+<img src="./Golden star.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Golden star.svg" height="100"/>
+
+`Golden star`
+#### Silent night
+<img src="./Silent night.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Silent night.svg" height="100"/>
+
+`Silent night`
+#### Color burst
+<img src="./Color burst.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Color burst.svg" height="100"/>
+
+`Color burst`
+#### Crystalline
+<img src="./Crystalline.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Crystalline.svg" height="100"/>
+
+`Crystalline`
+#### Rosy sparkle
+<img src="./Rosy sparkle.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Rosy sparkle.svg" height="100"/>
+
+`Rosy sparkle`
+#### Festive fun
+<img src="./Festive fun.jpeg" height="256"/>
+<br/>
+<img src="./palettes/Festive fun.svg" height="100"/>
+
+`Festive fun`
 
 ### Custom Palettes
 #### SECAM
