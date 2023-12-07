@@ -15,6 +15,7 @@ ATTR_TARGETS = "targets"
 ATTR_BRIGHTNESS = "brightness"
 ATTR_TRANSITION = "transition"
 ATTR_SHUFFLE = "shuffle"
+ATTR_SMART_SHUFFLE = "smart_shuffle"
 ATTR_INTERVAL = "interval"
 
 ATTR_DYNAMIC_SCENE_ID = "id"

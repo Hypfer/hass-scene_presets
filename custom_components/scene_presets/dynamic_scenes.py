@@ -34,8 +34,14 @@ class DynamicScene:
                     self._running = False
                     return
 
-            # on start of the dynamic scene use a short transition
-            transition = 0.5 if run_count == 0 else self.parameters.get(ATTR_TRANSITION)
+            transition = self.parameters.get(ATTR_TRANSITION)
+            smart_shuffle = True
+
+            # on start of the dynamic scene, the user wants quicker transitions + all colors available in the preset
+            if run_count == 0:
+                transition = 0.5
+                smart_shuffle = False
+
 
             await apply_preset(
                 self.hass,
@@ -43,6 +49,7 @@ class DynamicScene:
                 self.parameters.get("light_entity_ids"),
                 transition,
                 self.parameters.get(ATTR_SHUFFLE),
+                smart_shuffle,
                 self.parameters.get(ATTR_BRIGHTNESS, None),
             )
             run_count += 1

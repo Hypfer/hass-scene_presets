@@ -22,7 +22,7 @@ class ScenePresetsPanel extends HTMLElement {
 
     connectedCallback() {
         this.shadow = this.attachShadow({mode: "open"});
-        
+
         this.styleElem = document.createElement("style");
         this.container = document.createElement("div");
 

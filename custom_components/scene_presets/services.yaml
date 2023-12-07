@@ -42,6 +42,12 @@ apply_preset:
       example: true
       selector:
         boolean:
+    smart_shuffle:
+      name: "Smart shuffle"
+      description: "Ensure smooth color transitions when shuffling"
+      example: true
+      selector:
+        boolean:
 
 get_dynamic_scenes:
   name: "Get dynamic scenes"

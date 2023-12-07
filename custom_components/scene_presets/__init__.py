@@ -17,7 +17,8 @@ APPLY_PRESET_SCHEMA = vol.Schema({
     vol.Required(ATTR_TARGETS): vol.Any(dict),
     vol.Optional(ATTR_BRIGHTNESS): vol.Coerce(int),
     vol.Optional(ATTR_TRANSITION, default=1): vol.Coerce(int),
-    vol.Optional(ATTR_SHUFFLE, default=False): cv.boolean
+    vol.Optional(ATTR_SHUFFLE, default=False): cv.boolean,
+    vol.Optional(ATTR_SMART_SHUFFLE, default=False): cv.boolean
 })
 
 START_DYNAMIC_SCENE_SCHEMA = vol.Schema({
@@ -49,6 +50,7 @@ async def async_setup(hass, config):
         brightness_override = call.data.get(ATTR_BRIGHTNESS)
         transition = call.data.get(ATTR_TRANSITION, 1)
         shuffle = call.data.get(ATTR_SHUFFLE, False)
+        smart_shuffle = call.data.get(ATTR_SMART_SHUFFLE, False)
 
         entity_ids = ensure_list(targets.get("entity_id"))
         device_ids = ensure_list(targets.get("device_id"))
@@ -62,6 +64,7 @@ async def async_setup(hass, config):
             light_entity_ids,
             transition,
             shuffle,
+            smart_shuffle,
             brightness_override
         )
 

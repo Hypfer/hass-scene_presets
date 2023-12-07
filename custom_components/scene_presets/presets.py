@@ -8,7 +8,7 @@ _LOGGER = logging.getLogger(__name__)
 
 
 async def apply_preset(
-    hass, preset_id, light_entity_ids, transition, shuffle, brightness_override=None
+    hass, preset_id, light_entity_ids, transition, shuffle, smart_shuffle, brightness_override=None
 ):
     # Retrieve the scene data by ID (if found)
     scene_data = None
@@ -30,6 +30,10 @@ async def apply_preset(
 
     tasks = []
 
+    randomized_colors = None
+    if shuffle:
+        randomized_colors = get_randomized_colors(preset_colors, len(light_entity_ids))
+
     # Apply the scene to the selected light entities
     for index, entity_id in enumerate(light_entity_ids):
         light_params = {
@@ -46,8 +50,10 @@ async def apply_preset(
         if shuffle:
             current_color = hass_state.attributes.get("xy_color", None)
 
-            if current_color is not None:
-                next_color = get_next_random_color(current_color, preset_colors)
+            if current_color is not None and smart_shuffle:
+                next_color = get_next_smart_random_color(current_color, preset_colors)
+            elif randomized_colors is not None and index < len(randomized_colors):
+                next_color = randomized_colors[index]
             else:
                 next_color = get_random_color(preset_colors)
         else:

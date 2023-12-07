@@ -14,6 +14,7 @@ export const PresetApplyPage: React.FunctionComponent<{
 }): JSX.Element => {
     const [targets, setTargets] = useLocalStorage<HaTargetSelectorValue>("scene_presets_apply_page_targets", {});
     const [shuffle, setShuffle] = useLocalStorage<boolean>("scene_presets_apply_page_shuffle", false);
+    const [smartShuffle, setSmartShuffle] = useLocalStorage<boolean>("scene_presets_apply_page_smart_shuffle", false);
     const [customBrightness, setCustomBrightness] = useLocalStorage<boolean>("scene_presets_apply_page_custom_brightness", false);
     const [customBrightnessValue, setCustomBrightnessValue] = useLocalStorage<number>("scene_presets_apply_page_custom_brightness_value", 128);
     const [customTransition, setCustomTransition] = useLocalStorage<boolean>("scene_presets_apply_page_custom_transition", false);
@@ -23,10 +24,12 @@ export const PresetApplyPage: React.FunctionComponent<{
         (name) => {
             hass.callService(
                 "scene_presets",
-                "apply_preset", {
+                "apply_preset",
+                {
                     preset_id: name,
                     targets: targets,
                     shuffle: shuffle,
+                    smart_shuffle: smartShuffle,
                     brightness: customBrightness ? customBrightnessValue : undefined,
                     transition: customTransition ? customTransitionValue : undefined,
                 }
@@ -34,7 +37,7 @@ export const PresetApplyPage: React.FunctionComponent<{
         },
         [
             hass,
-            targets, shuffle,
+            targets, shuffle, smartShuffle,
             customBrightness, customBrightnessValue,
             customTransition, customTransitionValue
         ]
@@ -111,6 +114,20 @@ export const PresetApplyPage: React.FunctionComponent<{
                                 value={shuffle}
                                 onValueChanged={(value) => {
                                     setShuffle(value);
+                                }}
+                            />
+                        </label>
+                        <br/>
+                        <label
+                            style={{
+                                lineHeight: "3rem"
+                            }}
+                        >
+                            <span style={{marginRight: "0.5rem"}}>Smart Shuffle</span>
+                            <HaSwitch
+                                value={smartShuffle}
+                                onValueChanged={(value) => {
+                                    setSmartShuffle(value);
                                 }}
                             />
                         </label>

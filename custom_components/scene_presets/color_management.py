@@ -1,4 +1,5 @@
 import math
+import copy
 import random
 from typing import Tuple, List
 
@@ -7,7 +8,7 @@ min_angle = 2
 
 white_point = (0.3127, 0.3290)
 
-def get_next_random_color(current: Tuple[float, float], options: List[Tuple[float, float]]) -> Tuple[float, float]:
+def get_next_smart_random_color(current: Tuple[float, float], options: List[Tuple[float, float]]) -> Tuple[float, float]:
     if len(options) == 1:
         return options[0]
 
@@ -59,3 +60,16 @@ def get_random_color(options: List[Tuple[float, float]]) -> Tuple[float, float]:
     random_color = random.choice(options)
 
     return random_color
+
+def get_randomized_colors(options: List[Tuple[float, float]], total: int) -> List[Tuple[float, float]]:
+    color_sets_required = math.ceil(total/len(options))
+    colors = []
+
+    for _ in range(color_sets_required):
+        color_set = copy.copy(options)
+        random.shuffle(color_set)
+        colors.extend(color_set)
+
+    colors = colors[:total]
+
+    return colors
