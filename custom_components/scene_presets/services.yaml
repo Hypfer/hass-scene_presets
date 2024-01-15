@@ -4,7 +4,7 @@ apply_preset:
   fields:
     preset_id:
       name: "Preset"
-      description: "The preset to use"
+      description: "The preset ID to use"
       example: "Rest"
       required: true
       selector:
@@ -59,7 +59,7 @@ start_dynamic_scene:
   fields:
     preset_id:
       name: "Preset"
-      description: "The preset to use"
+      description: "The preset ID to use"
       example: "Rest"
       required: true
       selector:

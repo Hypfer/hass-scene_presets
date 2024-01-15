@@ -1,5 +1,5 @@
 import React from "react";
-import presets from "../../custom_components/scene_presets/presets.json";
+import data from "../../custom_components/scene_presets/presets.json";
 import {Tile} from "../components/Tile";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import HaSwitch from "../components/hass/building_blocks/HaSwitch";
@@ -29,13 +29,15 @@ export const PresetApplyPage: React.FunctionComponent<{
     const [customTransition, setCustomTransition] = useLocalStorage<boolean>("scene_presets_apply_page_custom_transition", DEFAULT_TUNABLE_SETTINGS.customTransition);
     const [customTransitionValue, setCustomTransitionValue] = useLocalStorage<number>("scene_presets_apply_page_custom_transition_value", DEFAULT_TUNABLE_SETTINGS.customTransitionValue);
 
+    const [favoritePresets, setFavoritePresets] = useLocalStorage<Array<string>>("scene_presets_apply_page_favorite_presets", []);
+
     const applyPreset = React.useCallback(
-        (name) => {
+        (id) => {
             hass.callService(
                 "scene_presets",
                 "apply_preset",
                 {
-                    preset_id: name,
+                    preset_id: id,
                     targets: targets,
                     shuffle: shuffle,
                     smart_shuffle: smartShuffle,
@@ -52,7 +54,51 @@ export const PresetApplyPage: React.FunctionComponent<{
         ]
     );
 
-    const presetsToUse = presets.sets;
+    const presetsByCategories = React.useMemo(() => {
+        const out = {};
+
+        data.categories.forEach(category => {
+            out[category.id] = data.presets.filter(p => p.categoryId === category.id);
+        });
+
+        return out;
+    }, []);
+
+
+    const tiles = React.useMemo(() => {
+        const allTiles: {[key: string] : JSX.Element} = {};
+        const favoriteTiles: Array<string> = [];
+
+        data.presets.forEach((preset, i) => {
+            const isFav = favoritePresets.includes(preset.id);
+
+            allTiles[preset.id] = <Tile
+                id={preset.id}
+                name={preset.name}
+                imgSrc={preset.img ? "/assets/scene_presets/" + preset.img : undefined}
+                onClick={(id) => {
+                    applyPreset(id);
+                }}
+                isFav={isFav}
+                onFavClick={() => {
+                    if (!favoritePresets.includes(preset.id)) {
+                        setFavoritePresets([...favoritePresets, preset.id]);
+                    } else {
+                        setFavoritePresets(favoritePresets.filter(e => e !== preset.id));
+                    }
+                }}
+            />;
+
+            if (isFav) {
+                favoriteTiles.push(preset.id);
+            }
+        });
+
+        return {
+            all: allTiles,
+            favoriteIds: favoriteTiles,
+        };
+    }, [favoritePresets, applyPreset, setFavoritePresets]);
 
     return (
         <div
@@ -257,7 +303,38 @@ export const PresetApplyPage: React.FunctionComponent<{
                 </ha-card>
 
                 {
-                    presetsToUse.map(({name, scenes}) => {
+                    tiles.favoriteIds.length > 0 &&
+                    <div
+                        key={"category_favorites"}
+                    >
+                        <h3
+                            style={{
+                                fontFamily: "sans-serif"
+                            }}
+                        >
+                            Favorites
+                        </h3>
+                        <div
+                            style={{
+                                display: "flex",
+                                flexWrap: "wrap",
+                                justifyContent: "center"
+                            }}
+                        >
+                            {
+                                tiles.favoriteIds.map(id => {
+                                    return <React.Fragment key={"favorite_" + id}>
+                                        {tiles.all[id]}
+                                    </React.Fragment>;
+                                })
+                            }
+                        </div>
+                    </div>
+
+                }
+
+                {
+                    data.categories.map(({name, id}) => {
                         return (
                             <div
                                 key={"category_" + name}
@@ -276,20 +353,11 @@ export const PresetApplyPage: React.FunctionComponent<{
                                         justifyContent: "center"
                                     }}
                                 >
-                                    {
-                                        scenes.map((scene, i) => {
-                                            return (
-                                                <Tile
-                                                    key={"scene_" + name + "_" + i}
-                                                    name={scene.name}
-                                                    imgSrc={scene.img ? "/assets/scene_presets/" + scene.img : undefined}
-                                                    onClick={(name) => {
-                                                        applyPreset(name);
-                                                    }}
-                                                />
-                                            );
-                                        })
-                                    }
+                                    {presetsByCategories[id].map(p => {
+                                        return <React.Fragment key={id + "_" + p.id}>
+                                            {tiles.all[p.id]}
+                                        </React.Fragment>;
+                                    })}
                                 </div>
                             </div>
                         );

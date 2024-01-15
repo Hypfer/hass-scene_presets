@@ -10,20 +10,17 @@ _LOGGER = logging.getLogger(__name__)
 async def apply_preset(
     hass, preset_id, light_entity_ids, transition, shuffle, smart_shuffle, brightness_override=None
 ):
-    # Retrieve the scene data by ID (if found)
-    scene_data = None
-    for scene_set in PRESET_DATA.get("sets", []):
-        for scene in scene_set.get("scenes", []):
-            if scene.get("name") == preset_id:
-                scene_data = scene
-                break
-        if scene_data:
+    # Retrieve the preset data by ID (if found)
+    preset_data = None
+    for preset in PRESET_DATA.get("presets", []):
+        if preset.get("id") == preset_id:
+            preset_data = preset
             break
 
-    if not scene_data:
+    if not preset_data:
         raise vol.Invalid(f"Preset '{preset_id}' not found.")
 
-    preset_colors = [(light["x"], light["y"]) for light in scene_data["lights"]]
+    preset_colors = [(light["x"], light["y"]) for light in preset_data["lights"]]
 
     if shuffle:
         random.shuffle(light_entity_ids)
@@ -39,7 +36,7 @@ async def apply_preset(
         light_params = {
             "brightness": brightness_override
             if brightness_override
-            else scene_data.get("bri", 255),
+            else preset_data.get("bri", 255),
             "transition": transition,
             "entity_id": entity_id,
         }

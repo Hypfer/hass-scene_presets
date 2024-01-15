@@ -27,12 +27,11 @@ async def async_setup_view(hass):
 
 
 async def bind_preset_images(hass):
-    for scene_set in PRESET_DATA.get("sets", []):
-        for scene in scene_set.get("scenes", []):
-            img_filename = scene.get("img")
+    for preset in PRESET_DATA.get("presets", []):
+        img_filename = preset.get("img")
 
-            if img_filename is not None:
-                hass.http.register_static_path(
-                    f'/assets/{DOMAIN}/{img_filename}',
-                    hass.config.path(f"{BASE_PATH}/assets/{img_filename}"),
-                )
+        if img_filename is not None:
+            hass.http.register_static_path(
+                f'/assets/{DOMAIN}/{img_filename}',
+                hass.config.path(f"{BASE_PATH}/assets/{img_filename}"),
+            )

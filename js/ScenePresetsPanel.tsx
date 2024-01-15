@@ -40,10 +40,17 @@ class ScenePresetsPanel extends HTMLElement {
                 max-width: 33%;
                 height: 6rem;
                 cursor: pointer;
-                
-                transition: filter 0.3s;
             }
-            .scene-preset-tile:active {
+            
+            .scene-preset-tile-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            .scene-preset-tile-content:active {
+                transition: filter 0.3s;
                 filter: brightness(0.7);
             }
             
@@ -56,7 +63,7 @@ class ScenePresetsPanel extends HTMLElement {
                 height: 100%;
                 border-radius: 15px;
             }
-            .scene-preset-time-img-text-bg {
+            .scene-preset-tile-img-text-bg {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -65,13 +72,22 @@ class ScenePresetsPanel extends HTMLElement {
                 border-radius: 15px;
                 background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
             }
-            .scene-preset-time-text {
+            .scene-preset-tile-text {
                 position: absolute;
                 bottom: 15px;
                 left: 15px;
                 margin: 0;
                 font-family: sans-serif;
                 color: #ffffff;
+            }
+            .scene-preset-tile-fav-btn-container {
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                margin: 0;
+                font-family: sans-serif;
+                color: #ffffff;
+                z-index: 1;
             }
         `;
 

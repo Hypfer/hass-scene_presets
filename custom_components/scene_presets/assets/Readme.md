@@ -20,641 +20,641 @@ Feel free to contact me, and I'm sure we can find a solution.
 ## Presets
 
 #### Rest
-<img src="./Rest.jpeg" height="256"/>
+<img src="./e03267e7-9914-4f47-97fe-63c0bd317fe7.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Rest.svg" height="100"/>
+<img src="./palettes/e03267e7-9914-4f47-97fe-63c0bd317fe7.svg" height="100"/>
 
-`Rest`
+`e03267e7-9914-4f47-97fe-63c0bd317fe7`
 #### Relax
-<img src="./Relax.jpeg" height="256"/>
+<img src="./e71b2ef3-1b15-4c4b-b036-4b3d6efe58f8.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Relax.svg" height="100"/>
+<img src="./palettes/e71b2ef3-1b15-4c4b-b036-4b3d6efe58f8.svg" height="100"/>
 
-`Relax`
+`e71b2ef3-1b15-4c4b-b036-4b3d6efe58f8`
 #### Read
-<img src="./Read.jpeg" height="256"/>
+<img src="./035b6ecf-414e-4781-abc7-3911556097cb.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Read.svg" height="100"/>
+<img src="./palettes/035b6ecf-414e-4781-abc7-3911556097cb.svg" height="100"/>
 
-`Read`
+`035b6ecf-414e-4781-abc7-3911556097cb`
 #### Concentrate
-<img src="./Concentrate.jpeg" height="256"/>
+<img src="./0cbec4e8-d064-4457-986a-fe6078a63f39.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Concentrate.svg" height="100"/>
+<img src="./palettes/0cbec4e8-d064-4457-986a-fe6078a63f39.svg" height="100"/>
 
-`Concentrate`
+`0cbec4e8-d064-4457-986a-fe6078a63f39`
 #### Energize
-<img src="./Energize.jpeg" height="256"/>
+<img src="./0eeacfc5-2d81-4035-a23d-4a9bc02af965.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Energize.svg" height="100"/>
+<img src="./palettes/0eeacfc5-2d81-4035-a23d-4a9bc02af965.svg" height="100"/>
 
-`Energize`
+`0eeacfc5-2d81-4035-a23d-4a9bc02af965`
 #### Cool bright
-<img src="./Cool bright.jpeg" height="256"/>
+<img src="./6d10a807-7330-46d1-b093-c15520ba72c0.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Cool bright.svg" height="100"/>
+<img src="./palettes/6d10a807-7330-46d1-b093-c15520ba72c0.svg" height="100"/>
 
-`Cool bright`
+`6d10a807-7330-46d1-b093-c15520ba72c0`
 #### Bright
-<img src="./Bright.jpeg" height="256"/>
+<img src="./84ebc26c-9d61-4d25-830c-41ea66f1c325.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Bright.svg" height="100"/>
+<img src="./palettes/84ebc26c-9d61-4d25-830c-41ea66f1c325.svg" height="100"/>
 
-`Bright`
+`84ebc26c-9d61-4d25-830c-41ea66f1c325`
 #### Dimmed
-<img src="./Dimmed.jpeg" height="256"/>
+<img src="./8f55e62a-e5f8-456a-9e8b-61f314bd4e99.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Dimmed.svg" height="100"/>
+<img src="./palettes/8f55e62a-e5f8-456a-9e8b-61f314bd4e99.svg" height="100"/>
 
-`Dimmed`
+`8f55e62a-e5f8-456a-9e8b-61f314bd4e99`
 #### Nightlight
-<img src="./Nightlight.jpeg" height="256"/>
+<img src="./b6f58e22-677f-4670-8677-3dea4ac60383.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Nightlight.svg" height="100"/>
+<img src="./palettes/b6f58e22-677f-4670-8677-3dea4ac60383.svg" height="100"/>
 
-`Nightlight`
+`b6f58e22-677f-4670-8677-3dea4ac60383`
 ### Refreshing
 #### Blossom
-<img src="./Blossom.jpeg" height="256"/>
+<img src="./d648408d-58ab-4768-b192-47ce06dc8e61.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Blossom.svg" height="100"/>
+<img src="./palettes/d648408d-58ab-4768-b192-47ce06dc8e61.svg" height="100"/>
 
-`Blossom`
+`d648408d-58ab-4768-b192-47ce06dc8e61`
 #### Crocus
-<img src="./Crocus.jpeg" height="256"/>
+<img src="./cf25db7e-72b6-499f-8a5d-552e723a6c6a.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Crocus.svg" height="100"/>
+<img src="./palettes/cf25db7e-72b6-499f-8a5d-552e723a6c6a.svg" height="100"/>
 
-`Crocus`
+`cf25db7e-72b6-499f-8a5d-552e723a6c6a`
 #### Precious
-<img src="./Precious.jpeg" height="256"/>
+<img src="./506abd58-b926-4786-bb35-3a52a0c0b4d4.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Precious.svg" height="100"/>
+<img src="./palettes/506abd58-b926-4786-bb35-3a52a0c0b4d4.svg" height="100"/>
 
-`Precious`
+`506abd58-b926-4786-bb35-3a52a0c0b4d4`
 #### Narcissa
-<img src="./Narcissa.jpeg" height="256"/>
+<img src="./6b8cbab7-6090-484f-b0c2-43176e1bb044.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Narcissa.svg" height="100"/>
+<img src="./palettes/6b8cbab7-6090-484f-b0c2-43176e1bb044.svg" height="100"/>
 
-`Narcissa`
+`6b8cbab7-6090-484f-b0c2-43176e1bb044`
 ### Cozy
 #### Rolling hills
-<img src="./Rolling hills.jpeg" height="256"/>
+<img src="./49c61bae-d3ec-4df2-89a4-65235705f3a1.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Rolling hills.svg" height="100"/>
+<img src="./palettes/49c61bae-d3ec-4df2-89a4-65235705f3a1.svg" height="100"/>
 
-`Rolling hills`
+`49c61bae-d3ec-4df2-89a4-65235705f3a1`
 #### Warm embrace
-<img src="./Warm embrace.jpeg" height="256"/>
+<img src="./73b2c0b3-b4c5-4307-8873-eb231c83e996.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Warm embrace.svg" height="100"/>
+<img src="./palettes/73b2c0b3-b4c5-4307-8873-eb231c83e996.svg" height="100"/>
 
-`Warm embrace`
+`73b2c0b3-b4c5-4307-8873-eb231c83e996`
 #### Dreamy dusk
-<img src="./Dreamy dusk.jpeg" height="256"/>
+<img src="./a127f9ef-0371-48dc-bc79-852e2e5b2cc3.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Dreamy dusk.svg" height="100"/>
+<img src="./palettes/a127f9ef-0371-48dc-bc79-852e2e5b2cc3.svg" height="100"/>
 
-`Dreamy dusk`
+`a127f9ef-0371-48dc-bc79-852e2e5b2cc3`
 #### Honolulu
-<img src="./Honolulu.jpeg" height="256"/>
+<img src="./23ab68cc-3a82-4762-b9db-f0d1a483281d.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Honolulu.svg" height="100"/>
+<img src="./palettes/23ab68cc-3a82-4762-b9db-f0d1a483281d.svg" height="100"/>
 
-`Honolulu`
+`23ab68cc-3a82-4762-b9db-f0d1a483281d`
 #### Savanna sunset
-<img src="./Savanna sunset.jpeg" height="256"/>
+<img src="./ea580cb0-149e-48e6-a729-2a500edfb924.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Savanna sunset.svg" height="100"/>
+<img src="./palettes/ea580cb0-149e-48e6-a729-2a500edfb924.svg" height="100"/>
 
-`Savanna sunset`
+`ea580cb0-149e-48e6-a729-2a500edfb924`
 #### Golden pond
-<img src="./Golden pond.jpeg" height="256"/>
+<img src="./89c16361-391d-4346-b6d8-ac1eaf4de3dc.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Golden pond.svg" height="100"/>
+<img src="./palettes/89c16361-391d-4346-b6d8-ac1eaf4de3dc.svg" height="100"/>
 
-`Golden pond`
+`89c16361-391d-4346-b6d8-ac1eaf4de3dc`
 #### Ruby glow
-<img src="./Ruby glow.jpeg" height="256"/>
+<img src="./454176dd-7d24-43de-86c4-ee73f8febbec.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Ruby glow.svg" height="100"/>
+<img src="./palettes/454176dd-7d24-43de-86c4-ee73f8febbec.svg" height="100"/>
 
-`Ruby glow`
+`454176dd-7d24-43de-86c4-ee73f8febbec`
 #### Tropical twilight
-<img src="./Tropical twilight.jpeg" height="256"/>
+<img src="./ffbf7ff8-dc4a-4c56-b157-7a59113be7b7.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Tropical twilight.svg" height="100"/>
+<img src="./palettes/ffbf7ff8-dc4a-4c56-b157-7a59113be7b7.svg" height="100"/>
 
-`Tropical twilight`
+`ffbf7ff8-dc4a-4c56-b157-7a59113be7b7`
 ### Party vibes
 #### Miami
-<img src="./Miami.jpeg" height="256"/>
+<img src="./a592fa63-4ba6-4399-a120-1c0b79ac832d.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Miami.svg" height="100"/>
+<img src="./palettes/a592fa63-4ba6-4399-a120-1c0b79ac832d.svg" height="100"/>
 
-`Miami`
+`a592fa63-4ba6-4399-a120-1c0b79ac832d`
 #### Cancun
-<img src="./Cancun.jpeg" height="256"/>
+<img src="./c321d848-51a8-4d09-9ad0-5e6b44bc7f2c.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Cancun.svg" height="100"/>
+<img src="./palettes/c321d848-51a8-4d09-9ad0-5e6b44bc7f2c.svg" height="100"/>
 
-`Cancun`
+`c321d848-51a8-4d09-9ad0-5e6b44bc7f2c`
 #### Rio
-<img src="./Rio.jpeg" height="256"/>
+<img src="./94fc428e-2855-4f67-877e-3d1e1dd95b7d.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Rio.svg" height="100"/>
+<img src="./palettes/94fc428e-2855-4f67-877e-3d1e1dd95b7d.svg" height="100"/>
 
-`Rio`
+`94fc428e-2855-4f67-877e-3d1e1dd95b7d`
 #### Chinatown
-<img src="./Chinatown.jpeg" height="256"/>
+<img src="./7581da02-1688-4128-9bb9-b635f3b89999.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Chinatown.svg" height="100"/>
+<img src="./palettes/7581da02-1688-4128-9bb9-b635f3b89999.svg" height="100"/>
 
-`Chinatown`
+`7581da02-1688-4128-9bb9-b635f3b89999`
 #### Ibiza
-<img src="./Ibiza.jpeg" height="256"/>
+<img src="./eaa0d424-ac66-4247-8342-06d2b128ac31.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Ibiza.svg" height="100"/>
+<img src="./palettes/eaa0d424-ac66-4247-8342-06d2b128ac31.svg" height="100"/>
 
-`Ibiza`
+`eaa0d424-ac66-4247-8342-06d2b128ac31`
 #### Osaka
-<img src="./Osaka.jpeg" height="256"/>
+<img src="./5768805d-27c1-442e-b069-d20443485201.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Osaka.svg" height="100"/>
+<img src="./palettes/5768805d-27c1-442e-b069-d20443485201.svg" height="100"/>
 
-`Osaka`
+`5768805d-27c1-442e-b069-d20443485201`
 #### Tokyo
-<img src="./Tokyo.jpeg" height="256"/>
+<img src="./de7eda64-84bf-4ed6-a4fa-76e0ebdd1968.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Tokyo.svg" height="100"/>
+<img src="./palettes/de7eda64-84bf-4ed6-a4fa-76e0ebdd1968.svg" height="100"/>
 
-`Tokyo`
+`de7eda64-84bf-4ed6-a4fa-76e0ebdd1968`
 #### Motown
-<img src="./Motown.jpeg" height="256"/>
+<img src="./7dded6f8-a2aa-4726-b391-21e9a0f76eee.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Motown.svg" height="100"/>
+<img src="./palettes/7dded6f8-a2aa-4726-b391-21e9a0f76eee.svg" height="100"/>
 
-`Motown`
+`7dded6f8-a2aa-4726-b391-21e9a0f76eee`
 #### Fairfax
-<img src="./Fairfax.jpeg" height="256"/>
+<img src="./abfc5768-5c2c-4d61-bd03-2b64660e813f.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Fairfax.svg" height="100"/>
+<img src="./palettes/abfc5768-5c2c-4d61-bd03-2b64660e813f.svg" height="100"/>
 
-`Fairfax`
+`abfc5768-5c2c-4d61-bd03-2b64660e813f`
 ### Serenity
 #### Galaxy
-<img src="./Galaxy.jpeg" height="256"/>
+<img src="./a6ba3a6e-1e3a-41fd-84f2-f7b021935deb.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Galaxy.svg" height="100"/>
+<img src="./palettes/a6ba3a6e-1e3a-41fd-84f2-f7b021935deb.svg" height="100"/>
 
-`Galaxy`
+`a6ba3a6e-1e3a-41fd-84f2-f7b021935deb`
 #### Starlight
-<img src="./Starlight.jpeg" height="256"/>
+<img src="./a2f95aab-e80a-4aca-ae32-142cdc7ad3e0.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Starlight.svg" height="100"/>
+<img src="./palettes/a2f95aab-e80a-4aca-ae32-142cdc7ad3e0.svg" height="100"/>
 
-`Starlight`
+`a2f95aab-e80a-4aca-ae32-142cdc7ad3e0`
 #### Blood moon
-<img src="./Blood moon.jpeg" height="256"/>
+<img src="./8d0f34db-78fd-475d-9bed-a502b787964d.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Blood moon.svg" height="100"/>
+<img src="./palettes/8d0f34db-78fd-475d-9bed-a502b787964d.svg" height="100"/>
 
-`Blood moon`
+`8d0f34db-78fd-475d-9bed-a502b787964d`
 #### Arctic aurora
-<img src="./Arctic aurora.jpeg" height="256"/>
+<img src="./940fd864-51e1-4761-95d3-75d4d68835ea.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Arctic aurora.svg" height="100"/>
+<img src="./palettes/940fd864-51e1-4761-95d3-75d4d68835ea.svg" height="100"/>
 
-`Arctic aurora`
+`940fd864-51e1-4761-95d3-75d4d68835ea`
 #### Moonlight
-<img src="./Moonlight.jpeg" height="256"/>
+<img src="./a87a8467-82ff-43f8-aaf3-6649b57b1480.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Moonlight.svg" height="100"/>
+<img src="./palettes/a87a8467-82ff-43f8-aaf3-6649b57b1480.svg" height="100"/>
 
-`Moonlight`
+`a87a8467-82ff-43f8-aaf3-6649b57b1480`
 #### Nebula
-<img src="./Nebula.jpeg" height="256"/>
+<img src="./3c8662e5-e650-4f6a-a4b2-03b66d502f77.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Nebula.svg" height="100"/>
+<img src="./palettes/3c8662e5-e650-4f6a-a4b2-03b66d502f77.svg" height="100"/>
 
-`Nebula`
+`3c8662e5-e650-4f6a-a4b2-03b66d502f77`
 ### Dreamy
 #### Still waters
-<img src="./Still waters.jpeg" height="256"/>
+<img src="./0629d5c4-ecbb-4ffd-afc3-6e6239e5e25d.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Still waters.svg" height="100"/>
+<img src="./palettes/0629d5c4-ecbb-4ffd-afc3-6e6239e5e25d.svg" height="100"/>
 
-`Still waters`
+`0629d5c4-ecbb-4ffd-afc3-6e6239e5e25d`
 #### Adrift
-<img src="./Adrift.jpeg" height="256"/>
+<img src="./67f8677a-ba4e-45d4-9a7e-601a7bdbd04d.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Adrift.svg" height="100"/>
+<img src="./palettes/67f8677a-ba4e-45d4-9a7e-601a7bdbd04d.svg" height="100"/>
 
-`Adrift`
+`67f8677a-ba4e-45d4-9a7e-601a7bdbd04d`
 #### Pensive
-<img src="./Pensive.jpeg" height="256"/>
+<img src="./ad1b1e0d-191d-4144-aaa5-b85b2fc5dc10.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Pensive.svg" height="100"/>
+<img src="./palettes/ad1b1e0d-191d-4144-aaa5-b85b2fc5dc10.svg" height="100"/>
 
-`Pensive`
+`ad1b1e0d-191d-4144-aaa5-b85b2fc5dc10`
 #### Majestic morning
-<img src="./Majestic morning.jpeg" height="256"/>
+<img src="./a07439ee-8a0b-4d86-9378-687acf1c1954.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Majestic morning.svg" height="100"/>
+<img src="./palettes/a07439ee-8a0b-4d86-9378-687acf1c1954.svg" height="100"/>
 
-`Majestic morning`
+`a07439ee-8a0b-4d86-9378-687acf1c1954`
 #### Sundown
-<img src="./Sundown.jpeg" height="256"/>
+<img src="./82c6ea11-70f9-4dab-9163-c9a94f8cff55.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Sundown.svg" height="100"/>
+<img src="./palettes/82c6ea11-70f9-4dab-9163-c9a94f8cff55.svg" height="100"/>
 
-`Sundown`
+`82c6ea11-70f9-4dab-9163-c9a94f8cff55`
 #### Blue lagoon
-<img src="./Blue lagoon.jpeg" height="256"/>
+<img src="./58d2dda6-8689-46c7-931b-d3abd039f04b.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Blue lagoon.svg" height="100"/>
+<img src="./palettes/58d2dda6-8689-46c7-931b-d3abd039f04b.svg" height="100"/>
 
-`Blue lagoon`
+`58d2dda6-8689-46c7-931b-d3abd039f04b`
 #### Palm Beach
-<img src="./Palm Beach.jpeg" height="256"/>
+<img src="./e780c175-09a9-4080-978a-1d5909d8588f.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Palm Beach.svg" height="100"/>
+<img src="./palettes/e780c175-09a9-4080-978a-1d5909d8588f.svg" height="100"/>
 
-`Palm Beach`
+`e780c175-09a9-4080-978a-1d5909d8588f`
 #### Lake Placid
-<img src="./Lake Placid.jpeg" height="256"/>
+<img src="./a489caa2-c7fd-4c01-b83c-2e7e87ce2cd6.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Lake Placid.svg" height="100"/>
+<img src="./palettes/a489caa2-c7fd-4c01-b83c-2e7e87ce2cd6.svg" height="100"/>
 
-`Lake Placid`
+`a489caa2-c7fd-4c01-b83c-2e7e87ce2cd6`
 ### Peaceful
 #### Mountain breeze
-<img src="./Mountain breeze.jpeg" height="256"/>
+<img src="./24964f19-ad24-402d-ab79-aaec30cfa1d8.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Mountain breeze.svg" height="100"/>
+<img src="./palettes/24964f19-ad24-402d-ab79-aaec30cfa1d8.svg" height="100"/>
 
-`Mountain breeze`
+`24964f19-ad24-402d-ab79-aaec30cfa1d8`
 #### Lake mist
-<img src="./Lake mist.jpeg" height="256"/>
+<img src="./7c6e81e7-d89a-4759-ae9e-b7c41e3fc0cb.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Lake mist.svg" height="100"/>
+<img src="./palettes/7c6e81e7-d89a-4759-ae9e-b7c41e3fc0cb.svg" height="100"/>
 
-`Lake mist`
+`7c6e81e7-d89a-4759-ae9e-b7c41e3fc0cb`
 #### Ocean dawn
-<img src="./Ocean dawn.jpeg" height="256"/>
+<img src="./e0b39d98-1485-446b-9324-672d3f18640d.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Ocean dawn.svg" height="100"/>
+<img src="./palettes/e0b39d98-1485-446b-9324-672d3f18640d.svg" height="100"/>
 
-`Ocean dawn`
+`e0b39d98-1485-446b-9324-672d3f18640d`
 #### Frosty dawn
-<img src="./Frosty dawn.jpeg" height="256"/>
+<img src="./8a896d0a-85d5-4658-86d7-8f8a10f4f1c9.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Frosty dawn.svg" height="100"/>
+<img src="./palettes/8a896d0a-85d5-4658-86d7-8f8a10f4f1c9.svg" height="100"/>
 
-`Frosty dawn`
+`8a896d0a-85d5-4658-86d7-8f8a10f4f1c9`
 #### Sunday morning
-<img src="./Sunday morning.jpeg" height="256"/>
+<img src="./2cbd7faf-f06f-4fe7-98af-80c7e7f3e437.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Sunday morning.svg" height="100"/>
+<img src="./palettes/2cbd7faf-f06f-4fe7-98af-80c7e7f3e437.svg" height="100"/>
 
-`Sunday morning`
+`2cbd7faf-f06f-4fe7-98af-80c7e7f3e437`
 #### Emerald isle
-<img src="./Emerald isle.jpeg" height="256"/>
+<img src="./fa2f3a7f-7648-42f1-88b7-38692f3fcb60.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Emerald isle.svg" height="100"/>
+<img src="./palettes/fa2f3a7f-7648-42f1-88b7-38692f3fcb60.svg" height="100"/>
 
-`Emerald isle`
+`fa2f3a7f-7648-42f1-88b7-38692f3fcb60`
 #### Spring blossom
-<img src="./Spring blossom.jpeg" height="256"/>
+<img src="./2be1f2f4-4e47-4fcc-a99c-4195da6210ea.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Spring blossom.svg" height="100"/>
+<img src="./palettes/2be1f2f4-4e47-4fcc-a99c-4195da6210ea.svg" height="100"/>
 
-`Spring blossom`
+`2be1f2f4-4e47-4fcc-a99c-4195da6210ea`
 ### Sunrise
 #### Beginnings
-<img src="./Beginnings.jpeg" height="256"/>
+<img src="./dfac784a-5df9-4d7d-8866-df77ded6182b.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Beginnings.svg" height="100"/>
+<img src="./palettes/dfac784a-5df9-4d7d-8866-df77ded6182b.svg" height="100"/>
 
-`Beginnings`
+`dfac784a-5df9-4d7d-8866-df77ded6182b`
 #### First light
-<img src="./First light.jpeg" height="256"/>
+<img src="./2db685df-7ca9-42b6-9a09-7da9c5590398.jpeg" height="256"/>
 <br/>
-<img src="./palettes/First light.svg" height="100"/>
+<img src="./palettes/2db685df-7ca9-42b6-9a09-7da9c5590398.svg" height="100"/>
 
-`First light`
+`2db685df-7ca9-42b6-9a09-7da9c5590398`
 #### Horizon
-<img src="./Horizon.jpeg" height="256"/>
+<img src="./c137d626-522d-4717-8e12-f14c7f28034d.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Horizon.svg" height="100"/>
+<img src="./palettes/c137d626-522d-4717-8e12-f14c7f28034d.svg" height="100"/>
 
-`Horizon`
+`c137d626-522d-4717-8e12-f14c7f28034d`
 #### Valley dawn
-<img src="./Valley dawn.jpeg" height="256"/>
+<img src="./b7529bf3-2efc-4cd2-88aa-c9afbfaec604.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Valley dawn.svg" height="100"/>
+<img src="./palettes/b7529bf3-2efc-4cd2-88aa-c9afbfaec604.svg" height="100"/>
 
-`Valley dawn`
+`b7529bf3-2efc-4cd2-88aa-c9afbfaec604`
 #### Sunflare
-<img src="./Sunflare.jpeg" height="256"/>
+<img src="./2f9ca2fb-dabb-4780-93cc-f9b169d94963.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Sunflare.svg" height="100"/>
+<img src="./palettes/2f9ca2fb-dabb-4780-93cc-f9b169d94963.svg" height="100"/>
 
-`Sunflare`
+`2f9ca2fb-dabb-4780-93cc-f9b169d94963`
 ### Luxurious
 #### Emerald flutter
-<img src="./Emerald flutter.jpeg" height="256"/>
+<img src="./95048fa7-6283-4253-9ca8-ad090b33f3e7.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Emerald flutter.svg" height="100"/>
+<img src="./palettes/95048fa7-6283-4253-9ca8-ad090b33f3e7.svg" height="100"/>
 
-`Emerald flutter`
+`95048fa7-6283-4253-9ca8-ad090b33f3e7`
 #### Memento
-<img src="./Memento.jpeg" height="256"/>
+<img src="./c3058e2f-695d-445c-b859-b6567c856e4e.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Memento.svg" height="100"/>
+<img src="./palettes/c3058e2f-695d-445c-b859-b6567c856e4e.svg" height="100"/>
 
-`Memento`
+`c3058e2f-695d-445c-b859-b6567c856e4e`
 #### Resplendent
-<img src="./Resplendent.jpeg" height="256"/>
+<img src="./ce4a5344-e052-43da-904a-123d7c024bf3.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Resplendent.svg" height="100"/>
+<img src="./palettes/ce4a5344-e052-43da-904a-123d7c024bf3.svg" height="100"/>
 
-`Resplendent`
+`ce4a5344-e052-43da-904a-123d7c024bf3`
 #### Scarlet dream
-<img src="./Scarlet dream.jpeg" height="256"/>
+<img src="./51960d8b-e47a-4b04-9163-28e3bbc91601.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Scarlet dream.svg" height="100"/>
+<img src="./palettes/51960d8b-e47a-4b04-9163-28e3bbc91601.svg" height="100"/>
 
-`Scarlet dream`
+`51960d8b-e47a-4b04-9163-28e3bbc91601`
 ### Pure
 #### Amethyst valley
-<img src="./Amethyst valley.jpeg" height="256"/>
+<img src="./297700b8-fcc6-4f35-88bb-900935d9da49.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Amethyst valley.svg" height="100"/>
+<img src="./palettes/297700b8-fcc6-4f35-88bb-900935d9da49.svg" height="100"/>
 
-`Amethyst valley`
+`297700b8-fcc6-4f35-88bb-900935d9da49`
 #### Misty ridge
-<img src="./Misty ridge.jpeg" height="256"/>
+<img src="./680a54fc-3477-4909-8d99-f35a9dc87e50.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Misty ridge.svg" height="100"/>
+<img src="./palettes/680a54fc-3477-4909-8d99-f35a9dc87e50.svg" height="100"/>
 
-`Misty ridge`
+`680a54fc-3477-4909-8d99-f35a9dc87e50`
 #### Hazy days
-<img src="./Hazy days.jpeg" height="256"/>
+<img src="./2d7f9e7a-5c94-4768-bd5a-6924d670dde0.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Hazy days.svg" height="100"/>
+<img src="./palettes/2d7f9e7a-5c94-4768-bd5a-6924d670dde0.svg" height="100"/>
 
-`Hazy days`
+`2d7f9e7a-5c94-4768-bd5a-6924d670dde0`
 #### Midsummer sun
-<img src="./Midsummer sun.jpeg" height="256"/>
+<img src="./3529421e-fdeb-46bd-904f-3c2c2dc14aac.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Midsummer sun.svg" height="100"/>
+<img src="./palettes/3529421e-fdeb-46bd-904f-3c2c2dc14aac.svg" height="100"/>
 
-`Midsummer sun`
+`3529421e-fdeb-46bd-904f-3c2c2dc14aac`
 #### Autumn gold
-<img src="./Autumn gold.jpeg" height="256"/>
+<img src="./1f0ef091-949a-4efe-a7ed-c396cea3423a.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Autumn gold.svg" height="100"/>
+<img src="./palettes/1f0ef091-949a-4efe-a7ed-c396cea3423a.svg" height="100"/>
 
-`Autumn gold`
+`1f0ef091-949a-4efe-a7ed-c396cea3423a`
 #### Spring lake
-<img src="./Spring lake.jpeg" height="256"/>
+<img src="./f2661458-aad1-4467-97cf-8ccd46abec4e.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Spring lake.svg" height="100"/>
+<img src="./palettes/f2661458-aad1-4467-97cf-8ccd46abec4e.svg" height="100"/>
 
-`Spring lake`
+`f2661458-aad1-4467-97cf-8ccd46abec4e`
 #### Winter mountain
-<img src="./Winter mountain.jpeg" height="256"/>
+<img src="./ce64b00b-efa9-45b0-ad34-9b56776fe8ba.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Winter mountain.svg" height="100"/>
+<img src="./palettes/ce64b00b-efa9-45b0-ad34-9b56776fe8ba.svg" height="100"/>
 
-`Winter mountain`
+`ce64b00b-efa9-45b0-ad34-9b56776fe8ba`
 #### Midwinter
-<img src="./Midwinter.jpeg" height="256"/>
+<img src="./fd55a078-d6a3-4715-9176-5a4fcbf5b3e6.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Midwinter.svg" height="100"/>
+<img src="./palettes/fd55a078-d6a3-4715-9176-5a4fcbf5b3e6.svg" height="100"/>
 
-`Midwinter`
+`fd55a078-d6a3-4715-9176-5a4fcbf5b3e6`
 ### Lush
 #### Amber bloom
-<img src="./Amber bloom.jpeg" height="256"/>
+<img src="./44f70646-9f9e-4a05-9c33-a42c11004dad.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Amber bloom.svg" height="100"/>
+<img src="./palettes/44f70646-9f9e-4a05-9c33-a42c11004dad.svg" height="100"/>
 
-`Amber bloom`
+`44f70646-9f9e-4a05-9c33-a42c11004dad`
 #### Lily
-<img src="./Lily.jpeg" height="256"/>
+<img src="./0834f278-ef59-4655-940c-a078650d2e86.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Lily.svg" height="100"/>
+<img src="./palettes/0834f278-ef59-4655-940c-a078650d2e86.svg" height="100"/>
 
-`Lily`
+`0834f278-ef59-4655-940c-a078650d2e86`
 #### Painted sky
-<img src="./Painted sky.jpeg" height="256"/>
+<img src="./467e2d6e-50e1-47eb-ac0f-ffd45d383a06.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Painted sky.svg" height="100"/>
+<img src="./palettes/467e2d6e-50e1-47eb-ac0f-ffd45d383a06.svg" height="100"/>
 
-`Painted sky`
+`467e2d6e-50e1-47eb-ac0f-ffd45d383a06`
 #### Winter beauty
-<img src="./Winter beauty.jpeg" height="256"/>
+<img src="./f125982c-82fa-428f-b494-39f7395def73.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Winter beauty.svg" height="100"/>
+<img src="./palettes/f125982c-82fa-428f-b494-39f7395def73.svg" height="100"/>
 
-`Winter beauty`
+`f125982c-82fa-428f-b494-39f7395def73`
 #### Orange fields
-<img src="./Orange fields.jpeg" height="256"/>
+<img src="./d8436b74-84b3-4750-83ba-fead7d94144f.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Orange fields.svg" height="100"/>
+<img src="./palettes/d8436b74-84b3-4750-83ba-fead7d94144f.svg" height="100"/>
 
-`Orange fields`
+`d8436b74-84b3-4750-83ba-fead7d94144f`
 #### Forest adventure
-<img src="./Forest adventure.jpeg" height="256"/>
+<img src="./2233f218-fd5b-4fa7-a7fd-cbe81eea8e15.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Forest adventure.svg" height="100"/>
+<img src="./palettes/2233f218-fd5b-4fa7-a7fd-cbe81eea8e15.svg" height="100"/>
 
-`Forest adventure`
+`2233f218-fd5b-4fa7-a7fd-cbe81eea8e15`
 #### Blue planet
-<img src="./Blue planet.jpeg" height="256"/>
+<img src="./369f2c22-2456-45f4-a91a-33d2c03c2c11.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Blue planet.svg" height="100"/>
+<img src="./palettes/369f2c22-2456-45f4-a91a-33d2c03c2c11.svg" height="100"/>
 
-`Blue planet`
+`369f2c22-2456-45f4-a91a-33d2c03c2c11`
 #### Meriete
-<img src="./Meriete.jpeg" height="256"/>
+<img src="./bef16d30-1a75-4aac-83c0-5b9968481254.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Meriete.svg" height="100"/>
+<img src="./palettes/bef16d30-1a75-4aac-83c0-5b9968481254.svg" height="100"/>
 
-`Meriete`
+`bef16d30-1a75-4aac-83c0-5b9968481254`
 ### Futuristic
 #### Soho
-<img src="./Soho.jpeg" height="256"/>
+<img src="./3580a7b2-ef38-4f34-bb5b-6416dde9df81.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Soho.svg" height="100"/>
+<img src="./palettes/3580a7b2-ef38-4f34-bb5b-6416dde9df81.svg" height="100"/>
 
-`Soho`
+`3580a7b2-ef38-4f34-bb5b-6416dde9df81`
 #### Vapor wave
-<img src="./Vapor wave.jpeg" height="256"/>
+<img src="./3984c3b7-6608-482f-84be-d2ffe39dbb1a.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Vapor wave.svg" height="100"/>
+<img src="./palettes/3984c3b7-6608-482f-84be-d2ffe39dbb1a.svg" height="100"/>
 
-`Vapor wave`
+`3984c3b7-6608-482f-84be-d2ffe39dbb1a`
 #### Magneto
-<img src="./Magneto.jpeg" height="256"/>
+<img src="./7fd8b7d2-7dd3-46b3-8188-23e34841eb98.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Magneto.svg" height="100"/>
+<img src="./palettes/7fd8b7d2-7dd3-46b3-8188-23e34841eb98.svg" height="100"/>
 
-`Magneto`
+`7fd8b7d2-7dd3-46b3-8188-23e34841eb98`
 #### Tyrell
-<img src="./Tyrell.jpeg" height="256"/>
+<img src="./66893c7e-4535-46d4-b9c7-fb6f5a80faa9.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Tyrell.svg" height="100"/>
+<img src="./palettes/66893c7e-4535-46d4-b9c7-fb6f5a80faa9.svg" height="100"/>
 
-`Tyrell`
+`66893c7e-4535-46d4-b9c7-fb6f5a80faa9`
 #### Disturbia
-<img src="./Disturbia.jpeg" height="256"/>
+<img src="./1a379a13-fd93-4f1d-977d-f0816b4385a4.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Disturbia.svg" height="100"/>
+<img src="./palettes/1a379a13-fd93-4f1d-977d-f0816b4385a4.svg" height="100"/>
 
-`Disturbia`
+`1a379a13-fd93-4f1d-977d-f0816b4385a4`
 #### Hal
-<img src="./Hal.jpeg" height="256"/>
+<img src="./78bbd5e7-720c-4343-9655-19602852e630.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Hal.svg" height="100"/>
+<img src="./palettes/78bbd5e7-720c-4343-9655-19602852e630.svg" height="100"/>
 
-`Hal`
+`78bbd5e7-720c-4343-9655-19602852e630`
 ### Halloween
 #### Trick or treat
-<img src="./Trick or treat.jpeg" height="256"/>
+<img src="./8a363ceb-f4c2-4c7f-9cd3-a71a6181b471.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Trick or treat.svg" height="100"/>
+<img src="./palettes/8a363ceb-f4c2-4c7f-9cd3-a71a6181b471.svg" height="100"/>
 
-`Trick or treat`
+`8a363ceb-f4c2-4c7f-9cd3-a71a6181b471`
 #### Glowing grins
-<img src="./Glowing grins.jpeg" height="256"/>
+<img src="./938da1ed-edbc-4cf0-b9ab-bdc3d7d0659f.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Glowing grins.svg" height="100"/>
+<img src="./palettes/938da1ed-edbc-4cf0-b9ab-bdc3d7d0659f.svg" height="100"/>
 
-`Glowing grins`
+`938da1ed-edbc-4cf0-b9ab-bdc3d7d0659f`
 #### Spellbound
-<img src="./Spellbound.jpeg" height="256"/>
+<img src="./0d2a6c4f-9c71-4279-950c-05f3f84b6dbd.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Spellbound.svg" height="100"/>
+<img src="./palettes/0d2a6c4f-9c71-4279-950c-05f3f84b6dbd.svg" height="100"/>
 
-`Spellbound`
+`0d2a6c4f-9c71-4279-950c-05f3f84b6dbd`
 #### Hocus pocus
-<img src="./Hocus pocus.jpeg" height="256"/>
+<img src="./00b65abf-df21-4f15-a379-c1742fb786fb.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Hocus pocus.svg" height="100"/>
+<img src="./palettes/00b65abf-df21-4f15-a379-c1742fb786fb.svg" height="100"/>
 
-`Hocus pocus`
+`00b65abf-df21-4f15-a379-c1742fb786fb`
 #### Toil and trouble
-<img src="./Toil and trouble.jpeg" height="256"/>
+<img src="./074338f3-f7f3-4402-9f30-46ac70e5a0e6.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Toil and trouble.svg" height="100"/>
+<img src="./palettes/074338f3-f7f3-4402-9f30-46ac70e5a0e6.svg" height="100"/>
 
-`Toil and trouble`
+`074338f3-f7f3-4402-9f30-46ac70e5a0e6`
 #### Witching hour
-<img src="./Witching hour.jpeg" height="256"/>
+<img src="./2ad04284-2f0a-40d9-b2a9-6b929a475fa1.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Witching hour.svg" height="100"/>
+<img src="./palettes/2ad04284-2f0a-40d9-b2a9-6b929a475fa1.svg" height="100"/>
 
-`Witching hour`
+`2ad04284-2f0a-40d9-b2a9-6b929a475fa1`
 #### Pandemonium
-<img src="./Pandemonium.jpeg" height="256"/>
+<img src="./0cbcc8ed-5474-471c-b3c1-45b4acc555b1.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Pandemonium.svg" height="100"/>
+<img src="./palettes/0cbcc8ed-5474-471c-b3c1-45b4acc555b1.svg" height="100"/>
 
-`Pandemonium`
+`0cbcc8ed-5474-471c-b3c1-45b4acc555b1`
 #### Phantom
-<img src="./Phantom.jpeg" height="256"/>
+<img src="./d824598f-0c09-4e67-beb2-972a8d5813e2.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Phantom.svg" height="100"/>
+<img src="./palettes/d824598f-0c09-4e67-beb2-972a8d5813e2.svg" height="100"/>
 
-`Phantom`
+`d824598f-0c09-4e67-beb2-972a8d5813e2`
 ### Winter holidays
 #### Snow sparkle
-<img src="./Snow sparkle.jpeg" height="256"/>
+<img src="./6a794ffd-3564-493d-a9ad-a1abcec8b81c.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Snow sparkle.svg" height="100"/>
+<img src="./palettes/6a794ffd-3564-493d-a9ad-a1abcec8b81c.svg" height="100"/>
 
-`Snow sparkle`
+`6a794ffd-3564-493d-a9ad-a1abcec8b81c`
 #### Under the tree
-<img src="./Under the tree.jpeg" height="256"/>
+<img src="./85b8bc42-c564-4661-b058-f4e5792a6a6c.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Under the tree.svg" height="100"/>
+<img src="./palettes/85b8bc42-c564-4661-b058-f4e5792a6a6c.svg" height="100"/>
 
-`Under the tree`
+`85b8bc42-c564-4661-b058-f4e5792a6a6c`
 #### Nutcracker
-<img src="./Nutcracker.jpeg" height="256"/>
+<img src="./33c32d2a-e5ad-4b26-8e6f-07090b4c6487.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Nutcracker.svg" height="100"/>
+<img src="./palettes/33c32d2a-e5ad-4b26-8e6f-07090b4c6487.svg" height="100"/>
 
-`Nutcracker`
+`33c32d2a-e5ad-4b26-8e6f-07090b4c6487`
 #### Jolly
-<img src="./Jolly.jpeg" height="256"/>
+<img src="./77d10893-7b6f-4586-a77b-694b2b78fd3a.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Jolly.svg" height="100"/>
+<img src="./palettes/77d10893-7b6f-4586-a77b-694b2b78fd3a.svg" height="100"/>
 
-`Jolly`
+`77d10893-7b6f-4586-a77b-694b2b78fd3a`
 #### Golden star
-<img src="./Golden star.jpeg" height="256"/>
+<img src="./a5a12d6a-430d-4324-9078-cf7a74538b52.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Golden star.svg" height="100"/>
+<img src="./palettes/a5a12d6a-430d-4324-9078-cf7a74538b52.svg" height="100"/>
 
-`Golden star`
+`a5a12d6a-430d-4324-9078-cf7a74538b52`
 #### Silent night
-<img src="./Silent night.jpeg" height="256"/>
+<img src="./4760abd5-e5a6-425a-be32-8f37f6e2acfd.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Silent night.svg" height="100"/>
+<img src="./palettes/4760abd5-e5a6-425a-be32-8f37f6e2acfd.svg" height="100"/>
 
-`Silent night`
+`4760abd5-e5a6-425a-be32-8f37f6e2acfd`
 #### Color burst
-<img src="./Color burst.jpeg" height="256"/>
+<img src="./e24e9183-747e-4d4e-a950-a746c6291c90.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Color burst.svg" height="100"/>
+<img src="./palettes/e24e9183-747e-4d4e-a950-a746c6291c90.svg" height="100"/>
 
-`Color burst`
+`e24e9183-747e-4d4e-a950-a746c6291c90`
 #### Crystalline
-<img src="./Crystalline.jpeg" height="256"/>
+<img src="./713a3f4d-2fc9-4d5e-80a5-a20a25815197.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Crystalline.svg" height="100"/>
+<img src="./palettes/713a3f4d-2fc9-4d5e-80a5-a20a25815197.svg" height="100"/>
 
-`Crystalline`
+`713a3f4d-2fc9-4d5e-80a5-a20a25815197`
 #### Rosy sparkle
-<img src="./Rosy sparkle.jpeg" height="256"/>
+<img src="./cf50bd49-16b1-47fd-a020-b83072595f37.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Rosy sparkle.svg" height="100"/>
+<img src="./palettes/cf50bd49-16b1-47fd-a020-b83072595f37.svg" height="100"/>
 
-`Rosy sparkle`
+`cf50bd49-16b1-47fd-a020-b83072595f37`
 #### Festive fun
-<img src="./Festive fun.jpeg" height="256"/>
+<img src="./667e4f15-4abf-4c56-8ef4-74fe1df422b8.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Festive fun.svg" height="100"/>
+<img src="./palettes/667e4f15-4abf-4c56-8ef4-74fe1df422b8.svg" height="100"/>
 
-`Festive fun`
+`667e4f15-4abf-4c56-8ef4-74fe1df422b8`
 
 ### Custom Palettes
 #### SECAM
-<img src="./SECAM.jpeg" height="256"/>
+<img src="./dbffbd71-7f65-428a-9ac7-0db51057d31a.jpeg" height="256"/>
 <br/>
-<img src="./palettes/SECAM.svg" height="100"/>
+<img src="./palettes/dbffbd71-7f65-428a-9ac7-0db51057d31a.svg" height="100"/>
 
-`SECAM`
+`dbffbd71-7f65-428a-9ac7-0db51057d31a`
 #### CGA
-<img src="./CGA.jpeg" height="256"/>
+<img src="./9565033d-f2ea-4821-bfba-7dd9b35be20a.jpeg" height="256"/>
 <br/>
-<img src="./palettes/CGA.svg" height="100"/>
+<img src="./palettes/9565033d-f2ea-4821-bfba-7dd9b35be20a.svg" height="100"/>
 
-`CGA`
+`9565033d-f2ea-4821-bfba-7dd9b35be20a`
 #### Light Cycles
-<img src="./Light Cycles.jpeg" height="256"/>
+<img src="./97648e18-758a-4382-99a4-8b657f4bb098.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Light Cycles.svg" height="100"/>
+<img src="./palettes/97648e18-758a-4382-99a4-8b657f4bb098.svg" height="100"/>
 
-`Light Cycles`
+`97648e18-758a-4382-99a4-8b657f4bb098`
 #### Valetudo
-<img src="./Valetudo.jpeg" height="256"/>
+<img src="./4bc4f958-b4af-46cf-8e67-636161e714f5.jpeg" height="256"/>
 <br/>
-<img src="./palettes/Valetudo.svg" height="100"/>
+<img src="./palettes/4bc4f958-b4af-46cf-8e67-636161e714f5.svg" height="100"/>
 
-`Valetudo`
+`4bc4f958-b4af-46cf-8e67-636161e714f5`

@@ -3,7 +3,7 @@ import HaIcon from "./HaIcon";
 
 interface HaIconButtonProps {
     icon: string;
-    onClick: () => void;
+    onClick: (event: Event) => void;
 
     size: number;
     iconSize: number;
@@ -25,8 +25,11 @@ class HaIconButton extends Component<HaIconButtonProps> {
         this.elementRef = React.createRef();
     }
 
-    handleClick = () => {
-        this.props.onClick();
+    handleClick = (event: Event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        this.props.onClick(event);
     };
 
     componentDidMount() {
