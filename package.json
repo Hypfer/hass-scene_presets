@@ -42,7 +42,6 @@
   },
   "dependencies": {
     "react": "0.0.0-experimental-67cc9ba87-20231016",
-    "react-dom": "0.0.0-experimental-67cc9ba87-20231016",
-    "react-icons": "4.11.0"
+    "react-dom": "0.0.0-experimental-67cc9ba87-20231016"
   }
 }

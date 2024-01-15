@@ -12,6 +12,8 @@ declare global {
             ["ha-top-app-bar-fixed"]: any;
             ["ha-selector"]: any;
             ["ha-switch"]: any;
+            ["ha-icon"]: any;
+            ["ha-icon-button"]: any;
             ["ha-card"]: any;
             ["ha-settings-row"]: any;
         }

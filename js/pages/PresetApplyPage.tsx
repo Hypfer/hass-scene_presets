@@ -5,7 +5,16 @@ import {useLocalStorage} from "../hooks/useLocalStorage";
 import HaSwitch from "../components/hass/building_blocks/HaSwitch";
 import {HaTargetSelector, HaTargetSelectorValue} from "../components/hass/selectors/HaTargetSelector";
 import {HaNumberSelector} from "../components/hass/selectors/HaNumberSelector";
+import HaIconButton from "../components/hass/building_blocks/HaIconButton";
 
+const DEFAULT_TUNABLE_SETTINGS = {
+    shuffle: false,
+    smartShuffle: false,
+    customBrightness: false,
+    customBrightnessValue: 128,
+    customTransition: false,
+    customTransitionValue: 60
+};
 
 export const PresetApplyPage: React.FunctionComponent<{
     hass: any
@@ -13,12 +22,12 @@ export const PresetApplyPage: React.FunctionComponent<{
     hass,
 }): JSX.Element => {
     const [targets, setTargets] = useLocalStorage<HaTargetSelectorValue>("scene_presets_apply_page_targets", {});
-    const [shuffle, setShuffle] = useLocalStorage<boolean>("scene_presets_apply_page_shuffle", false);
-    const [smartShuffle, setSmartShuffle] = useLocalStorage<boolean>("scene_presets_apply_page_smart_shuffle", false);
-    const [customBrightness, setCustomBrightness] = useLocalStorage<boolean>("scene_presets_apply_page_custom_brightness", false);
-    const [customBrightnessValue, setCustomBrightnessValue] = useLocalStorage<number>("scene_presets_apply_page_custom_brightness_value", 128);
-    const [customTransition, setCustomTransition] = useLocalStorage<boolean>("scene_presets_apply_page_custom_transition", false);
-    const [customTransitionValue, setCustomTransitionValue] = useLocalStorage<number>("scene_presets_apply_page_custom_transition_value", 60);
+    const [shuffle, setShuffle] = useLocalStorage<boolean>("scene_presets_apply_page_shuffle", DEFAULT_TUNABLE_SETTINGS.shuffle);
+    const [smartShuffle, setSmartShuffle] = useLocalStorage<boolean>("scene_presets_apply_page_smart_shuffle", DEFAULT_TUNABLE_SETTINGS.smartShuffle);
+    const [customBrightness, setCustomBrightness] = useLocalStorage<boolean>("scene_presets_apply_page_custom_brightness", DEFAULT_TUNABLE_SETTINGS.customBrightness);
+    const [customBrightnessValue, setCustomBrightnessValue] = useLocalStorage<number>("scene_presets_apply_page_custom_brightness_value", DEFAULT_TUNABLE_SETTINGS.customBrightnessValue);
+    const [customTransition, setCustomTransition] = useLocalStorage<boolean>("scene_presets_apply_page_custom_transition", DEFAULT_TUNABLE_SETTINGS.customTransition);
+    const [customTransitionValue, setCustomTransitionValue] = useLocalStorage<number>("scene_presets_apply_page_custom_transition_value", DEFAULT_TUNABLE_SETTINGS.customTransitionValue);
 
     const applyPreset = React.useCallback(
         (name) => {
@@ -69,7 +78,22 @@ export const PresetApplyPage: React.FunctionComponent<{
                             fontWeight: "bolder",
                             fontSize: "1.25rem"
                         }}>
-                        Targets
+                            <div style={{display: "flex"}}>
+                                Targets
+                                <div
+                                    style={{
+                                        marginTop: "-0.4rem",
+                                        marginLeft: "0.5rem"
+                                    }}>
+                                    <HaIconButton
+                                        icon={"mdi:broom"}
+                                        onClick={() => setTargets({})}
+
+                                        size={28}
+                                        iconSize={24}
+                                    />
+                                </div>
+                            </div>
                         </span>
                         <div
                             style={{
@@ -102,7 +126,29 @@ export const PresetApplyPage: React.FunctionComponent<{
                                 fontSize: "1.25rem"
                             }}
                         >
-                        Tunables
+                            <div style={{display: "flex"}}>
+                                Tunables
+                                <div
+                                    style={{
+                                        marginTop: "-0.4rem",
+                                        marginLeft: "0.5rem"
+                                    }}>
+                                    <HaIconButton
+                                        icon={"mdi:restore"}
+                                        onClick={() => {
+                                            setShuffle(DEFAULT_TUNABLE_SETTINGS.shuffle);
+                                            setSmartShuffle(DEFAULT_TUNABLE_SETTINGS.smartShuffle);
+                                            setCustomBrightness(DEFAULT_TUNABLE_SETTINGS.customBrightness);
+                                            setCustomBrightnessValue(DEFAULT_TUNABLE_SETTINGS.customBrightnessValue);
+                                            setCustomTransition(DEFAULT_TUNABLE_SETTINGS.customTransition);
+                                            setCustomTransitionValue(DEFAULT_TUNABLE_SETTINGS.customTransitionValue);
+                                        }}
+
+                                        size={28}
+                                        iconSize={24}
+                                    />
+                                </div>
+                            </div>
                         </div>
                         <label
                             style={{
