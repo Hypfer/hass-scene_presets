@@ -3,8 +3,8 @@
 This custom_component is an implementation of an idea not all too dissimilar to what the Philips Hue app calls Scenes.
 Apart from that though, it has nothing to do with Hue. No bridge required.
 
-Everything has been implemented entirely inside this custom_component, meaning that it works with every `light` entity.<br/>
-No vendor restrictions. No need for special bridges.<br/>
+Everything has been implemented entirely inside this custom_component, meaning that it works with every `light` entity.
+No vendor restrictions. No need for special bridges.
 And, most importantly, no account required :-)
 
 For now, installation is done by setting up this repo as a HACS custom repository.<br/>
@@ -14,7 +14,7 @@ After the install via HACS, you must then set it up via a config flow that does 
 
 For basic usage, open the Home Assistant sidebar, navigate to "Scene Presets", select your lights and then click on a preset image to apply it.
 
-For advanced usage, use the Home Assistant DevTools and call the services provided by the custom_component directly.<br/>
+For advanced usage, use the Home Assistant DevTools and call the services provided by the custom_component directly.
 Preset IDs can be found in the overview here: [assets](./custom_components/scene_presets/assets/Readme.md)
 
 ## Screenshots
