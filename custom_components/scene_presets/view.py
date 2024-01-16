@@ -7,6 +7,11 @@ async def async_setup_view(hass):
         PANEL_URL,
         hass.config.path(f'{BASE_PATH}/frontend/scene_presets_panel.js'),
     )
+    
+    hass.http.register_static_path(
+        f'/assets/{DOMAIN}/scene_presets.json',
+        hass.config.path(f"{BASE_PATH}/presets.json"),
+    )
 
     await bind_preset_images(hass)
 

@@ -1,11 +1,11 @@
 import React from "react";
-import data from "../../custom_components/scene_presets/presets.json";
 import {Tile} from "../components/Tile";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import HaSwitch from "../components/hass/building_blocks/HaSwitch";
 import {HaTargetSelector, HaTargetSelectorValue} from "../components/hass/selectors/HaTargetSelector";
 import {HaNumberSelector} from "../components/hass/selectors/HaNumberSelector";
 import HaIconButton from "../components/hass/building_blocks/HaIconButton";
+import {Category, Preset} from "../types";
 
 const DEFAULT_TUNABLE_SETTINGS = {
     shuffle: false,
@@ -17,9 +17,13 @@ const DEFAULT_TUNABLE_SETTINGS = {
 };
 
 export const PresetApplyPage: React.FunctionComponent<{
-    hass: any
+    hass: any,
+    categories: Array<Category>,
+    presets: Array<Preset>,
 }> = ({
     hass,
+    categories,
+    presets
 }): JSX.Element => {
     const [targets, setTargets] = useLocalStorage<HaTargetSelectorValue>("scene_presets_apply_page_targets", {});
     const [shuffle, setShuffle] = useLocalStorage<boolean>("scene_presets_apply_page_shuffle", DEFAULT_TUNABLE_SETTINGS.shuffle);
@@ -57,19 +61,19 @@ export const PresetApplyPage: React.FunctionComponent<{
     const presetsByCategories = React.useMemo(() => {
         const out = {};
 
-        data.categories.forEach(category => {
-            out[category.id] = data.presets.filter(p => p.categoryId === category.id);
+        categories.forEach(category => {
+            out[category.id] = presets.filter(p => p.categoryId === category.id);
         });
 
         return out;
-    }, []);
+    }, [categories, presets]);
 
 
     const tiles = React.useMemo(() => {
         const allTiles: {[key: string] : JSX.Element} = {};
         const favoriteTiles: Array<string> = [];
 
-        data.presets.forEach((preset, i) => {
+        presets.forEach((preset, i) => {
             const isFav = favoritePresets.includes(preset.id);
 
             allTiles[preset.id] = <Tile
@@ -98,7 +102,7 @@ export const PresetApplyPage: React.FunctionComponent<{
             all: allTiles,
             favoriteIds: favoriteTiles,
         };
-    }, [favoritePresets, applyPreset, setFavoritePresets]);
+    }, [presets, favoritePresets, applyPreset, setFavoritePresets]);
 
     return (
         <div
@@ -334,7 +338,7 @@ export const PresetApplyPage: React.FunctionComponent<{
                 }
 
                 {
-                    data.categories.map(({name, id}) => {
+                    categories.map(({name, id}) => {
                         return (
                             <div
                                 key={"category_" + name}
