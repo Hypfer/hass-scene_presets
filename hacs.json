@@ -1,3 +1,4 @@
 {
-  "name": "Scene presets"
+  "name": "Scene presets",
+  "persistent_directory": "userdata"
 }

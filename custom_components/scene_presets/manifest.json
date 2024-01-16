@@ -5,11 +5,11 @@
         "@hypfer"
     ],
     "config_flow": true,
-    "dependencies": [],
+    "after_dependencies": ["http"],
     "documentation": "https://github.com/Hypfer/hass-scene_presets",
     "integration_type": "service",
     "iot_class": "calculated",
     "issue_tracker": "https://github.com/Hypfer/hass-scene_presets/issues",
     "requirements": [],
-    "version": "1.0.0"
+    "version": "1.1.0"
 }

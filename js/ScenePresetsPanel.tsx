@@ -63,6 +63,24 @@ class ScenePresetsPanel extends HTMLElement {
                 height: 100%;
                 border-radius: 15px;
             }
+            .scene-preset-tile-no-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                
+                background:
+                    linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000),
+                    linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000),
+                    #ff00ff;
+                
+                background-size: 20px 20px;
+                background-position: 0 0, 10px 10px;
+            }
+            
             .scene-preset-tile-img-text-bg {
                 position: absolute;
                 top: 0;

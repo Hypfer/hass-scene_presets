@@ -1,17 +1,24 @@
 from .const import NAME, DOMAIN, PANEL_URL
 from .file_utils import VERSION, PRESET_DATA, BASE_PATH
+from homeassistant.components.http import HomeAssistantView
 
+class ScenePresetDataView(HomeAssistantView):
+    url = f'/assets/{DOMAIN}/scene_presets.json'
+    name = f'assets:{DOMAIN}:preset_data'
+    requires_auth = False
+
+    async def get(self, request):
+        return self.json(
+            result=PRESET_DATA,
+        )
 
 async def async_setup_view(hass):
     hass.http.register_static_path(
         PANEL_URL,
         hass.config.path(f'{BASE_PATH}/frontend/scene_presets_panel.js'),
     )
-    
-    hass.http.register_static_path(
-        f'/assets/{DOMAIN}/scene_presets.json',
-        hass.config.path(f"{BASE_PATH}/presets.json"),
-    )
+
+    hass.http.register_view(ScenePresetDataView)
 
     await bind_preset_images(hass)
 
@@ -34,9 +41,14 @@ async def async_setup_view(hass):
 async def bind_preset_images(hass):
     for preset in PRESET_DATA.get("presets", []):
         img_filename = preset.get("img")
+        is_custom = preset.get("custom")
 
         if img_filename is not None:
+            path = f"{BASE_PATH}/assets/{img_filename}"
+            if is_custom is not None and is_custom:
+                path = f"{BASE_PATH}/userdata/custom/assets/{img_filename}"
+
             hass.http.register_static_path(
                 f'/assets/{DOMAIN}/{img_filename}',
-                hass.config.path(f"{BASE_PATH}/assets/{img_filename}"),
+                hass.config.path(path),
             )

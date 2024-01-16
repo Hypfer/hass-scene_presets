@@ -62,19 +62,22 @@ export const Tile :React.FunctionComponent<{
                 className={"scene-preset-tile-content"}
             >
                 {
-                    imgSrc &&
-                    (
-                        <>
-                            <img
-                                src={imgSrc}
-                                className={"scene-preset-tile-img"}
-                            />
-                            <div
-                                className={"scene-preset-tile-img-text-bg"}
-                            ></div>
-                        </>
-                    )
+                    imgSrc ?
+
+                        <img
+                            src={imgSrc}
+                            className={"scene-preset-tile-img"}
+                        />
+                        :
+                        <div
+                            className={"scene-preset-tile-no-img"}
+                        >
+                        </div>
+
                 }
+                <div
+                    className={"scene-preset-tile-img-text-bg"}
+                ></div>
                 <p
                     className={"scene-preset-tile-text"}
                 >
