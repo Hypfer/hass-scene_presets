@@ -3,6 +3,7 @@ import asyncio
 import logging
 from .file_utils import PRESET_DATA
 from .color_management import *
+from .color_temperature import find_closest_ct_match
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -63,14 +64,7 @@ async def apply_preset(
         if color_support:
             light_params["xy_color"] = next_color
         elif temp_support:
-            # if light does not support xy colors, convert to kelvin
-            x_color = next_color[0]
-            y_color = next_color[1]
-
-            n = (x_color - 0.3320) / (0.1858 - y_color)
-            color_temp_kelvin = int(437 * n**3 + 3601 * n**2 + 6861 * n + 5517)
-
-            light_params["kelvin"] = color_temp_kelvin
+            light_params["kelvin"] = find_closest_ct_match(next_color[0], next_color[1])
         else:
             continue
 
