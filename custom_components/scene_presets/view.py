@@ -37,6 +37,8 @@ async def async_setup_view(hass):
         },
     )
 
+async def async_remove_view(hass):
+    hass.components.frontend.async_remove_panel("scene_presets")
 
 async def bind_preset_images(hass):
     for preset in PRESET_DATA.get("presets", []):

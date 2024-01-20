@@ -7,7 +7,7 @@ from .const import *
 
 from .dynamic_scenes import DynamicScene, DynamicSceneManager
 from .presets import apply_preset
-from .view import async_setup_view
+from .view import async_setup_view, async_remove_view
 from .util import ensure_list, resolve_targets
 
 CONFIG_SCHEMA = cv.empty_config_schema(DOMAIN)
@@ -178,3 +178,9 @@ async def async_setup_entry(
     await async_setup_view(hass)
 
     return True
+
+async def async_remove_entry(
+    hass: HomeAssistant, entry: ConfigEntry
+) -> None:
+
+    await async_remove_view(hass)
