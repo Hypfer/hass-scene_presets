@@ -45,14 +45,14 @@ def resolve_targets(hass, entity_ids, device_ids, area_ids):
     return light_entity_ids
 
 
-def resolve_entity_ids(hass, entity_id, depth=1):
+def resolve_entity_ids(hass, entity_id, depth=0):
     resolved_ids = []
 
     if not entity_id.startswith(("light", "group")):
         return resolved_ids
 
     # If you have groups nested 4+ layers deep, you should rethink your life choices
-    if depth >= 3:
+    if depth > 4:
         return resolved_ids
 
     if entity := hass.states.get(entity_id):
