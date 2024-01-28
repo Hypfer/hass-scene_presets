@@ -43,6 +43,10 @@ Preset IDs can be found in the overview here: [assets](./custom_components/scene
 Check out the [./docs/](./docs) folder for an explanation on what Smart Shuffle is and instructions for developers on how
 to add their own custom presets locally.
 
+## Further questions?
+[scene_presets Telegram group](https://t.me/+RTEq2nwI9-MwNWYy)
+
+
 ## Presets
 
 This component provides all the scene presets that were available in the Hue App scene gallery on 2023-09-28.
