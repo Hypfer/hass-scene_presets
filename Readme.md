@@ -7,8 +7,16 @@ Everything has been implemented entirely inside this custom_component, meaning t
 No vendor restrictions. No need for special bridges.
 And, most importantly, no account required :-)
 
-For now, installation is done by setting up this repo as a HACS custom repository.<br/>
-After the install via HACS, you must then set it up via a config flow that does nothing. 👍
+## Installation
+
+1. Add the repository as a custom repository of type integration in HACS: https://hacs.xyz/docs/faq/custom_repositories/
+2. Restart Home Assistant
+3. Navigate to Settings > Devices & Services
+4. Click Add integration
+5. Search for Scene Presets
+6. Click on it and follow the wizard 🧙
+
+You should now have a new item in your sidebar.
 
 ## Usage
 
@@ -27,6 +35,10 @@ Preset IDs can be found in the overview here: [assets](./custom_components/scene
 
 ![step2.png](./img/step2.png)
 
+## Docs
+
+Check out the [./docs/](./docs) folder for an explanation on what Smart Shuffle is and instructions for developers on how
+to add their own custom presets locally.
 
 ## Presets
 
