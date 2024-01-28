@@ -1,4 +1,7 @@
-# Scene Presets
+<div align="center">
+    <img src="assets/logo/github_banner.svg" width="600" alt="scene_presets">
+</div>
+<br/>
 
 This custom_component is an implementation of an idea not all too dissimilar to what the Philips Hue app calls Scenes.
 Apart from that though, it has nothing to do with Hue. No bridge required.

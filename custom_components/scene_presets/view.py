@@ -2,6 +2,15 @@ from .const import NAME, DOMAIN, PANEL_URL
 from .file_utils import VERSION, PRESET_DATA, BASE_PATH
 from homeassistant.components.http import HomeAssistantView
 
+# Adapted from https://github.com/hacs/integration/blob/7d46a52de0df2466aa65e446458b952150398f4c/custom_components/hacs/frontend.py#L58
+try:
+    from homeassistant.components.frontend import add_extra_js_url
+except ImportError:
+    def add_extra_js_url(hass: HomeAssistant, url: str, es5: bool = False) -> None:
+        if "frontend_extra_module_url" not in hass.data:
+            hass.data["frontend_extra_module_url"] = set()
+        hass.data["frontend_extra_module_url"].add(url)
+
 class ScenePresetDataView(HomeAssistantView):
     url = f'/assets/{DOMAIN}/scene_presets.json'
     name = f'assets:{DOMAIN}:preset_data'
@@ -25,7 +34,7 @@ async def async_setup_view(hass):
     hass.components.frontend.async_register_built_in_panel(
         component_name="custom",
         sidebar_title=NAME,
-        sidebar_icon="mdi:track-light",
+        sidebar_icon="scene_presets:scene_presets",
         frontend_url_path="scene_presets",
         require_admin=True,
         config={
@@ -36,6 +45,13 @@ async def async_setup_view(hass):
             "version": VERSION
         },
     )
+    
+    # Custom iconset
+    hass.http.register_static_path(
+        f'/assets/{DOMAIN}/iconset.js',
+        hass.config.path(f'{BASE_PATH}/res/iconset.js'),
+    )
+    add_extra_js_url(hass, f"/assets/{DOMAIN}/iconset.js?{VERSION}")
 
 async def async_remove_view(hass):
     hass.components.frontend.async_remove_panel("scene_presets")
