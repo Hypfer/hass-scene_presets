@@ -2,6 +2,10 @@ name: HACS validate
 
 on:
   workflow_dispatch:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   validate-hacs:
