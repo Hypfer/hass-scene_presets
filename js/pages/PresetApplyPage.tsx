@@ -407,7 +407,7 @@ export const PresetApplyPage: React.FunctionComponent<{
                     heading={"Last action payload"}
                 >
                     <div>
-                        Here you can see the payload used apply the last preset you selected.
+                        Here you can see the payload used to apply the last preset you selected.
                         This can be used in automations, scripts etc.
                     </div>
 
