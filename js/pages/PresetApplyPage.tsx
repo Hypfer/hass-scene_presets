@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {Tile} from "../components/Tile";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import HaSwitch from "../components/hass/building_blocks/HaSwitch";
@@ -6,6 +6,8 @@ import {HaTargetSelector, HaTargetSelectorValue} from "../components/hass/select
 import {HaNumberSelector} from "../components/hass/selectors/HaNumberSelector";
 import HaIconButton from "../components/hass/building_blocks/HaIconButton";
 import {Category, Preset} from "../types";
+import HaDialog from "../components/hass/building_blocks/HaDialog";
+import MwcButton from "../components/hass/building_blocks/MwcButton";
 
 const DEFAULT_TUNABLE_SETTINGS = {
     shuffle: false,
@@ -35,23 +37,34 @@ export const PresetApplyPage: React.FunctionComponent<{
 
     const [favoritePresets, setFavoritePresets] = useLocalStorage<Array<string>>("scene_presets_apply_page_favorite_presets", []);
 
+    const [automationDialogOpen, setAutomationDialogOpen] = useState<boolean>(false);
+    const [lastActionPayload, setLastActionPayload] = useState<any>({});
+    const [prettyLastActionPayload, setPrettyLastActionPayload] = useState<string>("");
+
     const applyPreset = React.useCallback(
         (id) => {
+            const payload = {
+                preset_id: id,
+                targets: targets,
+                shuffle: shuffle,
+                smart_shuffle: smartShuffle,
+                brightness: customBrightness ? customBrightnessValue : undefined,
+                transition: customTransition ? customTransitionValue : undefined,
+            };
+
+            setLastActionPayload({
+                service: "scene_presets.apply_preset",
+                data: payload
+            });
+
             hass.callService(
                 "scene_presets",
                 "apply_preset",
-                {
-                    preset_id: id,
-                    targets: targets,
-                    shuffle: shuffle,
-                    smart_shuffle: smartShuffle,
-                    brightness: customBrightness ? customBrightnessValue : undefined,
-                    transition: customTransition ? customTransitionValue : undefined,
-                }
+                payload
             );
         },
         [
-            hass,
+            hass, setLastActionPayload,
             targets, shuffle, smartShuffle,
             customBrightness, customBrightnessValue,
             customTransition, customTransitionValue
@@ -139,6 +152,24 @@ export const PresetApplyPage: React.FunctionComponent<{
                                         icon={"mdi:broom"}
                                         onClick={() => setTargets({})}
 
+                                        size={28}
+                                        iconSize={24}
+                                    />
+                                </div>
+                                <div
+                                    style={{
+                                        position: "absolute",
+                                        top: "0.5rem",
+                                        right: "1rem"
+                                    }}>
+                                    <HaIconButton
+                                        icon={"mdi:robot"}
+                                        onClick={
+                                            () => {
+                                                setPrettyLastActionPayload(JSON.stringify(lastActionPayload, null, 2));
+                                                setAutomationDialogOpen(true);
+                                            }
+                                        }
                                         size={28}
                                         iconSize={24}
                                     />
@@ -367,6 +398,43 @@ export const PresetApplyPage: React.FunctionComponent<{
                         );
                     })
                 }
+
+                <HaDialog
+                    open={automationDialogOpen}
+                    onClose={() => {
+                        setAutomationDialogOpen(false);
+                    }}
+                    heading={"Last action payload"}
+                >
+                    <div>
+                        Here you can see the payload used apply the last preset you selected.
+                        This can be used in automations, scripts etc.
+                    </div>
+
+                    <div style={{padding: "1rem"}}>
+                        <pre
+                            style={{
+                                backgroundColor: "#000000",
+                                padding: "1rem",
+                                userSelect: "text",
+                                color: "#ffffff",
+                                fontFamily: "monospace",
+                                fontWeight: 200,
+                                whiteSpace: "pre-wrap"
+                            }}
+                        >
+                            {prettyLastActionPayload}
+                        </pre>
+                    </div>
+
+                    <MwcButton
+                        label={"Close"}
+                        onClick={() => {
+                            setAutomationDialogOpen(false);
+                        }}
+                        slot={"secondaryAction"}
+                    />
+                </HaDialog>
             </div>
 
         </div>

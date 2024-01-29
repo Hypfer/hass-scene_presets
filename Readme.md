@@ -10,6 +10,13 @@ Everything has been implemented entirely inside this custom_component, meaning t
 No vendor restrictions. No need for special bridges.
 And, most importantly, no account required :-)
 
+## Screenshots
+
+![ui.png](./img/ui.png)
+
+![service.png](./img/service.png)
+
+
 ## Installation
 
 1. Add the repository as a custom repository of type integration in HACS: https://hacs.xyz/docs/faq/custom_repositories/
@@ -28,15 +35,10 @@ For basic usage, open the Home Assistant sidebar, navigate to "Scene Presets", s
 For advanced usage, use the Home Assistant DevTools and call the services provided by the custom_component directly.
 Preset IDs can be found in the overview here: [assets](./custom_components/scene_presets/assets/Readme.md)
 
-## Screenshots
+You can also get the payload for the service call for the preset you applied last by clicking on the robot icon:
 
-![ui.png](./img/ui.png)
+![last_action_payload.png](./img/last_action_payload.png)
 
-![service.png](./img/service.png)
-
-![step1.png](./img/step1.png)
-
-![step2.png](./img/step2.png)
 
 ## Docs
 

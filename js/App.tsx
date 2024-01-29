@@ -18,6 +18,8 @@ declare global {
             ["ha-icon-button"]: any;
             ["ha-card"]: any;
             ["ha-settings-row"]: any;
+            ["ha-dialog"]: any;
+            ["mwc-button"]: any;
         }
     }
 }
