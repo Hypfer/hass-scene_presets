@@ -1,7 +1,7 @@
 import React from "react";
 import HaIconButton from "./hass/building_blocks/HaIconButton";
 
-export const Tile :React.FunctionComponent<{
+export const PresetTile :React.FunctionComponent<{
     id: string,
     name: string,
     imgSrc?: string
@@ -42,7 +42,7 @@ export const Tile :React.FunctionComponent<{
 
     return (
         <div
-            className={"scene-preset-tile"}
+            className={"tile"}
             onClick={() => {
                 onClick?.(id);
             }}
@@ -50,7 +50,7 @@ export const Tile :React.FunctionComponent<{
             {
                 onFavClick &&
                 <div
-                    className={"scene-preset-tile-fav-btn-container"}
+                    className={"tile-top-icon-container"}
                 >
                     {
                         isFav ? favedIcon : unFavedIcon
@@ -59,27 +59,27 @@ export const Tile :React.FunctionComponent<{
             }
 
             <div
-                className={"scene-preset-tile-content"}
+                className={"tile-content"}
             >
                 {
                     imgSrc ?
 
                         <img
                             src={imgSrc}
-                            className={"scene-preset-tile-img"}
+                            className={"tile-bg-img"}
                         />
                         :
                         <div
-                            className={"scene-preset-tile-no-img"}
+                            className={"tile-bg-no-img"}
                         >
                         </div>
 
                 }
                 <div
-                    className={"scene-preset-tile-img-text-bg"}
+                    className={"tile-text-bg"}
                 ></div>
                 <p
-                    className={"scene-preset-tile-text"}
+                    className={"tile-text"}
                 >
                     {name}
                 </p>

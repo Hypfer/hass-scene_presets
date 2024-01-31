@@ -15,6 +15,7 @@ class DynamicScene:
         self._running = False
         self._task = None
         self.parameters = parameters if parameters is not None else {}
+        
         self.start_loop()
 
     async def _loop(self):

@@ -9,7 +9,6 @@ import {loadConfigDashboard} from "./helpers";
 class ScenePresetsPanel extends HTMLElement {
     initialized: boolean = false;
     shadow: Container;
-    hasHass: boolean = false;
     _hass: any;
     private _narrow: boolean = false;
     private root: Root;
@@ -31,7 +30,7 @@ class ScenePresetsPanel extends HTMLElement {
 
         // TODO: Figure out why styles can only be injected in this clunky way
         this.styleElem.textContent += `
-            .scene-preset-tile {
+            .tile {
                 margin: 10px;
                 padding: 15px;
                 border-radius: 15px;
@@ -42,19 +41,19 @@ class ScenePresetsPanel extends HTMLElement {
                 cursor: pointer;
             }
             
-            .scene-preset-tile-content {
+            .tile-content {
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
             }
-            .scene-preset-tile-content:active {
+            .tile-content:active {
                 transition: filter 0.3s;
                 filter: brightness(0.7);
             }
             
-            .scene-preset-tile-img {
+            .tile-bg-img {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -63,7 +62,7 @@ class ScenePresetsPanel extends HTMLElement {
                 height: 100%;
                 border-radius: 15px;
             }
-            .scene-preset-tile-no-img {
+            .tile-bg-no-img {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -81,7 +80,7 @@ class ScenePresetsPanel extends HTMLElement {
                 background-position: 0 0, 10px 10px;
             }
             
-            .scene-preset-tile-img-text-bg {
+            .tile-text-bg {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -90,7 +89,7 @@ class ScenePresetsPanel extends HTMLElement {
                 border-radius: 15px;
                 background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
             }
-            .scene-preset-tile-text {
+            .tile-text {
                 position: absolute;
                 bottom: 15px;
                 left: 15px;
@@ -98,11 +97,42 @@ class ScenePresetsPanel extends HTMLElement {
                 font-family: sans-serif;
                 color: #ffffff;
             }
-            .scene-preset-tile-fav-btn-container {
+            
+            .tile-top-info-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 33%;
+                border-radius: 15px;
+                background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+            }
+            .tile-top-info-container {
+                position: absolute;
+                top: 5px;
+                left: 10px;
+                margin: 0;
+                font-family: monospace;
+                font-size: 0.8rem;
+                color: #ffffff;
+                z-index: 1;
+            }
+            
+            .tile-top-icon-container {
                 position: absolute;
                 top: 5px;
                 right: 10px;
                 margin: 0;
+                font-family: sans-serif;
+                color: #ffffff;
+                z-index: 1;
+            }
+            
+            .tile-center-icon-container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -60%);
                 font-family: sans-serif;
                 color: #ffffff;
                 z-index: 1;
@@ -121,11 +151,7 @@ class ScenePresetsPanel extends HTMLElement {
     set hass(hass) {
         this._hass = hass;
 
-        if (!this.hasHass) {
-            this.hasHass = true;
-
-            this.renderElement();
-        }
+        this.renderElement();
     }
 
     set narrow(narrow) {

@@ -9,6 +9,7 @@ from .dynamic_scenes import DynamicScene, DynamicSceneManager
 from .presets import apply_preset
 from .view import async_setup_view, async_remove_view
 from .util import ensure_list, resolve_targets
+from .websocket_api import async_setup_websocket_api
 
 CONFIG_SCHEMA = cv.empty_config_schema(DOMAIN)
 
@@ -92,7 +93,6 @@ async def async_setup(hass, config):
             {
                 "preset_id": preset_id,
                 "light_entity_ids": light_entity_ids,
-                "interval": interval,
                 "brightness": brightness_override,
                 "transition": transition,
                 "shuffle": shuffle
@@ -175,7 +175,10 @@ async def async_setup_entry(
     hass: HomeAssistant, entry: ConfigEntry
 ) -> bool:
     hass.data.setdefault(DOMAIN, {})
+
     await async_setup_view(hass)
+
+    async_setup_websocket_api(hass, dynamic_scene_manager)
 
     return True
 
