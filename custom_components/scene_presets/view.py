@@ -36,7 +36,7 @@ async def async_setup_view(hass):
         sidebar_title=NAME,
         sidebar_icon="scene_presets:scene_presets",
         frontend_url_path="scene_presets",
-        require_admin=True,
+        require_admin=False,
         config={
             "_panel_custom": {
                 "name": "scene-presets-panel",
