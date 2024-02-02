@@ -1,0 +1,84 @@
+name: New issue
+description: Open an issue
+body:  
+  - type: textarea
+    id: what-is-happening
+    attributes:
+      label: What is happening?
+      description: What behavior do you observe?
+    validations:
+      required: true
+      
+  - type: textarea
+    id: what-should-be-happening
+    attributes:
+      label: What should be happening?
+      description: What behavior did you expect? Why do you expect that?
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: reflection-1
+    attributes:
+      label: Reflection 1
+      description: Thinking about what you said what should be happening and why, how much of that is objective input and how much is just an opinion?
+      options:
+        - Common Sense
+        - Objective Input
+        - Balanced View
+        - Subjective Opinion
+        - Strongly Opinionated
+      default: 2
+    validations:
+      required: true
+      
+  - type: textarea
+    id: why-is-this-related
+    attributes:
+      label: Is this issue tracker the right place for this topic?
+      description: Why do you believe that this issue is related to this project and its code? Which other involved components exist and might one of them be more fitting?
+    validations:
+      required: true
+      
+  - type: input
+    id: component-version
+    attributes:
+      label: Please enter the scene_preset version you're using
+      description: Make sure that you're running the latest one!
+    validations:
+      required: true
+      
+  - type: input
+    id: hass-version
+    attributes:
+      label: Please enter the Home Assistant version you're using
+      description: Make sure that you're running the latest one!
+    validations:
+      required: true
+      
+  - type: textarea
+    id: setup
+    attributes:
+      label: Details about your setup
+      description: What lights are you using? Hue? Wiz? Which ones exactly? How are they connected to Home Assistant? ZHA? Zigbee2MQTT? WLED?
+    validations:
+      required: true
+      
+  - type: textarea
+    id: reflection-2
+    attributes:
+      label: Reflection 2
+      description: Thinking about what you said about your setup, do you see anything non-standard about it that might be troublesome and cause this issue?
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: time-invested
+    attributes:
+      label: Time and Effort
+      description: By submitting this issue, you confirm that you've spent at least 30 minutes thinking about and doing research for this issue.
+      options:
+        - label: Yes, I did my homework.
+          required: true
+        - label: I understand that my issue will be deleted with no further comment if I did not do my homework.
+          required: true
