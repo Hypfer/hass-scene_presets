@@ -1,4 +1,3 @@
-from homeassistant.core import HomeAssistant
 from homeassistant.helpers import device_registry, entity_registry
 
 
@@ -59,7 +58,7 @@ def resolve_targets(hass, entity_ids, device_ids, area_ids):
     return light_entity_ids
 
 
-def resolve_entity_ids(hass: HomeAssistant, entity_id, depth=0):
+def resolve_entity_ids(hass, entity_id, depth=0):
     resolved_ids = []
     entity_reg = entity_registry.async_get(hass)
 
