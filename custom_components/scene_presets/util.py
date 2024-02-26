@@ -62,7 +62,7 @@ def resolve_entity_ids(hass, entity_id, depth=0):
             resolved_ids.append(entity_id)
 
         else: # It's a group possibly pretending to be a light
-            conf_entry = get_conf_entry(hass, entity_id)
+            conf_entry = get_config_entry(hass, entity_id)
 
             if conf_entry is not None and conf_entry.options.get("hide_members", False):
                 # Assume that by enabling hide_members, the user intended to have a single logical light consisting of multiple physical ones
@@ -77,7 +77,7 @@ def resolve_entity_ids(hass, entity_id, depth=0):
     return resolved_ids
 
 
-def get_conf_entry(hass, entity_id):
+def get_config_entry(hass, entity_id):
     entity_reg = entity_registry.async_get(hass)
 
     if entity_reg_entry := entity_reg.async_get(entity_id):
