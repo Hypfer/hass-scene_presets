@@ -1,6 +1,7 @@
 from .const import NAME, DOMAIN, PANEL_URL
 from .file_utils import VERSION, PRESET_DATA, BASE_PATH
 from homeassistant.components.http import HomeAssistantView
+from homeassistant.components.frontend import async_remove_panel, async_register_built_in_panel
 
 # Adapted from https://github.com/hacs/integration/blob/7d46a52de0df2466aa65e446458b952150398f4c/custom_components/hacs/frontend.py#L58
 try:
@@ -31,7 +32,8 @@ async def async_setup_view(hass):
 
     await bind_preset_images(hass)
 
-    hass.components.frontend.async_register_built_in_panel(
+    async_register_built_in_panel(
+        hass,
         component_name="custom",
         sidebar_title=NAME,
         sidebar_icon="scene_presets:scene_presets",
@@ -54,7 +56,7 @@ async def async_setup_view(hass):
     add_extra_js_url(hass, f"/assets/{DOMAIN}/iconset.js?{VERSION}")
 
 async def async_remove_view(hass):
-    hass.components.frontend.async_remove_panel("scene_presets")
+    async_remove_panel(hass, "scene_presets")
 
 async def bind_preset_images(hass):
     for preset in PRESET_DATA.get("presets", []):
