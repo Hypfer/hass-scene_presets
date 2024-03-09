@@ -11,5 +11,5 @@
     "iot_class": "calculated",
     "issue_tracker": "https://github.com/Hypfer/hass-scene_presets/issues",
     "requirements": [],
-    "version": "1.2.3"
+    "version": "1.2.4"
 }
