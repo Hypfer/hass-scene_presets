@@ -1,4 +1,5 @@
 {
   "name": "Scene presets",
-  "persistent_directory": "userdata"
+  "persistent_directory": "userdata",
+  "homeassistant": "2024.4.0b0"
 }

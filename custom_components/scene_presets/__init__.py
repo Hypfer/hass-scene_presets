@@ -56,8 +56,11 @@ async def async_setup(hass, config):
         entity_ids = ensure_list(targets.get("entity_id"))
         device_ids = ensure_list(targets.get("device_id"))
         area_ids = ensure_list(targets.get("area_id"))
+        floor_ids = ensure_list(targets.get("floor_id"))
+        label_ids = ensure_list(targets.get("label_id"))
 
-        light_entity_ids = resolve_targets(hass, entity_ids, device_ids, area_ids)
+
+        light_entity_ids = resolve_targets(hass, entity_ids, device_ids, area_ids, floor_ids, label_ids)
 
         await apply_preset(
             hass,
@@ -85,8 +88,10 @@ async def async_setup(hass, config):
         entity_ids = ensure_list(targets.get("entity_id"))
         device_ids = ensure_list(targets.get("device_id"))
         area_ids = ensure_list(targets.get("area_id"))
+        floor_ids = ensure_list(targets.get("floor_id"))
+        label_ids = ensure_list(targets.get("label_id"))
 
-        light_entity_ids = resolve_targets(hass, entity_ids, device_ids, area_ids)
+        light_entity_ids = resolve_targets(hass, entity_ids, device_ids, area_ids, floor_ids, label_ids)
 
         return dynamic_scene_manager.create_new(
             hass,
@@ -111,8 +116,10 @@ async def async_setup(hass, config):
         entity_ids = ensure_list(targets.get("entity_id"))
         device_ids = ensure_list(targets.get("device_id"))
         area_ids = ensure_list(targets.get("area_id"))
+        floor_ids = ensure_list(targets.get("floor_id"))
+        label_ids = ensure_list(targets.get("label_id"))
 
-        light_entity_ids = resolve_targets(hass, entity_ids, device_ids, area_ids)
+        light_entity_ids = resolve_targets(hass, entity_ids, device_ids, area_ids, floor_ids, label_ids)
 
         for light_entity_id in light_entity_ids:
             dynamic_scene_manager.stop_all_for_entity_id(light_entity_id)
