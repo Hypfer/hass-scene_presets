@@ -713,6 +713,50 @@ Feel free to contact me, and I'm sure we can find a solution.
 
 `Arise`
 
+### Romantic
+#### Ruby romance
+<img src="./68d97db1-eb52-4c03-8afc-eed5df30c417.jpeg" height="256"/>
+<br/>
+<img src="./palettes/68d97db1-eb52-4c03-8afc-eed5df30c417.svg" height="100"/>
+
+`Ruby romance`
+#### City of love
+<img src="./1fde4a1b-2ace-4b3a-a517-f9660fc84536.jpeg" height="256"/>
+<br/>
+<img src="./palettes/1fde4a1b-2ace-4b3a-a517-f9660fc84536.svg" height="100"/>
+
+`City of love`
+#### Sunset allure
+<img src="./68e8b68e-8237-48a6-bf5f-f62258dd2ff3.jpeg" height="256"/>
+<br/>
+<img src="./palettes/68e8b68e-8237-48a6-bf5f-f62258dd2ff3.svg" height="100"/>
+
+`Sunset allure`
+#### Lovebirds
+<img src="./f1f5f209-ffcb-4734-8567-0819a2885214.jpeg" height="256"/>
+<br/>
+<img src="./palettes/f1f5f209-ffcb-4734-8567-0819a2885214.svg" height="100"/>
+
+`Lovebirds`
+#### Smitten
+<img src="./a65a2815-52fb-4748-8e02-b607f96f70ea.jpeg" height="256"/>
+<br/>
+<img src="./palettes/a65a2815-52fb-4748-8e02-b607f96f70ea.svg" height="100"/>
+
+`Smitten`
+#### Glitz and glam
+<img src="./2bf0e527-62ac-4203-b8a1-de06b0913fde.jpeg" height="256"/>
+<br/>
+<img src="./palettes/2bf0e527-62ac-4203-b8a1-de06b0913fde.svg" height="100"/>
+
+`Glitz and glam`
+#### Promise
+<img src="./0b8dcd68-9ad0-4722-b23f-5fddb24204ef.jpeg" height="256"/>
+<br/>
+<img src="./palettes/0b8dcd68-9ad0-4722-b23f-5fddb24204ef.svg" height="100"/>
+
+`Promise`
+
 ### Custom Palettes
 #### SECAM
 <img src="./dbffbd71-7f65-428a-9ac7-0db51057d31a.jpeg" height="256"/>
