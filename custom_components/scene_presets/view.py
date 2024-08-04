@@ -1,6 +1,6 @@
 from .const import NAME, DOMAIN, PANEL_URL
 from .file_utils import VERSION, PRESET_DATA, BASE_PATH
-from homeassistant.components.http import HomeAssistantView
+from homeassistant.components.http import HomeAssistantView, StaticPathConfig
 from homeassistant.components.frontend import async_remove_panel, async_register_built_in_panel
 
 # Adapted from https://github.com/hacs/integration/blob/7d46a52de0df2466aa65e446458b952150398f4c/custom_components/hacs/frontend.py#L58
@@ -23,12 +23,13 @@ class ScenePresetDataView(HomeAssistantView):
         )
 
 async def async_setup_view(hass):
-    hass.http.register_static_path(
-        PANEL_URL,
-        hass.config.path(f'{BASE_PATH}/frontend/scene_presets_panel.js'),
-    )
+    await hass.http.async_register_static_paths([
+        StaticPathConfig(PANEL_URL, hass.config.path(f'{BASE_PATH}/frontend/scene_presets_panel.js'), True),
+        StaticPathConfig(f'/assets/{DOMAIN}/iconset.js', hass.config.path(f'{BASE_PATH}/res/iconset.js'), True)
+    ])
 
     hass.http.register_view(ScenePresetDataView)
+    add_extra_js_url(hass, f"/assets/{DOMAIN}/iconset.js?{VERSION}")
 
     await bind_preset_images(hass)
 
@@ -47,18 +48,13 @@ async def async_setup_view(hass):
             "version": VERSION
         },
     )
-    
-    # Custom iconset
-    hass.http.register_static_path(
-        f'/assets/{DOMAIN}/iconset.js',
-        hass.config.path(f'{BASE_PATH}/res/iconset.js'),
-    )
-    add_extra_js_url(hass, f"/assets/{DOMAIN}/iconset.js?{VERSION}")
 
 async def async_remove_view(hass):
     async_remove_panel(hass, "scene_presets")
 
 async def bind_preset_images(hass):
+    static_paths = []
+
     for preset in PRESET_DATA.get("presets", []):
         img_filename = preset.get("img")
         is_custom = preset.get("custom")
@@ -68,7 +64,12 @@ async def bind_preset_images(hass):
             if is_custom is not None and is_custom:
                 path = f"{BASE_PATH}/userdata/custom/assets/{img_filename}"
 
-            hass.http.register_static_path(
-                f'/assets/{DOMAIN}/{img_filename}',
-                hass.config.path(path),
+            static_paths.append(
+                StaticPathConfig(
+                    f'/assets/{DOMAIN}/{img_filename}',
+                    hass.config.path(path),
+                    True
+                )
             )
+
+    await hass.http.async_register_static_paths(static_paths)
