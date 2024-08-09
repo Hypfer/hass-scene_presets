@@ -27,5 +27,6 @@ export const loadConfigDashboard = async () => {
     await routes?.routes?.b?.load?.();
     await customElements.whenDefined("ha-panel-developer-tools");
     const devToolsRouter: any = document.createElement("developer-tools-router");
-    await devToolsRouter?.routerOptions?.routes?.service?.load?.();
+    await devToolsRouter?.routerOptions?.routes?.service?.load?.(); // Home assistant before 2024.8 => service
+    await devToolsRouter?.routerOptions?.routes?.action?.load?.(); // Home assistant after 2024.8 => action
 };
