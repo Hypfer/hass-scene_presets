@@ -93,10 +93,6 @@ Check the [docs page on that](./docs/Custom%20Presets.md) for more info.
 
 Check out the [./docs/](./docs) folder.
 
-## Further questions?
-[scene_presets Telegram group](https://t.me/+RTEq2nwI9-MwNWYy)
-
-
 ## Misc
 
 This component provides all the scene presets that were available in the Hue App scene gallery on 2023-09-28.
