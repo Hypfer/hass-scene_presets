@@ -67,7 +67,7 @@ async def apply_preset(
         if color_support:
             light_params["xy_color"] = next_color
         elif temp_support:
-            light_params["kelvin"] = find_closest_ct_match(next_color[0], next_color[1])
+            light_params["kelvin"] = find_closest_ct_match(next_color[0], next_color[1]) # TODO: Change to color_temp_kelvin before 2026.1
         elif brightness_support:
             pass # Nothing to add to the payload. Brightness is already part of it
         else:

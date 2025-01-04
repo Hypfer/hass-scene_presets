@@ -23,15 +23,17 @@ class ScenePresetDataView(HomeAssistantView):
         )
 
 async def async_setup_view(hass):
-    await hass.http.async_register_static_paths([
+    static_paths = [
         StaticPathConfig(PANEL_URL, hass.config.path(f'{BASE_PATH}/frontend/scene_presets_panel.js'), True),
         StaticPathConfig(f'/assets/{DOMAIN}/iconset.js', hass.config.path(f'{BASE_PATH}/res/iconset.js'), True)
-    ])
+    ]
+    
+    static_paths.extend(await get_preset_image_paths(hass))
+
+    await hass.http.async_register_static_paths(static_paths)
 
     hass.http.register_view(ScenePresetDataView)
     add_extra_js_url(hass, f"/assets/{DOMAIN}/iconset.js?{VERSION}")
-
-    await bind_preset_images(hass)
 
     async_register_built_in_panel(
         hass,
@@ -52,7 +54,7 @@ async def async_setup_view(hass):
 async def async_remove_view(hass):
     async_remove_panel(hass, "scene_presets")
 
-async def bind_preset_images(hass):
+async def get_preset_image_paths(hass):
     static_paths = []
 
     for preset in PRESET_DATA.get("presets", []):
@@ -72,4 +74,4 @@ async def bind_preset_images(hass):
                 )
             )
 
-    await hass.http.async_register_static_paths(static_paths)
+    return static_paths

@@ -25,7 +25,7 @@ if os.path.exists(custom_presets_path):
         with open(custom_presets_path, 'r') as file:
             CUSTOM_PRESETS = json.load(file)
 
-        print("Custom presets loaded successfully.")
+        _LOGGER.info("Custom presets loaded successfully.")
     except json.JSONDecodeError as e:
         _LOGGER.error(f"Error loading custom presets: {e}")
 else:
