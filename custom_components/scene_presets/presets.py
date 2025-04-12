@@ -26,7 +26,7 @@ async def apply_preset(
     if not preset_data:
         raise vol.Invalid(f"Preset '{preset_id}' not found.")
 
-    brightness = brightness_override if brightness_override else preset_data.get("bri", 255)
+    brightness = brightness_override if brightness_override else preset_data.get("bri", 1000)
 
     preset_colors = [(light["x"], light["y"]) for light in preset_data["lights"]]
 

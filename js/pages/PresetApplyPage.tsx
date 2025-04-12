@@ -555,7 +555,7 @@ export const PresetApplyPage: React.FunctionComponent<{
                             value={customBrightnessValue}
                             setValue={(v) => setCustomBrightnessValue(v)}
                             minValue={0}
-                            maxValue={255}
+                            maxValue={1000}
                             hass={hass}
                         />
                         {
