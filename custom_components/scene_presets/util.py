@@ -1,5 +1,6 @@
 from homeassistant.helpers import entity_registry, device_registry, area_registry
 
+
 def ensure_list(data):
     if isinstance(data, list):
         data = data
@@ -16,46 +17,56 @@ def resolve_targets(hass, entity_ids, device_ids, area_ids, floor_ids, label_ids
     device_reg = device_registry.async_get(hass)
     area_reg = area_registry.async_get(hass)
 
-    resolved_entity_ids = []
 
-    # Labels and floors are the new topmost layers, so we start with those
+    entity_ids_to_process = set(entity_ids)
+    device_ids_to_process = set(device_ids)
+    area_ids_to_process = set(area_ids)
+
+    # 1. Process labels: can yield entities, devices, or areas
     for label_id in label_ids:
-        device_entries = device_registry.async_entries_for_label(device_reg, label_id)
-        device_ids.extend([entry.id for entry in device_entries])
+        for entry in entity_registry.async_entries_for_label(entity_reg, label_id):
+            entity_ids_to_process.add(entry.entity_id)
+        for entry in device_registry.async_entries_for_label(device_reg, label_id):
+            device_ids_to_process.add(entry.id)
+        for entry in area_registry.async_entries_for_label(area_reg, label_id):
+            area_ids_to_process.add(entry.id)
 
-        area_entries = area_registry.async_entries_for_label(area_reg, label_id)
-        area_ids.extend([entry.id for entry in area_entries])
-
-        entity_entries = entity_registry.async_entries_for_label(entity_reg, label_id)
-        entity_ids.extend([entry.entity_id for entry in entity_entries])
-
-    # Right now, floors only contain areas
+    # 2. Process floors: can yield areas
     for floor_id in floor_ids:
-        area_entries = area_registry.async_entries_for_floor(area_reg, floor_id)
-        area_ids.extend([entry.id for entry in area_entries])
+        for entry in area_registry.async_entries_for_floor(area_reg, floor_id):
+            area_ids_to_process.add(entry.id)
 
-    # Areas either contain devices or entities directly
-    for area_id in area_ids:
-        device_entries = device_registry.async_entries_for_area(device_reg, area_id)
-        device_ids.extend([entry.id for entry in device_entries])
+    # 3. Process areas: can yield devices or entities
+    for area_id in area_ids_to_process:
+        # 3.1 Add entities directly assigned to this area
+        for entity in entity_registry.async_entries_for_area(entity_reg, area_id):
+            entity_ids_to_process.add(entity.entity_id)
 
-        entity_entries = entity_registry.async_entries_for_area(entity_reg, area_id)
-        entity_ids.extend([entry.entity_id for entry in entity_entries])
+        # 3.2 Process devices of areas here, as entities of devices may not be part of the same area the device is in
+        #     Only here do we know that the parent device was only referenced by an area + _which_ area it was
+        for device in device_registry.async_entries_for_area(device_reg, area_id):
+            for entity in entity_registry.async_entries_for_device(entity_reg, device.id):
+                # Skip any device entities that are in a different area than their parent device
+                if entity.area_id is None or entity.area_id == area_id:
+                    entity_ids_to_process.add(entity.entity_id)
 
-    # Devices only contain entities
-    for device_id in device_ids:
-        entity_entries = entity_registry.async_entries_for_device(entity_reg, device_id)
-        entity_ids.extend([entry.entity_id for entry in entity_entries])
+    # 4. Process explicitly targeted devices: can yield entities
+    for device_id in device_ids_to_process:
+        for entity in entity_registry.async_entries_for_device(entity_reg, device_id):
+            entity_ids_to_process.add(entity.entity_id)
 
-    # Iterate through all gathered entity IDs and try to recursively resolve them if they happen to be groups.
-    # Also filters down to light entities only
-    for entity_id in entity_ids:
+    # 5. Process entities: can yield even more entities
+    #    This resolves any groups and also filters down to light entities only
+    resolved_entity_ids = []
+    for entity_id in entity_ids_to_process:
         resolved_entity_ids.extend(resolve_entity_ids(hass, entity_id))
 
-    # Deduplicate entity_ids
+    # 6. Deduplicate all resolved entity_ids
+    #    This is required, because we may have resolved multiple groups that share one or more members
     resolved_entity_ids = list(set(resolved_entity_ids))
 
     return resolved_entity_ids
+
 
 def resolve_entity_ids(hass, entity_id, depth=0):
     resolved_ids = []
