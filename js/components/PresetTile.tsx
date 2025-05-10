@@ -17,7 +17,7 @@ export const PresetTile :React.FunctionComponent<{
 
     onFavClick,
     isFav
-}): JSX.Element => {
+}): React.JSX.Element => {
     // These two variables are _somehow_ required because without the change in key, the icon won't change even though we get rerendered ??
     const favedIcon = <HaIconButton
         key={"id_fav"}

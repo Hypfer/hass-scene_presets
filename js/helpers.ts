@@ -4,12 +4,12 @@
 export const loadConfigDashboard = async () => {
     await customElements.whenDefined("partial-panel-resolver");
     const ppResolver = document.createElement("partial-panel-resolver");
-    
+
     let getRoutes = (ppResolver as any)._getRoutes; // After HA 2025.1
     if (typeof getRoutes !== "function") { // Before HA 2025.1
         getRoutes = (ppResolver as any).getRoutes;
     }
-    
+
     const routes = getRoutes([
         {
             component_name: "config",

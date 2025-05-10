@@ -6,7 +6,7 @@ interface HaSwitchProps {
 }
 
 class HaSwitch extends Component<HaSwitchProps> {
-    private elementRef: React.RefObject<HTMLInputElement>;
+    private elementRef: React.RefObject<HTMLInputElement | null>;
 
     constructor(props: HaSwitchProps) {
         super(props);

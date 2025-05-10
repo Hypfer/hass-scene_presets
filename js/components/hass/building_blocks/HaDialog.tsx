@@ -8,7 +8,7 @@ interface HaDialogProps {
 }
 
 class HaDialog extends Component<HaDialogProps> {
-    private elementRef: React.RefObject<HTMLInputElement>;
+    private elementRef: React.RefObject<HTMLInputElement | null>;
 
     constructor(props: HaDialogProps) {
         super(props);

@@ -8,7 +8,7 @@ export interface HaSelectorProps {
 }
 
 abstract class HaSelector<P> extends Component<P & HaSelectorProps> {
-    private elementRef: React.RefObject<HTMLElement>;
+    private elementRef: React.RefObject<HTMLElement | null>;
 
     constructor(props: P & HaSelectorProps) {
         super(props);

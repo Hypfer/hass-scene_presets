@@ -7,7 +7,7 @@ interface MwcButtonProps {
 }
 
 class MwcButton extends Component<MwcButtonProps> {
-    private elementRef: React.RefObject<HTMLInputElement>;
+    private elementRef: React.RefObject<HTMLInputElement | null>;
     private label: string;
     private slot: string | undefined;
 

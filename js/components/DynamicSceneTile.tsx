@@ -15,7 +15,7 @@ export const DynamicSceneTile :React.FunctionComponent<{
     transition,
     imgSrc,
     onClick,
-}): JSX.Element => {
+}): React.JSX.Element => {
     return (
         <div
             className={"tile"}

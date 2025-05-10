@@ -33,7 +33,7 @@ export const Switch :React.FunctionComponent<{
     label,
     value,
     setValue
-}): JSX.Element => {
+}): React.JSX.Element => {
     return (
         <label
             style={{
@@ -72,7 +72,7 @@ export const OptionalNumberSelector :React.FunctionComponent<{
     maxValue,
     hass,
     extraSelectorProps = {}
-}): JSX.Element => {
+}): React.JSX.Element => {
     return (
         <label
             style={{
@@ -130,7 +130,7 @@ export const NumberSelector :React.FunctionComponent<{
     maxValue,
     hass,
     extraSelectorProps = {}
-}): JSX.Element => {
+}): React.JSX.Element => {
     return (
         <label
             style={{
@@ -174,7 +174,7 @@ export const PresetApplyPage: React.FunctionComponent<{
     hass,
     categories,
     presets
-}): JSX.Element => {
+}): React.JSX.Element => {
     const [targets, setTargets] = useLocalStorage<HaTargetSelectorValue>("scene_presets_apply_page_targets", {});
 
     const [shuffle, setShuffle] = useLocalStorage<boolean>("scene_presets_apply_page_shuffle", DEFAULT_TUNABLE_SETTINGS.shuffle);
@@ -311,7 +311,7 @@ export const PresetApplyPage: React.FunctionComponent<{
 
 
     const tiles = React.useMemo(() => {
-        const allTiles: {[key: string] : JSX.Element} = {};
+        const allTiles: {[key: string] : React.JSX.Element} = {};
         const favoriteTiles: Array<string> = [];
 
         presets.forEach((preset, i) => {

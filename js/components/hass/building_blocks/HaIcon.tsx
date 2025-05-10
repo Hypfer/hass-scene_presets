@@ -7,7 +7,7 @@ interface HaIconProps {
 }
 
 class HaIcon extends Component<HaIconProps> {
-    private elementRef: React.RefObject<HTMLInputElement>;
+    private elementRef: React.RefObject<HTMLInputElement | null>;
     private icon: string;
     private size: number;
 
