@@ -8,46 +8,52 @@ _LOGGER = logging.getLogger(__name__)
 
 
 class DynamicScene:
-    def __init__(self, hass, parameters=None, interval=5):
+    def __init__(self, hass, self_destruct_callback, parameters, interval):
         self.id = str(uuid.uuid4())
         self.hass = hass
         self.interval = interval
         self._running = False
         self._task = None
-        self.parameters = parameters if parameters is not None else {}
-        
+        self.parameters = parameters
+        self.self_destruct_callback = self_destruct_callback
+
         self.start_loop()
 
     async def _loop(self):
         run_count = 0
 
         while self._running:
-            # make sure to abort when (all) the light(s) turns off
-            if run_count > 0:
-                entity_states = [
-                    self.hass.states.get(x)
-                    for x in self.parameters.get("light_entity_ids")
-                    if x is not None
-                ]
-                lights_on = len([x for x in entity_states if x.state == "on"])
-                if lights_on == 0:
-                    _LOGGER.warning("Stop running because light(s) have turned off")
-                    self._running = False
-                    return
-
+            light_entity_ids = self.parameters.get("light_entity_ids")
             transition = self.parameters.get(ATTR_TRANSITION)
             smart_shuffle = True
 
-            # on start of the dynamic scene, the user wants quicker transitions + all colors available in the preset
             if run_count == 0:
                 transition = 0.5
                 smart_shuffle = False
+            else:
+                entity_states = [
+                    self.hass.states.get(x)
+                    for x in light_entity_ids
+                    if x is not None
+                ]
+                lights_on = len([x for x in entity_states if x.state == "on"])
+
+                if lights_on == 0:
+                    self._running = False
+                    self.self_destruct_callback(self.id)
+                    return
+                else:
+                    # The user probably purposefully turned off parts of the lights, so if one is off, we ignore it
+                    light_entity_ids = [
+                        entity_id for entity_id, state in zip(light_entity_ids, entity_states)
+                        if state and state.state == "on"
+                    ]
 
 
             await apply_preset(
                 self.hass,
                 self.parameters.get(ATTR_SCENE_PRESET_ID),
-                self.parameters.get("light_entity_ids"),
+                light_entity_ids,
                 transition,
                 self.parameters.get(ATTR_SHUFFLE),
                 smart_shuffle,
@@ -59,7 +65,7 @@ class DynamicScene:
 
     def start_loop(self):
         if self._running:
-            return  # Already running
+            return
         self._running = True
         self._task = self.hass.create_task(self._loop())
 
@@ -85,10 +91,14 @@ class DynamicSceneManager:
     def __init__(self):
         self.dynamic_scenes = {}
 
-    def create_new(self, hass, parameters=None, interval=None):
-        scene = DynamicScene(hass, parameters, interval)
+    def create_new(self, hass, parameters, interval):
+        scene = DynamicScene(
+            hass,
+            lambda scene_id: self.delete_by_id(scene_id),
+            parameters,
+            interval
+        )
         self.dynamic_scenes[scene.id] = scene
-
         return scene.to_dict()
 
     def get_by_id(self, id):

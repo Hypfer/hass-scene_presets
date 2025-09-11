@@ -64,6 +64,7 @@ You can see all active dynamic scenes at the top of the UI. To stop them, just t
 Furthermore, you should know that<br/>
 - a dynamic scene will automatically stop once you turn off all lights it was active on.
 - a dynamic scene will be stopped if a second one is started that would also interact with a light that is already part of the first one.
+- if you turn off parts of the lights that are part of a dynamic scene, they will not be turned back on by it.
 - dynamic scenes can put a lot of strain on your zigbee network if you pick many lights and very short intervals.
 - dynamic scenes may suffer from different lights having different command delays. Picking a longer transition time helps to mask that.
 - dynamic scenes do not survive a restart of home assistant. This is intentional.
