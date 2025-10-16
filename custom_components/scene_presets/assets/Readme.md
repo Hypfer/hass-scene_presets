@@ -294,6 +294,13 @@ Feel free to contact me, and I'm sure we can find a solution.
 <img src="./palettes/a489caa2-c7fd-4c01-b83c-2e7e87ce2cd6.svg" height="100"/>
 
 `a489caa2-c7fd-4c01-b83c-2e7e87ce2cd6`
+
+#### November haze
+<img src="./6550c445-3ed7-46b3-9d06-76f7e9ef7c4e.jpeg" height="256"/>
+<br/>
+<img src="./palettes/6550c445-3ed7-46b3-9d06-76f7e9ef7c4e.svg" height="100"/>
+
+`6550c445-3ed7-46b3-9d06-76f7e9ef7c4e`
 ### Peaceful
 #### Mountain breeze
 <img src="./24964f19-ad24-402d-ab79-aaec30cfa1d8.jpeg" height="256"/>
