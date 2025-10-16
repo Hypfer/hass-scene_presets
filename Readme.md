@@ -96,8 +96,5 @@ Check out the [./docs/](./docs) folder.
 
 ## Misc
 
-This component provides all the scene presets that were available in the Hue App scene gallery on 2023-09-28.
-These have been manually extracted in a clean-room way by setting a group of lights to a scene and then noting the different x,y values + its name.
-Thanks again to @coderph0x!
-
 Check out the [assets](./custom_components/scene_presets/assets/Readme.md) folder for a list with all presets available.
+All of them have been manually extracted in a clean-room way by setting a group of lights to a scene and then noting the different x,y values + its name.

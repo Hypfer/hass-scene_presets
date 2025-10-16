@@ -98,6 +98,12 @@ Feel free to contact me, and I'm sure we can find a solution.
 <img src="./palettes/6b8cbab7-6090-484f-b0c2-43176e1bb044.svg" height="100"/>
 
 `6b8cbab7-6090-484f-b0c2-43176e1bb044`
+#### Baby's breath
+<img src="./320cbf0d-36fc-4356-a8f5-82028760a53f.jpeg" height="256"/>
+<br/>
+<img src="./palettes/320cbf0d-36fc-4356-a8f5-82028760a53f.svg" height="100"/>
+
+`320cbf0d-36fc-4356-a8f5-82028760a53f`
 ### Cozy
 #### Rolling hills
 <img src="./49c61bae-d3ec-4df2-89a4-65235705f3a1.jpeg" height="256"/>
@@ -331,6 +337,13 @@ Feel free to contact me, and I'm sure we can find a solution.
 <img src="./palettes/2be1f2f4-4e47-4fcc-a99c-4195da6210ea.svg" height="100"/>
 
 `2be1f2f4-4e47-4fcc-a99c-4195da6210ea`
+
+#### Sailing away
+<img src="./f2ac2635-8b9e-4d5f-a307-63bd55e60475.jpeg" height="256"/>
+<br/>
+<img src="./palettes/f2ac2635-8b9e-4d5f-a307-63bd55e60475.svg" height="100"/>
+
+`f2ac2635-8b9e-4d5f-a307-63bd55e60475`
 ### Sunrise
 #### Beginnings
 <img src="./dfac784a-5df9-4d7d-8866-df77ded6182b.jpeg" height="256"/>
@@ -638,80 +651,80 @@ Feel free to contact me, and I'm sure we can find a solution.
 <br/>
 <img src="./palettes/c2ba8a69-acdf-4ce1-8bb2-f1b3819f1c0f.svg" height="100"/>
 
-`Silverstone`
+`c2ba8a69-acdf-4ce1-8bb2-f1b3819f1c0f`
 #### Zandvoort
 <img src="./f85558ad-f8db-461a-8ff3-7458e9f7320f.jpeg" height="256"/>
 <br/>
 <img src="./palettes/f85558ad-f8db-461a-8ff3-7458e9f7320f.svg" height="100"/>
 
-`Zandvoort`
+`f85558ad-f8db-461a-8ff3-7458e9f7320f`
 #### Singapore
 <img src="./0e98b2b9-5643-4e2d-a2b2-13c5ae63a1c1.jpeg" height="256"/>
 <br/>
 <img src="./palettes/0e98b2b9-5643-4e2d-a2b2-13c5ae63a1c1.svg" height="100"/>
 
-`Singapore`
+`0e98b2b9-5643-4e2d-a2b2-13c5ae63a1c1`
 #### São Paulo
 <img src="./a84a9a0c-282d-4b55-8b9c-be9d85455623.jpeg" height="256"/>
 <br/>
 <img src="./palettes/a84a9a0c-282d-4b55-8b9c-be9d85455623.svg" height="100"/>
 
-`São Paulo`
+`a84a9a0c-282d-4b55-8b9c-be9d85455623`
 #### Miami
 <img src="./d0b4b2d2-570f-4325-9475-098e3e0501f0.jpeg" height="256"/>
 <br/>
 <img src="./palettes/d0b4b2d2-570f-4325-9475-098e3e0501f0.svg" height="100"/>
 
-`Miami`
+`d0b4b2d2-570f-4325-9475-098e3e0501f0`
 #### Suzuka
 <img src="./8072c23c-c25e-425f-b93e-0402c169f1f3.jpeg" height="256"/>
 <br/>
 <img src="./palettes/8072c23c-c25e-425f-b93e-0402c169f1f3.svg" height="100"/>
 
-`Suzuka`
+`8072c23c-c25e-425f-b93e-0402c169f1f3`
 #### Bahrain
 <img src="./ad69cf77-3068-489b-96e8-1aa6e20759a7.jpeg" height="256"/>
 <br/>
 <img src="./palettes/ad69cf77-3068-489b-96e8-1aa6e20759a7.svg" height="100"/>
 
-`Bahrain`
+`ad69cf77-3068-489b-96e8-1aa6e20759a7`
 ### Daily
 #### Nighttime
 <img src="./cfdb43c7-ccb3-4dd1-b4c7-036e0d74aeb9.jpeg" height="256"/>
 <br/>
 <img src="./palettes/cfdb43c7-ccb3-4dd1-b4c7-036e0d74aeb9.svg" height="100"/>
 
-`Nighttime`
+`cfdb43c7-ccb3-4dd1-b4c7-036e0d74aeb9`
 #### Sleepy
 <img src="./6170702c-f2fc-46fc-99ef-ac98b6c1293e.jpeg" height="256"/>
 <br/>
 <img src="./palettes/6170702c-f2fc-46fc-99ef-ac98b6c1293e.svg" height="100"/>
 
-`Sleepy`
+`6170702c-f2fc-46fc-99ef-ac98b6c1293e`
 #### Unwind
 <img src="./f7c2f4ce-f957-4745-b9bf-651d5b81c9a6.jpeg" height="256"/>
 <br/>
 <img src="./palettes/f7c2f4ce-f957-4745-b9bf-651d5b81c9a6.svg" height="100"/>
 
-`Unwind`
+`f7c2f4ce-f957-4745-b9bf-651d5b81c9a6`
 #### Storybook
 <img src="./4f76cd74-28db-455b-9c11-04654be86281.jpeg" height="256"/>
 <br/>
 <img src="./palettes/4f76cd74-28db-455b-9c11-04654be86281.svg" height="100"/>
 
-`Storybook`
+`4f76cd74-28db-455b-9c11-04654be86281`
 #### Shine
 <img src="./ded92eba-901e-4675-8a77-2d17d95aac54.jpeg" height="256"/>
 <br/>
 <img src="./palettes/ded92eba-901e-4675-8a77-2d17d95aac54.svg" height="100"/>
 
-`Shine`
+`ded92eba-901e-4675-8a77-2d17d95aac54`
 #### Arise
 <img src="./d7225176-5cb9-47f3-ab99-8ca9908866fc.jpeg" height="256"/>
 <br/>
 <img src="./palettes/d7225176-5cb9-47f3-ab99-8ca9908866fc.svg" height="100"/>
 
-`Arise`
+`d7225176-5cb9-47f3-ab99-8ca9908866fc`
 
 ### Romantic
 #### Ruby romance
@@ -719,43 +732,130 @@ Feel free to contact me, and I'm sure we can find a solution.
 <br/>
 <img src="./palettes/68d97db1-eb52-4c03-8afc-eed5df30c417.svg" height="100"/>
 
-`Ruby romance`
+`68d97db1-eb52-4c03-8afc-eed5df30c417`
 #### City of love
 <img src="./1fde4a1b-2ace-4b3a-a517-f9660fc84536.jpeg" height="256"/>
 <br/>
 <img src="./palettes/1fde4a1b-2ace-4b3a-a517-f9660fc84536.svg" height="100"/>
 
-`City of love`
+`1fde4a1b-2ace-4b3a-a517-f9660fc84536`
 #### Sunset allure
 <img src="./68e8b68e-8237-48a6-bf5f-f62258dd2ff3.jpeg" height="256"/>
 <br/>
 <img src="./palettes/68e8b68e-8237-48a6-bf5f-f62258dd2ff3.svg" height="100"/>
 
-`Sunset allure`
+`68e8b68e-8237-48a6-bf5f-f62258dd2ff3`
 #### Lovebirds
 <img src="./f1f5f209-ffcb-4734-8567-0819a2885214.jpeg" height="256"/>
 <br/>
 <img src="./palettes/f1f5f209-ffcb-4734-8567-0819a2885214.svg" height="100"/>
 
-`Lovebirds`
+`f1f5f209-ffcb-4734-8567-0819a2885214`
 #### Smitten
 <img src="./a65a2815-52fb-4748-8e02-b607f96f70ea.jpeg" height="256"/>
 <br/>
 <img src="./palettes/a65a2815-52fb-4748-8e02-b607f96f70ea.svg" height="100"/>
 
-`Smitten`
+`a65a2815-52fb-4748-8e02-b607f96f70ea`
 #### Glitz and glam
 <img src="./2bf0e527-62ac-4203-b8a1-de06b0913fde.jpeg" height="256"/>
 <br/>
 <img src="./palettes/2bf0e527-62ac-4203-b8a1-de06b0913fde.svg" height="100"/>
 
-`Glitz and glam`
+`2bf0e527-62ac-4203-b8a1-de06b0913fde`
 #### Promise
 <img src="./0b8dcd68-9ad0-4722-b23f-5fddb24204ef.jpeg" height="256"/>
 <br/>
 <img src="./palettes/0b8dcd68-9ad0-4722-b23f-5fddb24204ef.svg" height="100"/>
 
-`Promise`
+`0b8dcd68-9ad0-4722-b23f-5fddb24204ef`
+### Vibrant
+#### Juicy watermelon
+<img src="./eebd67ce-5b73-4cb6-b926-bf4613c361b0.jpeg" height="256"/>
+<br/>
+<img src="./palettes/eebd67ce-5b73-4cb6-b926-bf4613c361b0.svg" height="100"/>
+
+`eebd67ce-5b73-4cb6-b926-bf4613c361b0`
+#### Summer splash
+<img src="./fd02c728-e90e-4abd-b1bf-6b2f2acb0b11.jpeg" height="256"/>
+<br/>
+<img src="./palettes/fd02c728-e90e-4abd-b1bf-6b2f2acb0b11.svg" height="100"/>
+
+`fd02c728-e90e-4abd-b1bf-6b2f2acb0b11`
+#### Fruity popsicle
+<img src="./77cf9ffd-5491-47cd-83d6-2f0e806b4cb0.jpeg" height="256"/>
+<br/>
+<img src="./palettes/77cf9ffd-5491-47cd-83d6-2f0e806b4cb0.svg" height="100"/>
+
+`77cf9ffd-5491-47cd-83d6-2f0e806b4cb0`
+### Wanderlust
+#### Rome
+<img src="./13be0e02-2004-4489-b2fa-fb05aeb3d1c4.jpeg" height="256"/>
+<br/>
+<img src="./palettes/13be0e02-2004-4489-b2fa-fb05aeb3d1c4.svg" height="100"/>
+
+`13be0e02-2004-4489-b2fa-fb05aeb3d1c4`
+#### Santorini
+<img src="./b4211eac-fd8b-4025-900c-b86af13e9a55.jpeg" height="256"/>
+<br/>
+<img src="./palettes/b4211eac-fd8b-4025-900c-b86af13e9a55.svg" height="100"/>
+
+`b4211eac-fd8b-4025-900c-b86af13e9a55`
+#### Coastal nights
+<img src="./1f9bcaa3-82c9-4393-a571-b8de9905c0f0.jpeg" height="256"/>
+<br/>
+<img src="./palettes/1f9bcaa3-82c9-4393-a571-b8de9905c0f0.svg" height="100"/>
+
+`1f9bcaa3-82c9-4393-a571-b8de9905c0f0`
+#### Island warmth
+<img src="./075aea9a-80c3-4bce-8c65-a8a3938054bd.jpeg" height="256"/>
+<br/>
+<img src="./palettes/075aea9a-80c3-4bce-8c65-a8a3938054bd.svg" height="100"/>
+
+`075aea9a-80c3-4bce-8c65-a8a3938054bd`
+#### Ocean escape
+<img src="./a62d217e-be67-4674-83d0-254a045793d9.jpeg" height="256"/>
+<br/>
+<img src="./palettes/a62d217e-be67-4674-83d0-254a045793d9.svg" height="100"/>
+
+`a62d217e-be67-4674-83d0-254a045793d9`
+#### Downtown drizzle
+<img src="./18482f7d-4a18-4635-88c8-83c0695aa56c.jpeg" height="256"/>
+<br/>
+<img src="./palettes/18482f7d-4a18-4635-88c8-83c0695aa56c.svg" height="100"/>
+
+`18482f7d-4a18-4635-88c8-83c0695aa56c`
+### Rustic
+#### Amber robin
+<img src="./ae6319a6-7c4f-4f85-87b9-ade7dc8e2c26.jpeg" height="256"/>
+<br/>
+<img src="./palettes/ae6319a6-7c4f-4f85-87b9-ade7dc8e2c26.svg" height="100"/>
+
+`ae6319a6-7c4f-4f85-87b9-ade7dc8e2c26`
+#### Woodland toadstool
+<img src="./ad0fe6ac-5877-4dc7-8386-6d4e8a17ea88.jpeg" height="256"/>
+<br/>
+<img src="./palettes/ad0fe6ac-5877-4dc7-8386-6d4e8a17ea88.svg" height="100"/>
+
+`ad0fe6ac-5877-4dc7-8386-6d4e8a17ea88`
+#### Pumpkin spice
+<img src="./b592ea26-5c52-403d-9836-82140fc2b679.jpeg" height="256"/>
+<br/>
+<img src="./palettes/b592ea26-5c52-403d-9836-82140fc2b679.svg" height="100"/>
+
+`b592ea26-5c52-403d-9836-82140fc2b679`
+#### Fall harvest
+<img src="./a2fc579f-71e5-47a1-af9d-43e8edd91c6e.jpeg" height="256"/>
+<br/>
+<img src="./palettes/a2fc579f-71e5-47a1-af9d-43e8edd91c6e.svg" height="100"/>
+
+`a2fc579f-71e5-47a1-af9d-43e8edd91c6e`
+#### Pumpkin patch
+<img src="./1ae2c539-9afa-4870-bb29-061c255f2177.jpeg" height="256"/>
+<br/>
+<img src="./palettes/1ae2c539-9afa-4870-bb29-061c255f2177.svg" height="100"/>
+
+`1ae2c539-9afa-4870-bb29-061c255f2177`
 
 ### Custom Palettes
 #### SECAM
