@@ -19,8 +19,10 @@ And, most importantly, no account required :-)
 
 ## Installation
 
-1. Add the repository as a custom repository of type `integration` in HACS: https://hacs.xyz/docs/faq/custom_repositories/
-2. Restart Home Assistant
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Hypfer&repository=hass-scene_presets&category=Integration)
+
+1. Add the repository as a custom repository of type `integration` in HACS: https://github.com/Hypfer/hass-scene_presets
+2. Install the integration and restart Home Assistant
 3. Navigate to Settings > Devices & Services
 4. Click Add integration
 5. Search for Scene Presets
