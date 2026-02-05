@@ -30,7 +30,9 @@ export const loadConfigDashboard = async () => {
 
 
     // For the selectors
-    await routes?.routes?.b?.load?.();
+    await routes?.routes?.b?.load?.(); //  Before 2026.2, the devtools are their own route
+    await configRouter?.routerOptions?.routes?.["developer-tools"]?.load?.(); // After HA 2026.2, the devtools are a sub-route of the config
+
     await customElements.whenDefined("ha-panel-developer-tools");
     const devToolsRouter: any = document.createElement("developer-tools-router");
     await devToolsRouter?.routerOptions?.routes?.service?.load?.(); // Home assistant before 2024.8 => service
