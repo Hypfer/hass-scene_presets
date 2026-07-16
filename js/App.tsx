@@ -53,15 +53,13 @@ export const App : React.FunctionComponent<{
     }, []); // eslint-disable-line react-hooks/exhaustive-deps 
 
     return (
-        <>
-            <ha-top-app-bar-fixed>
-                <ha-menu-button
-                    slot="navigationIcon"
-                    hass={hass}
-                    narrow={narrow}
-                />
-                <div slot="title">Scene Presets</div>
-            </ha-top-app-bar-fixed>
+        <ha-top-app-bar-fixed>
+            <ha-menu-button
+                slot="navigationIcon"
+                hass={hass}
+                narrow={narrow}
+            />
+            <div slot="title">Scene Presets</div>
 
             <PresetApplyPage
                 hass={hass}
@@ -69,6 +67,6 @@ export const App : React.FunctionComponent<{
                 categories={categories}
                 presets={presets}
             />
-        </>
+        </ha-top-app-bar-fixed>
     );
 };
