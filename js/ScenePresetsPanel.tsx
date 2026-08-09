@@ -176,7 +176,26 @@ class ScenePresetsPanel extends HTMLElement {
     }
 
     async initialize() {
+        this.prefetchLabels().catch(() => {/* can't happen */}); // Without this, the pickers can get unhappy sometimes
+
         await loadConfigDashboard();
+    }
+
+    private prefetchLabels(): Promise<void> {
+        return new Promise((resolve) => {
+            // Mimics @lit/context ContextRequestEvent
+            const event = new Event("context-request", {
+                bubbles: true,
+                composed: true,
+            }) as any;
+            event.context = "labels";
+            event.contextTarget = this;
+            event.subscribe = false;
+            event.callback = () => resolve();
+
+            setTimeout(resolve, 5_000);
+            this.dispatchEvent(event);
+        });
     }
 }
 
