@@ -864,6 +864,41 @@ Feel free to contact me, and I'm sure we can find a solution.
 
 `1ae2c539-9afa-4870-bb29-061c255f2177`
 
+### Winter whisper
+#### Among the pines
+<img src="./84edbfd4-968f-4fe5-b4c6-484a0e5d4aff.jpeg" height="256"/>
+<br/>
+<img src="./palettes/84edbfd4-968f-4fe5-b4c6-484a0e5d4aff.svg" height="100"/>
+
+`84edbfd4-968f-4fe5-b4c6-484a0e5d4aff`
+#### Fuchsia frost
+<img src="./7deef554-6a3a-4c92-b758-6a17aec25f02.jpeg" height="256"/>
+<br/>
+<img src="./palettes/7deef554-6a3a-4c92-b758-6a17aec25f02.svg" height="100"/>
+
+`7deef554-6a3a-4c92-b758-6a17aec25f02`
+#### Icy glow
+<img src="./19175aca-cd4d-4e3d-b144-03f96edbf412.jpeg" height="256"/>
+<br/>
+<img src="./palettes/19175aca-cd4d-4e3d-b144-03f96edbf412.svg" height="100"/>
+
+`19175aca-cd4d-4e3d-b144-03f96edbf412`
+#### Snow capped
+<img src="./83cb8a6c-1290-42d2-9760-5654e8e821a5.jpeg" height="256"/>
+<br/>
+<img src="./palettes/83cb8a6c-1290-42d2-9760-5654e8e821a5.svg" height="100"/>
+
+`83cb8a6c-1290-42d2-9760-5654e8e821a5`
+
+### Sports live
+#### Stadium
+<img src="./f587060a-c4a1-4885-87ff-54c247fb29e6.jpeg" height="256"/>
+<br/>
+<img src="./palettes/f587060a-c4a1-4885-87ff-54c247fb29e6.svg" height="100"/>
+
+`f587060a-c4a1-4885-87ff-54c247fb29e6`
+
+
 ### Custom Palettes
 #### SECAM
 <img src="./dbffbd71-7f65-428a-9ac7-0db51057d31a.jpeg" height="256"/>
