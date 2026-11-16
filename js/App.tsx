@@ -19,7 +19,8 @@ declare module "react" {
             ["ha-card"]: any;
             ["ha-settings-row"]: any;
             ["ha-dialog"]: any;
-            ["mwc-button"]: any;
+            ["ha-dialog-footer"]: any;
+            ["ha-button"]: any;
         }
     }
 }

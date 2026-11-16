@@ -7,7 +7,8 @@ import {HaNumberSelector} from "../components/hass/selectors/HaNumberSelector";
 import HaIconButton from "../components/hass/building_blocks/HaIconButton";
 import {Category, Preset} from "../types";
 import HaDialog from "../components/hass/building_blocks/HaDialog";
-import MwcButton from "../components/hass/building_blocks/MwcButton";
+import HaDialogFooter from "../components/hass/building_blocks/HaDialogFooter";
+import HaButton from "../components/hass/building_blocks/HaButton";
 import {DynamicSceneTile} from "../components/DynamicSceneTile";
 
 const DEFAULT_TUNABLE_SETTINGS = {
@@ -713,13 +714,15 @@ export const PresetApplyPage: React.FunctionComponent<{
                         </pre>
                     </div>
 
-                    <MwcButton
-                        label={"Close"}
-                        onClick={() => {
-                            setAutomationDialogOpen(false);
-                        }}
-                        slot={"secondaryAction"}
-                    />
+                    <HaDialogFooter slot={"footer"}>
+                        <HaButton
+                            label={"Close"}
+                            onClick={() => {
+                                setAutomationDialogOpen(false);
+                            }}
+                            slot={"secondaryAction"}
+                        />
+                    </HaDialogFooter>
                 </HaDialog>
             </div>
 

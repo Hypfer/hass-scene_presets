@@ -36,12 +36,12 @@ export const loadConfigDashboard = async () => {
     // After HA 2026.2, the devtools are a sub-route of the config
     const devToolsConfigSubRoute = await configRouter?.routerOptions?.routes?.["developer-tools"]?.load?.();
     // After HA 2026.8, devtools have been renamed to tools, because dev is a scary word, apparently.
-    const devlessDevToolsConfigSubRoute = await configRouter?.routerOptions?.routes?.["tools"]?.load?.(); 
+    const devlessDevToolsConfigSubRoute = await configRouter?.routerOptions?.routes?.["tools"]?.load?.();
 
     if (devlessDevToolsConfigSubRoute) {
         await customElements.whenDefined("ha-panel-tools");
         const toolsRouter: any = document.createElement("tools-router");
-        
+
         await toolsRouter?.routerOptions?.routes?.action?.load?.();
 
     } else if (devToolsRoute || devToolsConfigSubRoute) {

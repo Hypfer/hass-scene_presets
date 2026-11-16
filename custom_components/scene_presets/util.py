@@ -12,7 +12,24 @@ def ensure_list(data):
     return data
 
 
-def resolve_targets(hass, entity_ids, device_ids, area_ids, floor_ids, label_ids):
+def resolve_targets(hass, targets):
+    included = extract_entity_ids(hass, targets)
+    excluded = extract_entity_ids(hass, targets.get("exclude") or {})
+
+    if not excluded:
+        return included
+
+    excluded_set = set(excluded)
+    return [entity_id for entity_id in included if entity_id not in excluded_set]
+
+
+def extract_entity_ids(hass, target):
+    entity_ids = ensure_list(target.get("entity_id"))
+    device_ids = ensure_list(target.get("device_id"))
+    area_ids = ensure_list(target.get("area_id"))
+    floor_ids = ensure_list(target.get("floor_id"))
+    label_ids = ensure_list(target.get("label_id"))
+
     entity_reg = entity_registry.async_get(hass)
     device_reg = device_registry.async_get(hass)
     area_reg = area_registry.async_get(hass)

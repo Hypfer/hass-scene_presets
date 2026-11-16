@@ -8,7 +8,7 @@ from .const import *
 from .dynamic_scenes import DynamicScene, DynamicSceneManager
 from .presets import apply_preset
 from .view import async_setup_view, async_remove_view
-from .util import ensure_list, resolve_targets
+from .util import resolve_targets
 from .websocket_api import async_setup_websocket_api
 
 CONFIG_SCHEMA = cv.empty_config_schema(DOMAIN)
@@ -53,14 +53,7 @@ async def async_setup(hass, config):
         shuffle = call.data.get(ATTR_SHUFFLE, False)
         smart_shuffle = call.data.get(ATTR_SMART_SHUFFLE, False)
 
-        entity_ids = ensure_list(targets.get("entity_id"))
-        device_ids = ensure_list(targets.get("device_id"))
-        area_ids = ensure_list(targets.get("area_id"))
-        floor_ids = ensure_list(targets.get("floor_id"))
-        label_ids = ensure_list(targets.get("label_id"))
-
-
-        light_entity_ids = resolve_targets(hass, entity_ids, device_ids, area_ids, floor_ids, label_ids)
+        light_entity_ids = resolve_targets(hass, targets)
 
         await apply_preset(
             hass,
@@ -85,13 +78,7 @@ async def async_setup(hass, config):
         transition = call.data.get(ATTR_TRANSITION, 1)
         shuffle = True
 
-        entity_ids = ensure_list(targets.get("entity_id"))
-        device_ids = ensure_list(targets.get("device_id"))
-        area_ids = ensure_list(targets.get("area_id"))
-        floor_ids = ensure_list(targets.get("floor_id"))
-        label_ids = ensure_list(targets.get("label_id"))
-
-        light_entity_ids = resolve_targets(hass, entity_ids, device_ids, area_ids, floor_ids, label_ids)
+        light_entity_ids = resolve_targets(hass, targets)
 
         return dynamic_scene_manager.create_new(
             hass,
@@ -113,13 +100,7 @@ async def async_setup(hass, config):
     async def stop_dynamic_scenes_for_targets(call):
         targets = call.data.get(ATTR_TARGETS)
 
-        entity_ids = ensure_list(targets.get("entity_id"))
-        device_ids = ensure_list(targets.get("device_id"))
-        area_ids = ensure_list(targets.get("area_id"))
-        floor_ids = ensure_list(targets.get("floor_id"))
-        label_ids = ensure_list(targets.get("label_id"))
-
-        light_entity_ids = resolve_targets(hass, entity_ids, device_ids, area_ids, floor_ids, label_ids)
+        light_entity_ids = resolve_targets(hass, targets)
 
         for light_entity_id in light_entity_ids:
             dynamic_scene_manager.stop_all_for_entity_id(light_entity_id)

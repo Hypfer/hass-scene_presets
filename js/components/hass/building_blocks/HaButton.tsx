@@ -1,17 +1,18 @@
 import React, {Component} from "react";
 
-interface MwcButtonProps {
+interface HaButtonProps {
     label: string,
     onClick: (event: Event) => void;
-    slot?: string
+    slot?: string,
+    appearance?: "accent" | "filled" | "outlined" | "plain"
 }
 
-class MwcButton extends Component<MwcButtonProps> {
+class HaButton extends Component<HaButtonProps> {
     private elementRef: React.RefObject<HTMLInputElement | null>;
     private label: string;
     private slot: string | undefined;
 
-    constructor(props: MwcButtonProps) {
+    constructor(props: HaButtonProps) {
         super(props);
 
         this.label = props.label;
@@ -37,15 +38,16 @@ class MwcButton extends Component<MwcButtonProps> {
 
     render() {
         return (
-            <mwc-button
+            <ha-button
                 ref={this.elementRef}
                 slot={this.slot}
+                appearance={this.props.appearance ?? "plain"}
             >
                 {this.label}
-            </mwc-button>
+            </ha-button>
         );
     }
 
 }
 
-export default MwcButton;
+export default HaButton;
